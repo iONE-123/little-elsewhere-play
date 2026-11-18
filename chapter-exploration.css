@@ -1,0 +1,48 @@
+.chapter-exploration[hidden],
+.chapter-exploration button[hidden] { display: none; }
+.chapter-exploration {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  translate: -50%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: calc(100vw - 16px);
+  padding: 2px 7px 2px 12px;
+  background: #312a40ed;
+  color: #fff6ef;
+  border: 1px solid #d6c0dd85;
+  border-radius: 6px;
+  box-shadow: 0 4px 18px #221d3430;
+  font: 400 12px Arial, 'Microsoft YaHei', 'PingFang SC', sans-serif;
+}
+.chapter-exploration > * { white-space: nowrap; }
+.chapter-exploration button {
+  min-height: 44px;
+  padding: 0 7px;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.chapter-exploration .exploration-next { border-left: 1px solid #d6c0dd65; }
+.in-game:has(.reflection-section:not([hidden])) .chapter-exploration {
+  visibility: hidden;
+}
+.in-game .exploration-highlight {
+  outline: 2px solid #ffe3ae !important;
+  outline-offset: 3px;
+  box-shadow: 0 0 15px #ffdfb1a0;
+}
+.exploration-reminder-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+#life-modal[data-kind="exploration"] h2 { font-size: clamp(24px, 5vw, 34px); }
+@media (max-width: 520px) {
+  .chapter-exploration { font-size: 11px; gap: 3px; padding-left: 8px; }
+  .chapter-exploration button { padding-inline: 5px; }
+}

@@ -1,0 +1,135 @@
+/* July's approved water terrace: diagonal wall, quiet photo index, one memory at a time. */
+html:has(body.july-experience-active.in-game){height:100%;overflow:hidden}
+.july-experience-active.in-game{height:100%;overflow:hidden;background:#3f7079}
+.july-experience-active.in-game>footer{display:none}
+.july-experience-active.in-game .topbar{height:64px;background:#24313c;border-bottom:1px solid #f6e9db55}
+.july-experience-active.in-game .topbar .wordmark,.july-experience-active.in-game .topnav button,.july-experience-active.in-game .portal-top-progress{color:#fff5e9}
+.july-experience-active.in-game .topbar .wordmark{font:600 12px Arial,Helvetica,sans-serif;letter-spacing:.15em}
+.july-experience-active.in-game .topbar .wordmark>span:last-child{font-size:0}
+.july-experience-active.in-game .topbar .wordmark>span:last-child:after{content:'THE ARCHIVE';font-size:12px}
+.july-experience-active.in-game .atlas{padding:64px 0 0;background:#3f7079}
+.july-experience-active.in-game .atlas:before,.july-experience-active.in-game .atlas:after{display:none}
+.july-experience-active.in-game .chapter-stage{width:100%;max-width:none;height:calc(100svh - 64px);min-height:540px;margin:0;border:0;border-radius:0;box-shadow:none;background:#3f7079}
+.july-experience-active.in-game .july-chapter,.july-experience-active.in-game .july-chapter .play-layout{height:100%}
+.july-experience-active.in-game .july-chapter .play-layout{position:relative;display:block;max-width:none;margin:0;box-shadow:none}
+.july-experience-active.in-game .july-chapter .scene-canvas.july-board{position:relative;width:100%;height:100%;min-height:0;padding:0;overflow:hidden;background:#3f7079;color:#fff5e9;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.july-experience-active .july-board:after{display:none}
+.july-art-plane{position:absolute;inset:0;background:url('./assets/july-water-terrace-scene.png') center/cover no-repeat}
+.july-edition{position:absolute;z-index:5;top:11.9%;left:5.3%;color:#283f49;font:600 12px/1.4 Arial,sans-serif;letter-spacing:.19em;white-space:nowrap}
+.july-edition:after{content:'';display:block;width:82px;height:1px;margin-top:12px;background:#45616b9c}
+.july-scene-tools{position:absolute;z-index:7;top:2.4%;right:2.8%;display:grid;gap:8px}
+.july-scene-tools button{display:flex;align-items:center;gap:9px;min-width:144px;min-height:44px;padding:6px 12px;border:1px solid #f9e9d2b0;border-radius:999px;background:#254953ab;color:#fff5e9;text-align:left;backdrop-filter:blur(5px);cursor:pointer}
+.july-scene-tools svg{width:22px;height:22px;flex:0 0 22px}
+.july-scene-tools button>span{display:grid;gap:2px}
+.july-scene-tools small{font:500 8px/1.1 Arial,sans-serif;letter-spacing:.12em}
+.july-scene-tools strong{font:400 12px/1.25 Arial,'Microsoft YaHei',sans-serif}
+.july-panel-shell{position:absolute;z-index:5;top:7.3%;left:4.3%;width:clamp(700px,60.3vw,1040px);max-width:90vw;height:clamp(255px,35.6%,320px);clip-path:polygon(0 33%,47% 0,100% 0,100% 94%,90% 100%,0 100%);background:#ffebd9b8;backdrop-filter:blur(2px)}
+.july-panel-shell:before{content:'';position:absolute;inset:1px;clip-path:polygon(0 33%,47% 0,100% 0,100% 94%,90% 100%,0 100%);background:#233e48b2;pointer-events:none}
+.july-panel-inner{position:relative;height:100%;font-style:normal}
+.july-panel-primary{position:absolute;left:6.2%;top:42%;max-width:56%}
+.july-panel-primary h3{margin:0;color:#fff7e9;font:400 clamp(42px,3.82vw,58px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:.17em;white-space:nowrap}
+.july-panel-primary p{margin:24px 0 0;color:#fff6e9;font:400 clamp(21px,1.87vw,29px)/1.35 Arial,'Microsoft YaHei','PingFang SC',sans-serif;white-space:nowrap}
+.july-panel-primary:after{content:'';display:block;width:76px;height:1px;margin-top:14px;background:#ffedda9c}
+.july-panel-detail{position:absolute;top:15%;left:68%;right:6%;min-width:0}
+.july-panel-detail>small{color:#f5e7d9;font:400 12px/1.4 Arial,'Microsoft YaHei',sans-serif;letter-spacing:.13em;white-space:nowrap}
+.july-panel-detail h4{margin:35px 0 17px;color:#fff7eb;font:400 clamp(19px,1.6vw,25px)/1.35 Arial,'Microsoft YaHei','PingFang SC',sans-serif;white-space:nowrap}
+.july-memory-link{display:grid;grid-template-columns:27px minmax(0,1fr);column-gap:13px;align-items:center;width:100%;min-height:83px;padding:16px 0 0;border:0;border-top:1px solid #fff1ddb0;background:none;color:#fff7eb;text-align:left;cursor:pointer}
+.july-memory-link svg{grid-column:1;grid-row:1;width:26px;height:26px}
+.july-memory-name{grid-column:2;grid-row:1;font:400 clamp(16px,1.32vw,20px)/1.35 Arial,'Microsoft YaHei','PingFang SC',sans-serif;white-space:nowrap}
+.july-memory-action{grid-column:1/3;grid-row:2;margin-top:14px;color:#f5e6d8;font:400 15px/1.4 Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.july-photo-nav{position:absolute;z-index:6;right:5%;bottom:6%;display:flex;align-items:flex-end;gap:17px;color:#fff6e8;text-shadow:0 1px 8px #244853a6;font-family:Arial,'Microsoft YaHei',sans-serif}
+.july-photo-nav button,.july-photo-nav summary{min-height:44px;color:inherit;cursor:pointer}
+.july-step{min-width:86px;padding:8px 2px;border:0;background:none;font:400 14px Arial,'Microsoft YaHei',sans-serif;white-space:nowrap}
+.july-step:disabled{visibility:hidden}
+.july-index{position:relative}
+.july-index summary{display:flex;align-items:center;gap:24px;padding:8px 0;list-style:none;font:500 13px Arial,sans-serif;letter-spacing:.13em;white-space:nowrap}
+.july-index summary::-webkit-details-marker{display:none}
+.july-ticks{display:flex;align-items:center;gap:7px;height:25px}
+.july-ticks>span{display:block;width:1px;height:12px;background:#fff5e6a6}
+.july-ticks>span.is-current{width:2px;height:24px;background:#fffaf1}
+.july-index-list{position:absolute;right:0;bottom:calc(100% + 10px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;width:min(560px,88vw);max-height:48svh;overflow-y:auto;padding:16px;border:1px solid #f5e9dbba;background:#284751f2;box-shadow:0 16px 50px #1e404ca6;backdrop-filter:blur(12px)}
+.july-index-list button{display:flex;align-items:center;gap:11px;min-height:46px;padding:7px 9px;border:1px solid transparent;background:none;color:#fff6ea;text-align:left;font:400 13px/1.35 Arial,'Microsoft YaHei',sans-serif}
+.july-index-list button[aria-current=true],.july-index-list button:hover{border-color:#f5e3cc96;background:#f5e3cc20}
+.july-index-list small{color:#e7c5a9;font:500 10px Arial,sans-serif}
+.july-experience-active.in-game .july-chapter .quest-panel{display:none}
+.july-experience-active.in-game .july-month-drawer{position:absolute;z-index:8;left:3.8%;bottom:5.5%;width:max-content;max-width:90vw;color:#fff5e9}
+.july-month-drawer summary{min-height:44px;padding:10px 4px;list-style:none;font:600 10px/24px Arial,sans-serif;letter-spacing:.2em;cursor:pointer;text-shadow:0 1px 7px #21414b}
+.july-month-drawer summary::-webkit-details-marker{display:none}
+.july-month-drawer[open]{padding:5px 12px;background:#284751f2;backdrop-filter:blur(8px)}
+.july-month-drawer .portal-months{margin:0;padding:5px 0 10px;background:none;box-shadow:none}
+.july-month-drawer .portal-months button{font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.july-experience-active.in-game .july-chapter .reflection-section{position:fixed;z-index:15;inset:64px 0 0 auto;width:min(760px,100vw);height:calc(100svh - 64px);max-width:none;overflow-y:auto;margin:0;padding:30px clamp(24px,5vw,70px) 60px;border:1px solid #f7e9d4a6;background:#284a53f0;color:#fff5e9;box-shadow:-18px 0 70px #1e3f4880;backdrop-filter:blur(12px);font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.july-experience-active.in-game .july-chapter .reflection-section[hidden]{display:none}
+.july-journal-close{display:block;min-height:44px;margin:0 0 26px auto;padding:5px 0;border:0;border-bottom:1px solid #f5e6d6a8;background:none;color:#fff5e8;font:400 13px Arial,'Microsoft YaHei',sans-serif;cursor:pointer}
+.july-experience-active .july-ledger,.july-experience-active .july-ledger div+div{border-color:#f7ebde8c}
+.july-experience-active .july-ledger strong,.july-experience-active .july-ledger small,.july-experience-active .july-reading h4,.july-experience-active .july-reading .diary-prose,.july-experience-active .july-reading .diary-prose p,.july-experience-active .july-byline,.july-experience-active .reflection-section .locked-diary,.july-experience-active .reflection-section .choice-response,.july-experience-active .reflection-section .next-row small{color:#fff5e9;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif;font-style:normal}
+.july-experience-active .july-reading h4{font-size:30px}
+.july-experience-active .july-reading .diary-prose{font-size:15px;line-height:2}
+.july-experience-active .july-voice-switch button{border-radius:999px;border-color:#f7e7d5b5;color:#fff5e9}
+.july-experience-active .july-voice-switch button[aria-pressed=true]{background:#efddc9;color:#294650}
+.july-experience-active .reflection-section .choices button{border-color:#f3e4d4ae;background:#fff8ea18;color:#fff5e9}
+.july-experience-active .reflection-section .choices button.is-chosen{background:#efddc9;color:#294650}
+.july-experience-active .reflection-section .next-button{background:#e6c6aa;color:#294650}
+body.july-experience-active #life-modal[data-kind="july"]{width:min(930px,calc(100% - 32px));max-height:87svh;padding:35px clamp(22px,4vw,50px);border:1px solid #f7e9d5b8;border-radius:18px;background:#284a53f0;color:#fff5e9;box-shadow:0 20px 75px #183b447e;backdrop-filter:blur(12px);font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+body.july-experience-active #life-modal[data-kind="july"]::backdrop{background:#1d3a438c;backdrop-filter:blur(2px)}
+body.july-experience-active #life-modal[data-kind="july"] .modal-close{width:44px;height:44px;border:1px solid #f7e7d5b5;border-radius:50%;background:#31525ba8;color:#fff5e9;box-shadow:none}
+body.july-experience-active #life-modal[data-kind="july"] h2{color:#fff5e9;font:500 clamp(25px,3vw,38px)/1.3 Arial,'Microsoft YaHei',sans-serif}
+body.july-experience-active #life-modal[data-kind="july"] .july-memory-date,body.july-experience-active #life-modal[data-kind="july"] .july-memory-photo figcaption,body.july-experience-active #life-modal[data-kind="july"] .july-note p,body.july-experience-active #life-modal[data-kind="july"] #event-feedback{color:#fff5e9;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.july-experience-active #life-modal[data-kind="july"] .july-memory-date{border-color:#f7ebdd8c}
+body.july-experience-active #life-modal[data-kind="july"] .july-memory-photo{border-color:#f7ebdd8c;background:#d7e0d526}
+body.july-experience-active #life-modal[data-kind="july"] .july-note{border-color:#f7ebdd8c;background:#c5d9d02b}
+body.july-experience-active #life-modal[data-kind="july"] .july-note[data-side=back]{background:#e0bea82e}
+body.july-experience-active #life-modal[data-kind="july"] .july-note small{color:#efd5c0}
+body.july-experience-active #life-modal[data-kind="july"] .july-turn,body.july-experience-active #life-modal[data-kind="july"] #collect-object{min-height:44px;border:1px solid #f4e6d5b8;border-radius:999px;background:#e2bda86b;color:#fff6ea;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.july-experience-active #life-modal[data-kind="july"] #collect-object:not(:disabled){background:#e7cab0;color:#294650}
+.july-board button:focus-visible,.july-index summary:focus-visible,.july-month-drawer summary:focus-visible,.july-journal-close:focus-visible{outline:2px solid #fff4e5;outline-offset:3px}
+@media(max-width:1120px){
+  .july-panel-shell{width:clamp(700px,65vw,850px)}
+  .july-panel-primary h3{font-size:clamp(42px,4.3vw,52px)}
+  .july-panel-primary p{font-size:clamp(20px,2.3vw,25px)}
+  .july-panel-detail h4{font-size:clamp(18px,1.9vw,22px)}
+  .july-scene-tools button{min-width:125px}
+}
+@media(max-width:800px){
+  .july-experience-active.in-game .topbar{height:62px;padding:0 12px}
+  .july-experience-active.in-game .atlas{padding-top:62px}
+  .july-experience-active.in-game .chapter-stage{height:calc(100svh - 62px);min-height:0}
+  .july-experience-active.in-game .july-chapter .scene-canvas.july-board{background:#3f7079 url('./assets/july-water-terrace-scene.png') 34% bottom/auto 125% no-repeat}
+  .july-art-plane{display:none}
+  .july-edition{top:4%;left:5%;color:#2d4650;font-size:10px;text-shadow:0 1px 5px #f5d8bf}
+  .july-edition:after{margin-top:7px}
+  .july-scene-tools{top:2%;right:4%;display:flex;gap:6px}
+  .july-scene-tools button{min-width:0;min-height:44px;gap:5px;padding:5px 7px}
+  .july-scene-tools svg{width:19px;height:19px;flex-basis:19px}
+  .july-scene-tools small{font-size:7px}
+  .july-scene-tools strong{font-size:10px}
+  .july-panel-shell{top:47%;left:4%;width:92%;height:40%;max-width:none;max-height:none;overflow-y:auto;clip-path:polygon(0 6%,100% 0,100% 100%,0 100%)}
+  .july-panel-shell:before{clip-path:polygon(0 6%,100% 0,100% 100%,0 100%)}
+  .july-panel-inner{height:auto;min-height:100%;padding:25px 25px 28px}
+  .july-panel-primary,.july-panel-detail{position:static;max-width:none}
+  .july-panel-primary h3{font-size:clamp(29px,8vw,38px);letter-spacing:.13em}
+  .july-panel-primary p{margin:11px 0 0;font-size:19px;white-space:normal}
+  .july-panel-primary:after{width:62px;margin-top:17px}
+  .july-panel-detail{margin-top:19px}
+  .july-panel-detail>small{font-size:10px}
+  .july-panel-detail h4{margin:12px 0 13px;font-size:18px;white-space:normal}
+  .july-memory-link{min-height:70px;padding-top:12px}
+  .july-memory-name{font-size:16px}
+  .july-memory-action{margin-top:9px;font-size:13px}
+  .july-photo-nav{left:3%;right:3%;bottom:3%;display:grid;grid-template-columns:76px minmax(0,1fr) 76px;gap:5px;align-items:center}
+  .july-step{min-width:0;font-size:11px}
+  .july-index summary{justify-content:center;gap:12px;font-size:11px}
+  .july-ticks{gap:5px}
+  .july-index-list{right:-75px;grid-template-columns:1fr;width:min(350px,94vw);max-height:43svh}
+  .july-experience-active.in-game .july-month-drawer{left:3%;bottom:10%}
+  .july-experience-active.in-game .july-chapter .reflection-section{inset:62px 0 0;width:100vw;height:calc(100svh - 62px);padding:25px 22px 55px}
+  body.july-experience-active #life-modal[data-kind="july"]{padding:28px 20px}
+}
+@media(max-width:400px){
+  .july-panel-inner{padding:23px 20px 27px}
+  .july-panel-primary h3{font-size:29px}
+  .july-panel-primary p{font-size:17px}
+  .july-ticks{gap:4px}
+  .july-index summary{gap:8px}
+}
+@media(prefers-reduced-motion:reduce){.july-experience-active *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

@@ -1,0 +1,85 @@
+.june-chapter .play-layout { display: block; }
+.june-chapter .scene-canvas.june-board {
+  height: auto;
+  min-height: 0;
+  padding: 26px 34px 38px;
+  color: #514d48;
+  background: linear-gradient(135deg, #e6e1d3 0%, #e6ded4 46%, #d8e0db 100%);
+}
+.june-board::after { inset: 11px; }
+.june-tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; margin-bottom: 28px; }
+.june-tabs button { min-height: 68px; padding: 10px 7px; border: 0; border-bottom: 1px solid #b3a799; background: #fffaf3a6; color: #615c55; cursor: pointer; font: 15px/1.5 var(--serif); }
+.june-tabs button[aria-pressed="true"] { background: #fffdf7; border-bottom: 3px solid #af7c76; }
+.june-tabs small { display: block; margin-bottom: 5px; color: #a3726e; font: 10px var(--sans); letter-spacing: .16em; }
+.june-board-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); align-items: center; gap: clamp(25px, 4vw, 54px); max-width: 950px; margin: 0 auto; }
+.june-cover { margin: 0; padding: 11px 11px 16px; background: #fffdf7; box-shadow: 0 11px 28px #534e4224; transform: rotate(-1deg); }
+.june-cover img { display: block; width: 100%; height: 385px; object-fit: contain; background: #ece6db; }
+.june-cover figcaption { padding: 11px 5px 0; color: #6e625d; font: 13px/1.75 var(--serif); }
+.june-board-copy { max-width: 420px; }
+.june-date { color: #aa756d; font: 11px var(--sans); letter-spacing: .1em; }
+.june-board-copy h4 { margin: 15px 0 17px; font: 400 clamp(25px, 3vw, 35px)/1.5 var(--serif); }
+.june-board-copy p { margin: 0 0 28px; font: 15px/1.95 var(--serif); }
+.june-object-card { display: flex; align-items: center; gap: 14px; width: 100%; min-height: 78px; padding: 14px; border: 1px solid #ac9384; background: #fffdf7c9; color: #6d6257; text-align: left; cursor: pointer; }
+.june-object-card:hover { background: #fffdf7; }
+.june-object-card.found { border-color: #859d8c; }
+.june-object-card svg { width: 42px; height: 42px; flex: 0 0 42px; }
+.june-object-card strong { display: block; font: 17px/1.4 var(--serif); }
+.june-object-card small { display: block; margin-top: 4px; font: 11px var(--sans); }
+.june-chapter .quest-panel { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 7px 24px; border-left: 0; padding: 24px 35px; }
+.june-chapter .quest-panel > .eyebrow,
+.june-chapter .quest-panel h4,
+.june-chapter .quest-meter,
+.june-chapter .quest-count,
+.june-chapter .quest-panel ul { grid-column: 1; }
+.june-chapter .quest-panel h4 { font-size: 17px; }
+.june-chapter .quest-panel ul { display: flex; flex-wrap: wrap; gap: 0 14px; margin: 0; }
+.june-chapter .quest-panel li button { min-height: 44px; font-size: 12px; }
+.june-chapter .mood-label { display: none; }
+.june-chapter .mood-chips { grid-column: 2; grid-row: 2; margin: 0; }
+.june-chapter .chapter-badge { grid-column: 2; grid-row: 3 / 6; align-self: center; margin: 0; }
+.june-ledger { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 790px; margin: 12px auto 48px; border-top: 1px solid #cfc5b9; border-bottom: 1px solid #cfc5b9; }
+.june-ledger div { display: grid; align-content: center; min-height: 100px; padding: 15px 9px; text-align: center; }
+.june-ledger div + div { border-left: 1px solid #d6cbbf; }
+.june-ledger strong { color: #a16f68; font: 400 31px/1.2 var(--serif); }
+.june-ledger small { margin-top: 7px; color: #756c61; font-size: 11px; }
+.june-reading { max-width: 735px; margin: 0 auto 42px; }
+.june-reading h4 { margin: 0 0 23px; text-align: center; font: 400 30px/1.6 var(--serif); }
+.june-voice-switch { display: flex; justify-content: center; gap: 8px; margin-bottom: 29px; }
+.june-voice-switch button { min-height: 44px; padding: 9px 21px; border: 1px solid #a4a292; background: transparent; color: #665f53; cursor: pointer; }
+.june-voice-switch button[aria-pressed="true"] { background: #a5766e; border-color: #a5766e; color: #fffdf7; }
+.june-byline { margin: -12px 0 25px; text-align: center; color: #81766b; font-size: 12px; letter-spacing: .04em; }
+.june-reading .diary-prose { color: #514d48; font-size: 17px; line-height: 2.2; }
+.june-reading .diary-prose p { margin: 0 0 26px; }
+.life-modal[data-kind="june"] { width: min(900px, calc(100% - 24px)); }
+.life-modal[data-kind="june"] .event-illustration,
+.life-modal[data-kind="june"] .event-story { display: none; }
+.life-modal[data-kind="june"] h2 { color: #8e766f; font-size: 24px; }
+#june-memory { margin-top: 20px; }
+.june-memory-date { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 11px; border-bottom: 1px solid #cdc4b8; color: #85796d; font-size: 11px; }
+.june-memory-photo { margin: 20px 0 0; padding: 10px; background: #fffdf7; border: 1px solid #ddd4c7; }
+.june-memory-photo img { display: block; width: 100%; height: min(53svh, 540px); object-fit: contain; background: #ece6db; }
+.june-memory-photo figcaption { padding: 11px 4px 3px; font: 13px/1.8 var(--serif); }
+.june-note { min-height: 125px; margin: 20px 0 0; padding: 18px 20px; border: 1px solid #d7c5b5; background: #f8f0e5; }
+.june-note[data-side="back"] { background: #e9eee9; border-color: #b5c7bd; }
+.june-note small { color: #9b726e; font-size: 11px; letter-spacing: .1em; }
+.june-note p { margin: 9px 0 0; font: 16px/1.9 var(--serif); }
+.june-turn { display: block; min-height: 44px; margin: 13px 0 12px auto; padding: 8px 16px; border: 1px solid #b7a395; background: #fffdf7; color: #7a615c; cursor: pointer; }
+.june-chapter button:focus-visible,
+#june-memory button:focus-visible { outline: 2px solid #875e58; outline-offset: 3px; }
+@media (max-width: 700px) {
+  .june-chapter .scene-canvas.june-board { padding: 18px 16px 27px; }
+  .june-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; margin-bottom: 20px; }
+  .june-tabs button { min-height: 55px; font-size: 13px; }
+  .june-board-layout { grid-template-columns: 1fr; gap: 22px; }
+  .june-cover img { height: 290px; }
+  .june-board-copy h4 { font-size: 25px; }
+  .june-chapter .quest-panel { display: block; padding: 22px 20px; }
+  .june-chapter .quest-panel ul { display: block; }
+  .june-chapter .mood-chips { margin: 12px 0; }
+  .june-chapter .chapter-badge { margin-top: 14px; }
+  .june-ledger { margin-bottom: 32px; }
+  .june-ledger strong { font-size: 25px; }
+  .june-ledger small { font-size: 10px; }
+  .june-reading .diary-prose { font-size: 16px; }
+  .life-modal[data-kind="june"] { padding: 30px 20px; }
+}

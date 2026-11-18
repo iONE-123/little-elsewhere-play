@@ -1,0 +1,128 @@
+/* A continuous, quiet storybook world around the existing monthly memories. */
+.season-yearline{display:flex;justify-content:center;align-items:center;gap:7px;margin:18px auto 0;max-width:260px}
+.season-yearline i{display:block;width:12px;height:12px;border:1px solid #f5e4d39e;border-radius:40% 60% 46% 54%;background:#f2e9d540;transform:rotate(-18deg)}
+.season-yearline .is-kept{background:#ead6ae;box-shadow:0 0 9px #f7dfaa94}
+.season-yearline .spring.is-kept{background:#b0ba9b}.season-yearline .summer.is-kept{background:#d1b776}.season-yearline .autumn.is-kept{background:#bf9282}.season-yearline .winter.is-kept{background:#b2b5ba}
+.season-story{--season-sky:#e2cfba;--season-hill:#a8a993;--season-light:#f3dbab;position:relative;display:grid;grid-template-columns:minmax(175px,.37fr) minmax(0,1fr);min-height:185px;overflow:hidden;border-bottom:1px solid #9c7a6b25;background:#f7efdf}
+.life-chapter[data-season="spring"] .season-story{--season-sky:#dce7d7;--season-hill:#a7b69c;--season-light:#f6e0bb;background:#f4f0df}
+.life-chapter[data-season="summer"] .season-story{--season-sky:#d9e5d5;--season-hill:#8fa68b;--season-light:#f3d79b;background:#f4e9d5}
+.life-chapter[data-season="autumn"] .season-story{--season-sky:#e8d7c4;--season-hill:#a89883;--season-light:#f4d3a0;background:#f7ebdc}
+.life-chapter[data-season="winter"] .season-story{--season-sky:#d9e0df;--season-hill:#a4afad;--season-light:#f3dfc7;background:#f2ede5}
+.season-story-copy{position:relative;z-index:4;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:22px 14px 24px 36px;color:#68565a}
+.season-story-copy small{font-size:9px;letter-spacing:.15em;color:#9a7c7d}
+.season-story-copy strong{font:400 clamp(20px,2.2vw,29px)/1.35 var(--serif);letter-spacing:.08em}
+.season-story-copy span{font:12px/1.7 var(--serif);color:#917678}
+.season-landscape{position:relative;isolation:isolate;min-height:185px;overflow:hidden;background:radial-gradient(ellipse at 80% 45%,#fff8e3a6,transparent 40%),linear-gradient(180deg,var(--season-sky),#f5ebdd)}
+.season-landscape:after{content:"";position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.18;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='3' seed='5'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='.32'/%3E%3C/svg%3E");mix-blend-mode:multiply}
+.season-sun{position:absolute;right:21%;top:18%;width:64px;height:64px;border-radius:50%;background:var(--season-light);box-shadow:0 0 45px 24px #fff2d381}
+.life-chapter[data-season="winter"] .season-sun{width:42px;height:42px;background:#fff7e7;box-shadow:0 0 25px #fff6e3aa}
+.season-hill{position:absolute;left:-15%;bottom:-70%;width:100%;height:140%;border-radius:50%;background:var(--season-hill)}
+.season-hill.far{left:38%;bottom:-83%;background:#b8b8a9;opacity:.75}
+.season-hill.near{z-index:2;opacity:.88}
+.season-tree{position:absolute;z-index:3;bottom:5px;width:6px;height:75px;border-radius:4px;background:#7d7568;transform:rotate(6deg)}
+.season-tree:before{content:"";position:absolute;left:-27px;top:-20px;width:58px;height:62px;border-radius:49% 51% 46% 54%;background:#829882a8;filter:blur(1px)}
+.tree-one{left:20%}.tree-two{right:7%;bottom:10px;height:60px;transform:scale(.75) rotate(-8deg)}
+.life-chapter[data-season="autumn"] .season-tree:before{background:#b78b6fa8}
+.life-chapter[data-season="winter"] .season-tree:before{background:#dce4e0ae;clip-path:polygon(44% 0,57% 0,100% 83%,50% 67%,0 83%)}
+.life-chapter[data-season="spring"] .season-tree:before{background:#a9bc9bc2}
+.season-fawn{position:absolute;z-index:4;left:48%;bottom:-4px;width:113px;height:154px;object-fit:contain;filter:drop-shadow(4px 5px 5px #5d504335)}
+.season-violet{position:absolute;z-index:3;bottom:4px;width:50px;height:64px;object-fit:contain;opacity:.75;filter:saturate(.75)}
+.season-violet.near{left:67%}.season-violet.trace{right:8%;width:27px;height:38px;opacity:.47;transform:rotate(-18deg)}
+.life-chapter[data-season="summer"] .season-sun{top:8%;right:26%}
+.life-chapter[data-season="autumn"] .season-sun{top:29%;right:17%}
+.life-chapter[data-season="winter"] .season-landscape{background:linear-gradient(180deg,#cfd8d8,#f2e8dc)}
+.life-chapter[data-season="spring"] .scene-header,.life-chapter[data-season="spring"] .reflection-section{background-color:#f9f6eb}
+.life-chapter[data-season="summer"] .scene-header,.life-chapter[data-season="summer"] .reflection-section{background-color:#faf2e5}
+.life-chapter[data-season="autumn"] .scene-header,.life-chapter[data-season="autumn"] .reflection-section{background-color:#f8f0e7}
+.life-chapter[data-season="winter"] .scene-header,.life-chapter[data-season="winter"] .reflection-section{background-color:#f4f2ef}
+.paper-person.qiulu{background:url('./assets/storybook-fawn.svg') center bottom/contain no-repeat}
+.paper-person.qiulu i{visibility:hidden}
+.scene-people .paper-person.qiulu{width:105px;height:175px}
+@media(max-width:640px){.season-story{grid-template-columns:1fr;min-height:0}.season-story-copy{gap:5px;padding:16px 20px}.season-story-copy strong{font-size:21px}.season-landscape{min-height:145px}.season-fawn{width:98px;height:135px}.season-tree{height:60px}.season-story-copy small{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.season-story *, .season-yearline *{animation:none!important;transition:none!important}}
+
+/* The final room is a place to browse, with no required emotional response. */
+.life-modal[data-kind="birthday"]{width:min(900px,calc(100% - 28px));background:#faf3e8}
+.birthday-room{position:relative;isolation:isolate;min-height:340px;overflow:hidden;border:12px solid #eee0ca;background:linear-gradient(180deg,#e9e1d7 0 63%,#d6bd9e 63% 100%);box-shadow:inset 0 0 0 1px #b89e886b,8px 12px 28px #70574724}
+.birthday-room:before{content:"";position:absolute;inset:0 0 36%;background:repeating-linear-gradient(0deg,transparent 0 24px,#a8877b0e 25px 26px);pointer-events:none}
+.birthday-window{position:absolute;left:13%;top:12%;width:28%;height:48%;border:12px solid #f4e8d7;border-radius:100px 100px 3px 3px;background:linear-gradient(180deg,#d7dcd5,#f7e9cc 70%,#aeb89f);box-shadow:6px 8px 14px #7664582d}
+.birthday-window:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 48%,#f4e8d7 48% 53%,transparent 53%),linear-gradient(0deg,transparent 57%,#f4e8d7 57% 62%,transparent 62%)}
+.birthday-window i{position:absolute;right:21%;top:17%;width:35px;height:35px;border-radius:50%;background:#fff9df;box-shadow:0 0 25px 12px #fff3d8aa}
+.birthday-room-shelf{position:absolute;z-index:2;right:9%;top:26%;width:35%;min-height:62px;display:flex;align-items:flex-end;justify-content:center;gap:9px;padding:0 8px 7px;border-bottom:8px solid #9e7f6c}
+.birthday-room-shelf span{width:35px;height:40px;display:grid;place-items:center;color:#8f7478;background:#f4e5d7;border:1px solid #bfa9a05a;box-shadow:2px 3px 0 #7b63582b;transform:rotate(-3deg)}
+.birthday-room-shelf span:nth-child(even){height:33px;transform:rotate(4deg)}.birthday-room-shelf svg{width:28px;height:28px}
+.birthday-room-table{position:absolute;right:11%;bottom:17%;width:35%;height:9px;background:#9b7865;box-shadow:3px 7px 0 #7f6457a1}
+.birthday-room-table:after{content:"";position:absolute;top:8px;left:9%;width:7px;height:82px;background:#9b7865;box-shadow:160px 0 #9b7865}
+.birthday-room-fawn{position:absolute;z-index:3;left:29%;bottom:5%;height:66%;width:auto;filter:drop-shadow(5px 7px 5px #5e514733)}
+.birthday-room-violet{position:absolute;z-index:2;right:6%;bottom:23%;height:42px;width:38px;opacity:.56;transform:rotate(-9deg)}
+.birthday-album-cover{position:absolute;z-index:3;right:17%;bottom:18%;width:24%;min-width:112px;min-height:72px;display:grid;place-content:center;color:#70535c;border:4px double #d9b7ba;background:#e9d1ce;box-shadow:5px 8px 0 #6f59533d;font:18px/1.4 var(--serif);text-align:center;transform:rotate(-6deg)}
+.birthday-album-cover small{font:8px var(--sans);letter-spacing:.08em}
+.birthday-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:20px 0 0}.birthday-actions .game-primary,.birthday-actions .secondary-button{margin:0}
+.birthday-album-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0}
+.birthday-album-card{min-width:0;display:grid;gap:6px;padding:9px 9px 13px;color:#654f55;border:1px solid #bda7a087;background:#fffaf0;box-shadow:3px 5px 0 #977a7124;text-align:left;cursor:pointer;transition:transform .22s var(--ease),box-shadow .22s var(--ease)}
+.birthday-album-card:hover,.birthday-album-card:focus-visible{transform:translateY(-4px) rotate(-.5deg);box-shadow:5px 9px 15px #806b5d29}
+.birthday-album-card img{width:100%;height:128px;object-fit:cover;object-position:center;background:#eee3d8}
+.birthday-album-card span{font-size:10px;color:#957880}.birthday-album-card strong{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;font:14px/1.45 var(--serif)}
+.birthday-page-photo{max-width:520px;margin:18px auto 0;padding:12px 12px 24px;background:#fffaf1;box-shadow:5px 8px 20px #8369582a;transform:rotate(-.5deg)}
+.birthday-page-photo img{display:block;width:100%;max-height:52svh;object-fit:contain;background:#eee7dd}
+.birthday-page-photo figcaption{padding:12px 5px 0;color:#876d70;font:13px/1.7 var(--serif);text-align:center}
+@media(max-width:640px){.birthday-room{min-height:260px;border-width:7px}.birthday-room-fawn{left:21%;height:60%}.birthday-room-shelf{right:4%;width:47%;gap:4px}.birthday-room-shelf span{width:25px;height:29px}.birthday-room-shelf svg{width:21px;height:21px}.birthday-room-table{right:7%;width:43%}.birthday-album-cover{right:15%;width:30%;font-size:15px}.birthday-album-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.birthday-album-card img{height:105px}}
+
+/* Reference-led chapter cover: painted world, translucent notebook cards, and a month strip. */
+.in-game .topbar{height:70px;background:#fff9f3ee;border-bottom:1px solid #7c577221;box-shadow:0 3px 20px #664d6815;backdrop-filter:blur(18px)}
+.in-game .wordmark{gap:15px;color:#654262;font-size:15px;letter-spacing:.18em}
+.in-game .wordmark-mark{border:0;background:none;box-shadow:none;color:#9b738e;font-size:24px;transform:none}
+.in-game .topnav .text-button{color:#5c3b56;font:15px var(--serif);letter-spacing:.04em}
+.in-game .topnav .text-button:hover{color:#a36a91}
+.portal-top-progress{display:none;margin-left:12px;color:#68465f;font:17px Georgia,serif;letter-spacing:.04em;white-space:nowrap}
+.in-game .portal-top-progress{display:inline-flex;align-items:center;gap:15px}
+.portal-top-progress:after{content:"";display:block;width:85px;height:5px;border-radius:8px;background:linear-gradient(90deg,#8d5b7b var(--chapter-progress,0%),#d9ccd0 var(--chapter-progress,0%))}
+.in-game .atlas{padding:70px 0 0;background:#fbf5f1}
+.in-game .atlas:before,.in-game .atlas:after{display:none}
+.in-game .game-hud{display:none}
+.in-game .chapter-stage{width:100%;max-width:none;margin:0;border:0;border-radius:0;box-shadow:none;overflow:visible;scroll-margin-top:70px;background:#fbf5f1}
+.in-game .scene-header{display:none}
+.chapter-portal{position:relative;isolation:isolate;min-height:680px;height:calc(100svh - 136px);max-height:900px;overflow:hidden;background:#d9c5d2 var(--chapter-art) center center/cover no-repeat;color:#59374f}
+.chapter-portal:before{content:"";position:absolute;z-index:0;inset:0;background:linear-gradient(90deg,#67486128,transparent 43%),linear-gradient(180deg,#f2def125,transparent 31%,transparent 70%,#6d455528);pointer-events:none}
+.portal-wash{position:absolute;z-index:0;top:7%;right:8%;width:42%;height:39%;background:radial-gradient(ellipse,#fce6f19e,transparent 72%);filter:blur(24px);pointer-events:none}
+.portal-cards{position:absolute;z-index:2;top:14%;left:clamp(20px,2.5vw,46px);width:min(315px,29vw);display:grid;gap:12px}
+.portal-card{padding:23px 25px;color:#5e4058;border:1px solid #fff9f5bd;border-radius:15px;background:#fff9f1d9;box-shadow:0 12px 35px #49354a35;backdrop-filter:blur(18px)}
+.portal-card strong{font:600 17px/1.4 Georgia,var(--serif)}
+.portal-card-link{display:flex;justify-content:space-between;align-items:center;color:inherit;text-decoration:none}
+.portal-card-link span{font:30px/1 Georgia,serif}
+.portal-card p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;margin:9px 0 0;color:#7c6978;font:13px/1.7 var(--serif)}
+.portal-rule{height:1px;margin:16px 0;background:#795f7340}
+.portal-card ul{display:grid;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.portal-card li button{width:100%;display:flex;align-items:center;gap:10px;padding:4px 0;border:0;background:none;color:#60455b;text-align:left;font:13px/1.45 var(--serif);cursor:pointer}
+.portal-card li button:hover{color:#9b5f84}
+.portal-check{flex:none;display:grid;place-items:center;width:16px;height:16px;border:1.5px solid #9d8194;border-radius:3px;color:#7f5575;font:12px/1 sans-serif}
+.portal-progress{display:flex;justify-content:space-between;gap:10px;color:#6b4861;font:13px var(--serif)}
+.portal-meter{height:6px;margin-top:10px;border-radius:10px;background:#d6c7cb;overflow:hidden}
+.portal-meter i{display:block;height:100%;border-radius:inherit;background:#845575}
+.portal-card-small{padding:9px 21px}
+.portal-card-small a{display:flex;align-items:center;gap:12px;min-height:47px;color:#60435a;text-decoration:none;border-bottom:1px solid #82697a36}
+.portal-card-small a:last-child{border-bottom:0}
+.portal-card-small a>span:first-child{width:20px;color:#aa8ca3;font:23px/1 Georgia,serif}
+.portal-card-small strong{font-size:14px;white-space:nowrap}
+.portal-card-small small{margin-left:auto;color:#897284;font:11px var(--serif);white-space:nowrap}
+.portal-card-small a>span:last-child{font:25px Georgia,serif}
+.portal-title{position:absolute;z-index:1;top:11%;left:42%;right:6%;text-align:center;text-shadow:0 2px 12px #fff0f4a8}
+.portal-index{font:italic 19px Georgia,serif;letter-spacing:.15em}
+.portal-title h2{margin:7px 0 6px;color:#653b60;font:italic clamp(55px,7vw,102px)/1.08 Georgia,var(--serif);letter-spacing:-.045em}
+.portal-title h2:focus{outline:none}
+.portal-title p{margin:0;font:clamp(17px,2.2vw,26px)/1.5 var(--serif)}
+.portal-title small{display:block;margin-top:7px;font:italic 14px/1.5 var(--serif);opacity:.8}
+.portal-enter{position:absolute;z-index:2;bottom:4.5%;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:24px;min-width:238px;min-height:54px;padding:11px 28px;border:1px solid #fceff4a1;border-radius:40px;background:#805173ed;color:#fff7f7;box-shadow:0 9px 24px #60394d35;font:20px var(--serif);cursor:pointer;white-space:nowrap;transition:transform .2s,background .2s}
+.portal-enter:hover{transform:translateX(-50%) translateY(-3px);background:#6d3f61}
+.portal-role{position:absolute;z-index:2;left:clamp(20px,2.5vw,46px);bottom:5%;padding:8px 11px;border:1px solid #fff7ec9c;border-radius:20px;background:#fff8efd9;color:#62465d;font:11px var(--serif);cursor:pointer;backdrop-filter:blur(9px)}
+.portal-months{display:grid;grid-template-columns:32px repeat(12,minmax(0,1fr)) 32px;align-items:center;gap:0;min-height:68px;padding:6px clamp(18px,3vw,55px);background:#fff9f5;border-bottom:1px solid #9c7c921c;box-shadow:0 5px 18px #70526810}
+.portal-months button{min-height:39px;padding:4px 5px;border:0;border-left:1px solid #80647e27;background:transparent;color:#65435e;font:15px Georgia,serif;cursor:pointer}
+.portal-months button[aria-current="page"]{border:0;border-radius:24px;background:#805574;color:#fff6fa;box-shadow:0 3px 9px #67435c28}
+.portal-months button:disabled{color:#a99aa5;cursor:not-allowed}
+.portal-months button:not(:disabled):not([aria-current="page"]):hover{background:#f2e8ed}
+.portal-month-arrow{text-align:center;color:#63415b;font:27px Georgia,serif}
+.in-game .play-layout{max-width:1180px;margin:36px auto 0;scroll-margin-top:90px;box-shadow:8px 12px 40px #71545915}
+.in-game .reflection-section{max-width:1180px;margin:0 auto 60px;scroll-margin-top:90px}
+.in-game .life-chapter{padding-bottom:1px}
+@media(max-width:900px){.chapter-portal{min-height:860px;height:auto}.portal-cards{top:25%;width:min(300px,40vw)}.portal-title{top:7%;left:34%;right:4%}.portal-title h2{font-size:65px}.portal-role{bottom:4%}.portal-months{overflow-x:auto;grid-template-columns:25px repeat(12,48px) 25px;justify-content:start}.in-game .play-layout,.in-game .reflection-section{margin-left:16px;margin-right:16px}}
+@media(max-width:640px){.in-game .topbar{height:62px}.in-game .atlas{padding-top:62px}.in-game .topnav .text-button{display:none}.in-game .topnav .text-button:first-child{display:inline-block;font-size:12px}.portal-top-progress{font-size:13px;margin-left:0}.portal-top-progress:after{width:45px}.chapter-portal{display:flex;flex-direction:column;align-items:stretch;min-height:0;height:auto;max-height:none;padding:28px 16px 26px;background-position:57% center}.portal-wash{top:0;left:0;right:0;width:auto;height:34%;background:linear-gradient(180deg,#fce9edc9,transparent);filter:none}.portal-title{position:relative;top:auto;left:auto;right:auto;order:1;margin-bottom:38px}.portal-index{font-size:13px}.portal-title h2{font-size:clamp(53px,16vw,72px)}.portal-title p{font-size:16px}.portal-title small{font-size:11px}.portal-cards{position:relative;top:auto;left:auto;right:auto;order:2;width:100%;grid-template-columns:1fr}.portal-card{padding:15px 18px;border-radius:13px}.portal-card p{-webkit-line-clamp:2;font-size:12px}.portal-card strong{font-size:15px}.portal-rule{margin:10px 0}.portal-card ul{gap:3px;margin-top:6px}.portal-card li button{font-size:12px}.portal-card-small{padding:4px 16px}.portal-card-small a{min-height:41px}.portal-card-small strong{font-size:12px}.portal-card-small small{font-size:10px}.portal-role{position:relative;bottom:auto;left:auto;align-self:center;transform:none;order:3;margin-top:18px;white-space:nowrap}.portal-enter{position:relative;bottom:auto;left:auto;align-self:center;transform:none;order:4;min-height:48px;min-width:200px;margin-top:18px;font-size:16px}.portal-enter:hover{transform:translateY(-3px)}.portal-months{min-height:58px;padding:5px 10px}.in-game .play-layout,.in-game .reflection-section{margin-left:10px;margin-right:10px}}

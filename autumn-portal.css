@@ -1,0 +1,120 @@
+/* The approved autumn artwork carries the English wordmark. Keep chapter actions in Chinese. */
+.in-game[data-portal-season="autumn"] .game-hud{display:none}
+
+.life-chapter[data-season="autumn"] .chapter-portal-autumn{
+  display:block;
+  width:100%;
+  min-height:0;
+  height:auto;
+  max-height:none;
+  aspect-ratio:1672 / 941;
+  padding:0;
+  background-color:#dbb7bf;
+  background-position:center;
+  background-size:100% 100%;
+}
+.chapter-portal-autumn:before,
+.chapter-portal-autumn .portal-wash,
+.chapter-portal-autumn .portal-cards,
+.chapter-portal-autumn .portal-title{display:none}
+
+.chapter-portal-autumn .portal-enter{
+  position:absolute;
+  top:20%;
+  right:auto;
+  bottom:auto;
+  left:85.5%;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  gap:.25em;
+  width:11.5%;
+  min-width:0;
+  height:37%;
+  min-height:44px;
+  padding:0 0 clamp(4px,1vw,12px);
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  color:#fff6e9;
+  font:500 clamp(11px,1.15vw,15px)/1.3 var(--sans);
+  letter-spacing:.08em;
+  text-shadow:0 1px 5px #344558;
+  transform:none;
+}
+.chapter-portal-autumn .portal-enter:hover{
+  background:transparent;
+  color:#fff;
+  transform:none;
+}
+.chapter-portal-autumn .portal-enter:focus-visible{
+  outline:2px solid #fff6e9;
+  outline-offset:3px;
+}
+.chapter-portal-autumn .portal-role{
+  position:absolute;
+  right:auto;
+  bottom:3%;
+  left:3%;
+  align-self:auto;
+  margin:0;
+  padding:8px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  color:#fff6e9;
+  font:500 clamp(10px,1vw,13px)/1.3 var(--sans);
+  letter-spacing:.04em;
+  text-shadow:0 1px 5px #344558;
+  transform:none;
+}
+.chapter-portal-autumn .portal-role:hover{text-decoration:underline;text-underline-offset:4px}
+
+.portal-month-drawer{
+  border-bottom:1px solid var(--color-line);
+  background:#f6f0ea;
+}
+.portal-month-drawer summary{
+  width:max-content;
+  min-height:44px;
+  margin-left:auto;
+  padding:12px 24px;
+  color:var(--color-heading);
+  font:13px/20px var(--sans);
+  letter-spacing:.06em;
+  cursor:pointer;
+}
+.portal-month-drawer .portal-months{
+  display:flex;
+  justify-content:center;
+  gap:5px;
+  min-height:0;
+  padding:8px 20px 18px;
+  overflow-x:auto;
+  border:0;
+  background:transparent;
+}
+.portal-month-drawer .portal-month-arrow{display:none}
+.portal-month-drawer .portal-months button{
+  flex:0 0 36px;
+  width:36px;
+  min-height:36px;
+  padding:0;
+  border:0;
+  border-radius:50%;
+  color:var(--color-muted);
+  font:12px var(--sans);
+}
+.portal-month-drawer .portal-months button[aria-current="page"]{
+  border-radius:50%;
+  background:var(--color-heading);
+  color:#fff;
+}
+@media(max-width:640px){
+  .chapter-portal-autumn .portal-enter{font-size:10px;letter-spacing:0}
+  .chapter-portal-autumn .portal-enter span{display:none}
+  .chapter-portal-autumn .portal-role{bottom:1%;left:1%;font-size:10px}
+  .portal-month-drawer summary{padding:10px 16px}
+  .portal-month-drawer .portal-months{justify-content:flex-start}
+}

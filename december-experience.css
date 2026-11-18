@@ -1,0 +1,135 @@
+/* December uses the original snow painting as an interactive place, not a page illustration. */
+.december-experience-active.in-game{overflow:hidden;background:#6d7890}
+.december-experience-active.in-game .topbar{height:64px;background:#3c4860e8;border-bottom:1px solid #f4e9e055;backdrop-filter:blur(9px)}
+.december-experience-active.in-game .topbar .wordmark,.december-experience-active.in-game .topnav button,.december-experience-active.in-game .portal-top-progress{color:#f9f2ed}
+.december-experience-active.in-game .topbar .wordmark{font:600 12px Arial,Helvetica,sans-serif;letter-spacing:.15em}
+.december-experience-active.in-game .topbar .wordmark>span:last-child{font-size:0}
+.december-experience-active.in-game .topbar .wordmark>span:last-child:after{content:'THE ARCHIVE';font-size:12px}
+.december-experience-active.in-game .atlas{padding:64px 0 0;background:#6d7890}
+.december-experience-active.in-game .atlas:before,.december-experience-active.in-game .atlas:after{display:none}
+.december-experience-active.in-game .chapter-stage{width:100%;max-width:none;height:calc(100svh - 64px);min-height:530px;margin:0;border:0;border-radius:0;box-shadow:none;background:#6d7890}
+.december-experience-active.in-game .december-chapter,.december-experience-active.in-game .december-chapter .play-layout{height:100%}
+.december-experience-active.in-game .december-chapter .play-layout{position:relative;display:block;max-width:none;margin:0;box-shadow:none}
+.december-experience-active.in-game .december-board{position:relative;width:100%;height:100%;min-height:0;padding:0;overflow:hidden;background:linear-gradient(#9aa4b5a3,#68758b87),url('./assets/december-snow-scene.png') center/cover no-repeat;color:#f9f4f0;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.december-board:before{content:'';position:absolute;inset:-18px;background:url('./assets/december-snow-scene.png') center/cover no-repeat;filter:blur(20px) brightness(.83);pointer-events:none}
+.december-experience-active.in-game .december-board:after{display:none}
+.december-snow-frame{position:absolute;inset:50% auto auto 50%;width:min(100%,calc(280.1svh - 179.3px));aspect-ratio:2098/749;transform:translate(-50%,-50%);background:url('./assets/december-snow-scene.png') center/100% 100% no-repeat;box-shadow:0 0 75px #4a546a55}
+.december-board-top{position:absolute;z-index:6;top:3%;left:3%;right:3%;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.december-logo{display:grid;gap:2px;color:#465a78;text-shadow:0 1px 12px #f7eeeea8;white-space:nowrap}
+.december-logo small{font:600 clamp(12px,1.2vw,19px)/1.2 Arial,sans-serif;letter-spacing:.34em}
+.december-logo strong{font:500 clamp(35px,5vw,84px)/.95 Arial,Helvetica,sans-serif;letter-spacing:.13em}
+.december-tools{display:flex;gap:12px}
+.december-tools .november-top-action{display:flex;align-items:center;gap:9px;min-height:54px;padding:7px 16px;border:1px solid #fff1e7d9;border-radius:999px;background:#515a75b8;color:#fff5ec;box-shadow:0 8px 24px #3c46613b;backdrop-filter:blur(9px);text-align:left;cursor:pointer}
+.december-tools .november-top-action:hover{background:#4a5574e8}
+.december-tools .november-action-icon{display:grid;place-items:center;width:34px;height:34px;flex:0 0 34px;padding-right:6px;border-right:1px solid #fff2e6a3}
+.december-tools .november-action-icon svg{width:30px;height:30px}
+.december-tools .november-action-icon img{width:33px;height:33px;object-fit:contain;transform:scale(1.12)}
+.december-tools .november-action-copy{display:grid;gap:2px;white-space:nowrap}
+.december-tools .november-action-copy small{font:600 8px/1.2 Arial,sans-serif;letter-spacing:.19em}
+.december-tools .november-action-copy strong{font:500 14px/1.2 Arial,'Microsoft YaHei',sans-serif}
+.december-scene-nav{position:absolute;z-index:5;inset:0;pointer-events:none}
+.december-scene-node{position:absolute;display:flex;align-items:center;gap:9px;min-height:48px;padding:4px 7px;border:0;background:#45577731;color:#fff6ed;text-shadow:0 1px 7px #2d3a56;backdrop-filter:blur(2px);font:600 clamp(11px,1vw,15px)/1.3 Arial,'Microsoft YaHei',sans-serif;white-space:nowrap;cursor:pointer;pointer-events:auto}
+.december-node-0{left:23%;top:42%}.december-node-1{left:49%;top:59%}.december-node-2{left:74%;top:73%}
+.december-node-icon{display:grid;place-items:center;width:37px;height:37px;flex:0 0 37px;border:1px solid #fff5ebce;border-radius:50%;background:#eef0f03d;box-shadow:0 0 0 5px #f5f2f01c}
+.december-node-icon svg{width:22px;height:22px}
+.december-scene-node.is-active .december-node-icon,.december-scene-node:hover .december-node-icon{background:#fff3eb;color:#5e6b84}
+.december-scene-hint{position:absolute;z-index:3;left:5%;bottom:3%;margin:0;color:#4c5c78;font:600 10px Arial,sans-serif;letter-spacing:.22em}
+.december-scene-hint span{font-size:17px}
+.december-scene-panel{position:absolute;z-index:4;left:2%;bottom:5%;width:min(46%,760px);max-height:47%;overflow-y:auto;padding:30px 40px 24px;border:1px solid #f4f1eea8;border-radius:18px 36px 20px 16px;background:#536380d5;color:#fff7f2;box-shadow:0 18px 48px #3b486859;backdrop-filter:blur(12px);clip-path:polygon(0 0,32% 0,52% 5%,83% 5%,100% 28%,100% 100%,0 100%)}
+.december-panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.december-panel-head small{font:600 10px Arial,sans-serif;letter-spacing:.22em}
+.december-panel-head button,.december-journal-close{min-height:44px;padding:7px 0;border:0;border-bottom:1px solid #fff4e8a1;background:none;color:#fff4e8;font:500 12px Arial,'Microsoft YaHei',sans-serif;cursor:pointer;white-space:nowrap}
+.december-scene-panel h3{margin:12px 0;color:#fff7f1;font:500 clamp(25px,2.6vw,39px)/1.2 Arial,'Microsoft YaHei','PingFang SC',sans-serif;letter-spacing:.02em}
+.december-panel-lines{display:grid;gap:5px;margin:0 0 12px}
+.december-panel-lines p{margin:0;color:#f8eeea;font:400 clamp(12px,1vw,15px)/1.55 Arial,'Microsoft YaHei',sans-serif}
+.december-panel-objects{border-top:1px solid #fff1e780}
+.december-panel-objects button{display:flex;align-items:center;width:100%;min-height:56px;gap:13px;padding:5px 2px;border:0;border-bottom:1px solid #fff1e75e;background:none;color:#fff7f1;text-align:left;cursor:pointer}
+.december-panel-objects button:hover{background:#ffffff18}
+.december-object-symbol{display:grid;place-items:center;width:33px;flex:0 0 33px;color:#f8dfe7}
+.december-object-symbol svg{width:25px;height:25px}
+.december-object-text{display:grid;gap:2px;flex:1}
+.december-object-text strong{font:500 14px Arial,'Microsoft YaHei',sans-serif}
+.december-object-text small{font:400 10px Arial,'Microsoft YaHei',sans-serif;opacity:.78}
+.december-panel-progress{margin:10px 0 0;font:600 9px Arial,sans-serif;letter-spacing:.2em;opacity:.8}
+.december-experience-active.in-game .december-chapter .quest-panel{display:none}
+.december-experience-active.in-game .december-month-drawer{position:absolute;z-index:8;left:3%;bottom:1%;width:max-content;max-width:94vw;color:#fff5ec}
+.december-month-drawer summary{min-height:44px;padding:10px 4px;list-style:none;font:600 10px/24px Arial,sans-serif;letter-spacing:.2em;cursor:pointer;text-shadow:0 1px 5px #34445d}
+.december-month-drawer summary::-webkit-details-marker{display:none}
+.december-month-drawer[open]{padding:5px 12px;background:#465774ed;backdrop-filter:blur(9px)}
+.december-month-drawer .portal-months{margin:0;padding:5px 0 10px;background:none;box-shadow:none}
+.december-experience-active.in-game .december-chapter .reflection-section{position:fixed;z-index:15;inset:64px 0 0 auto;width:min(760px,100vw);height:calc(100svh - 64px);max-width:none;overflow-y:auto;margin:0;padding:30px clamp(24px,5vw,70px) 60px;border:1px solid #f3ecdfa3;background:#52617edc;color:#fff5ed;box-shadow:-18px 0 75px #34435b70;backdrop-filter:blur(14px);font-family:Arial,'Microsoft YaHei',sans-serif}
+.december-experience-active.in-game .december-chapter .reflection-section[hidden]{display:none}
+.december-journal-close{display:block;margin:0 0 25px auto}
+.december-experience-active .reflection-heading,.december-experience-active .reflection-heading>span:last-child,.december-experience-active .dec-reading .eyebrow,.december-experience-active .dec-byline{color:#f9e9ed}
+.december-experience-active .dec-reading h4{color:#fff7f0;font:500 clamp(24px,2.4vw,34px)/1.4 Arial,'Microsoft YaHei',sans-serif}
+.december-experience-active .dec-reading,.december-experience-active .dec-bridge{border-color:#fff0e478}
+.december-experience-active .dec-reading .diary-prose,.december-experience-active .dec-reading .diary-prose p{color:#fff4ee;font:400 15px/2 Arial,'Microsoft YaHei',sans-serif}
+.december-experience-active .dec-voice-switch{border-color:#fff2e68c;background:#3b4b6b74;border-radius:999px}
+.december-experience-active .dec-voice-switch button{color:#fff3ea;border-radius:999px;font-family:Arial,'Microsoft YaHei',sans-serif}
+.december-experience-active .dec-voice-switch button[aria-pressed=true]{background:#f2e8e9;color:#445670}
+.december-experience-active .reflection-section .choices button{border-color:#fff2e69c;background:#fff8f014;color:#fff5ee}
+.december-experience-active .reflection-section .choices button.is-chosen{background:#ece2e9;color:#40516b}
+.december-experience-active .reflection-section .choice-response,.december-experience-active .reflection-section .locked-diary,.december-experience-active .reflection-section .next-row small{color:#f3e7e6;font-family:Arial,'Microsoft YaHei',sans-serif}
+.december-experience-active .reflection-section .next-button{background:#d7b8c9;color:#3c4c69}
+.december-board button:focus-visible,.december-month-drawer summary:focus-visible,.december-journal-close:focus-visible{outline:2px solid #fff7f0;outline-offset:3px}
+
+/* Keep the existing December sequence, photos and save flow inside a matching floating layer. */
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"]{width:min(940px,calc(100% - 32px));max-height:87svh;padding:40px clamp(22px,4vw,55px);border:1px solid #f7eee1b8;border-radius:20px;background:#53617edc;color:#fff5ed;box-shadow:0 20px 75px #2f3c5f70;backdrop-filter:blur(13px);font-family:Arial,'Microsoft YaHei',sans-serif}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"]::backdrop{background:#2d3c5b75;backdrop-filter:blur(2px)}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .modal-close{width:44px;height:44px;border:1px solid #fff0e3bd;border-radius:50%;background:#485774a0;color:#fff5ed;box-shadow:none}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .eyebrow{color:#f5dfe8;font:600 10px Arial,sans-serif;letter-spacing:.21em}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] h2{color:#fff6ee;font:500 clamp(26px,3vw,40px)/1.3 Arial,'Microsoft YaHei',sans-serif}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .event-story,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] #dec-event{color:#fff4ed;font:400 15px/1.9 Arial,'Microsoft YaHei',sans-serif}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .event-illustration{border-color:#f8ece27e;background:#9babc443;color:#fff0e8}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-ticket-slip,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-hair-note,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-transcript{border:1px solid #f6ede59d;border-radius:14px;background:#a4afc137;color:#fff3eb}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-ticket-slip strong,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-ticket-slip p,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-hair-note strong,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-hair-note p,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-transcript p,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-transcript blockquote{font-family:Arial,'Microsoft YaHei',sans-serif;color:#fff4eb}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-photo,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-continuation{border:1px solid #f5eee28a;border-radius:10px;background:#b7c1cb35;color:#fff0e9;box-shadow:none}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-photo-caption,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-sequence-header,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] #event-feedback{color:#fff0e9;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] #collect-object,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-sequence-controls button,body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] .dec-hair-note button{min-height:44px;border:1px solid #f8e8e4bc;border-radius:999px;background:#6d7896b8;color:#fff4ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"] #collect-object:not(:disabled){background:#be9ab3}
+body.december-experience-active #dec-photo-viewer{border:1px solid #f4e7e2ab;background:#4d5d7aed;color:#fff6ed;backdrop-filter:blur(10px)}
+body.december-experience-active #dec-photo-viewer::backdrop{background:#2b395cb1}
+body.december-experience-active #dec-photo-viewer header{background:#4d5d7a;color:#fff6ed}
+body.december-experience-active #dec-photo-viewer nav button{border-radius:999px;border-color:#f5e6e0a9;background:#ffffff19;color:#fff3ed}
+body.december-experience-active #life-modal[data-kind="characters"].november-role-choice::backdrop{background:linear-gradient(#45536c38,#45536c62),url('./assets/december-snow-scene.png') center/cover no-repeat}
+
+@media(max-width:900px){
+  .december-experience-active.in-game .topbar{padding:0 12px}
+  .december-experience-active.in-game .topnav{gap:5px}
+  .december-experience-active.in-game .topnav .text-button{font-size:10px;padding:4px}
+  .december-scene-panel{width:52%;padding:25px 25px 18px}
+  .december-node-2{left:auto;right:5%}
+}
+@media(max-width:650px){
+  .december-experience-active.in-game .topbar{height:62px}
+  .december-experience-active.in-game .atlas{padding-top:62px}
+  .december-experience-active.in-game .chapter-stage{height:calc(100svh - 62px);min-height:0}
+  .december-experience-active.in-game .topnav .text-button:nth-child(2),.december-experience-active.in-game .topnav .text-button:nth-child(4){display:none}
+  .december-experience-active.in-game .portal-top-progress{display:none}
+  .december-board:before{background-position:84% center}
+  .december-snow-frame{inset:0;background-size:auto 100%;background-position:84% center;width:100%;height:100%;aspect-ratio:auto;transform:none}
+  .december-board-top{top:2%;left:4%;right:4%;display:grid;gap:14px}
+  .december-logo small{font-size:10px}
+  .december-logo strong{font-size:32px}
+  .december-tools{gap:6px;justify-content:flex-end}
+  .december-tools .november-top-action{min-width:0;min-height:48px;padding:5px 9px;gap:5px}
+  .december-tools .november-action-icon{width:24px;height:28px;flex-basis:24px;padding-right:3px}
+  .december-tools .november-action-icon svg,.december-tools .november-action-icon img{width:24px;height:24px}
+  .december-tools .november-action-copy small{font-size:7px;letter-spacing:.08em}
+  .december-tools .november-action-copy strong{font-size:11px}
+  .december-scene-nav{inset:0}
+  .december-scene-node{top:auto;bottom:22%;padding:4px 2px;flex-direction:column;gap:4px;font-size:10px;text-align:center;background:#4a58735e;min-width:74px}
+  .december-node-0{left:5%}.december-node-1{left:39%}.december-node-2{left:auto;right:5%}
+  .december-node-icon{width:31px;height:31px;flex-basis:31px}
+  .december-node-icon svg{width:18px;height:18px}
+  .december-board.has-scene .december-scene-node{bottom:auto;top:23%}
+  .december-scene-panel{left:3%;right:3%;bottom:8%;width:auto;max-height:61%;padding:28px 20px 18px;clip-path:none;border-radius:18px}
+  .december-scene-panel h3{font-size:25px}
+  .december-panel-head small{font-size:8px;letter-spacing:.08em}
+  .december-panel-head button{font-size:11px}
+  .december-panel-lines p{font-size:12px}
+  .december-scene-hint{bottom:7%;color:#fff4e9;text-shadow:0 1px 5px #3c4964}
+  .december-experience-active.in-game .december-chapter .reflection-section{inset:62px 0 0;width:100vw;height:calc(100svh - 62px);padding:25px 22px 55px}
+  body.december-experience-active #life-modal[data-kind="event"][data-december-object="true"]{padding:28px 20px}
+}
+@media(prefers-reduced-motion:reduce){.december-experience-active *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

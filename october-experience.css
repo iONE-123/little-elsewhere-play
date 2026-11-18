@@ -1,0 +1,140 @@
+/* October's approved mountain lake, with a dark ridge panel and six snowbank markers. */
+html:has(body.october-experience-active.in-game){height:100%;overflow:hidden}
+.october-experience-active.in-game{height:100%;overflow:hidden;background:#17234f}
+.october-experience-active.in-game>footer{display:none}
+.october-experience-active.in-game .topbar{height:64px;background:#263141;border-bottom:1px solid #fff4f064}
+.october-experience-active.in-game .topbar .wordmark,.october-experience-active.in-game .topnav button,.october-experience-active.in-game .portal-top-progress{color:#fff7f5}
+.october-experience-active.in-game .topbar .wordmark{font:600 12px Arial,Helvetica,sans-serif;letter-spacing:.15em}
+.october-experience-active.in-game .topbar .wordmark>span:last-child{font-size:0}
+.october-experience-active.in-game .topbar .wordmark>span:last-child:after{content:'THE ARCHIVE';font-size:12px}
+.october-experience-active.in-game .atlas{padding:64px 0 0;background:#17234f}
+.october-experience-active.in-game .atlas:before,.october-experience-active.in-game .atlas:after{display:none}
+.october-experience-active.in-game .chapter-stage{width:100%;max-width:none;height:calc(100svh - 64px);min-height:540px;margin:0;border:0;border-radius:0;box-shadow:none;background:#17234f}
+.october-experience-active.in-game .october-chapter,.october-experience-active.in-game .october-chapter .play-layout{height:100%}
+.october-experience-active.in-game .october-chapter .play-layout{position:relative;display:block;max-width:none;margin:0;box-shadow:none}
+.october-experience-active.in-game .october-chapter .scene-canvas.october-board{position:relative;width:100%;height:100%;min-height:0;padding:0;overflow:hidden;background:#17234f;color:#fff9f8;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.october-experience-active .october-board:after{display:none}
+.october-art-plane{position:absolute;inset:0;background:url('./assets/october-lake-scene.png') center/cover no-repeat}
+.october-scene-tools{position:absolute;z-index:7;top:1.6%;right:2.6%;display:flex;gap:8px}
+.october-scene-tools button{display:flex;align-items:center;justify-content:center;gap:7px;min-width:110px;min-height:44px;padding:7px 12px;border:1px solid #fff5f0c2;border-radius:999px;background:#46577876;color:#fff7f5;backdrop-filter:blur(5px);font:400 12px Arial,'Microsoft YaHei',sans-serif;cursor:pointer}
+.october-scene-tools svg{width:18px;height:18px;flex:0 0 18px}
+.october-panel-shell{position:absolute;z-index:5;top:31.25%;left:5.1%;width:39.9%;max-width:650px;height:37.5%;min-height:276px;clip-path:polygon(0 0,100% 21%,100% 92%,64% 100%,0 99%);background:#f4ecf9ad;backdrop-filter:blur(2px)}
+.october-panel-shell:before{content:'';position:absolute;inset:1px;clip-path:polygon(0 0,100% 21%,100% 92%,64% 100%,0 99%);background:#1b2852bf;pointer-events:none}
+.october-panel-inner{position:relative;height:100%;padding:20px 8% 16px;font-style:normal}
+.october-panel-kicker{display:block;color:#f2eaf7;font:400 12px/1.4 Arial,sans-serif;letter-spacing:.19em;white-space:nowrap}
+.october-panel-kicker:after{content:'';display:block;width:86px;height:1px;margin-top:14px;background:#fff5f0a1}
+.october-panel-inner h3{margin:12px 0 0;color:#fff9f8;font:400 clamp(32px,3.05vw,46px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:.15em;white-space:nowrap}
+.october-panel-title{margin:10px 0 0;color:#fff9f8;font:400 clamp(18px,1.7vw,24px)/1.35 Arial,'Microsoft YaHei','PingFang SC',sans-serif;white-space:nowrap}
+.october-panel-title:after{content:'';display:block;width:100%;height:1px;margin-top:12px;background:#fff5f0a1}
+.october-panel-detail{position:relative;margin-top:9px;min-width:0}
+.october-panel-detail>small{color:#f3eaf4;font:400 11px/1.4 Arial,'Microsoft YaHei',sans-serif;letter-spacing:.08em;white-space:nowrap}
+.october-panel-detail h4{margin:7px 0 0;color:#fff8f6;font:400 clamp(18px,1.4vw,20px)/1.35 Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.october-panel-detail [data-october-album]{position:absolute;right:3%;top:10px;min-height:44px;padding:8px 0;border:0;border-bottom:1px solid #fff5f0ab;background:none;color:#fff9f8;font:400 15px Arial,'Microsoft YaHei','PingFang SC',sans-serif;white-space:nowrap;cursor:pointer}
+.october-panel-range{display:block;margin-top:7px;color:#eee8f1;font:400 10px Arial,sans-serif;letter-spacing:.11em;white-space:nowrap}
+.october-route{position:absolute;z-index:5;inset:0;pointer-events:none}
+.october-route-line{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:#2f3b6b99;stroke-width:1}
+.october-route-node{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-width:145px;min-height:70px;padding:3px;border:0;background:none;color:#2d3767;text-shadow:0 1px 7px #fff8ffc4;transform:translate(-50%,-50%);cursor:pointer;pointer-events:auto}
+.october-node-0{left:7.9%;top:87.2%}.october-node-1{left:24.3%;top:86.4%}.october-node-2{left:40.7%;top:88%}.october-node-3{left:57.1%;top:87.1%}.october-node-4{left:73.5%;top:85.7%}.october-node-5{left:89.9%;top:87.2%}
+.october-route-name{visibility:hidden;min-height:20px;font:400 15px/1.3 Arial,'Microsoft YaHei','PingFang SC',sans-serif;white-space:nowrap}
+.october-route-node.is-active .october-route-name,.october-route-node:hover .october-route-name,.october-route-node:focus-visible .october-route-name{visibility:visible}
+.october-route-dot{display:block;width:11px;height:11px;border:1px solid #2d3767;border-radius:50%;background:#2d3767;box-shadow:0 1px 8px #ffffff87}
+.october-route-node.is-active .october-route-dot{box-shadow:0 0 0 8px #36497731,0 1px 10px #ffffff87}
+.october-route-node small{font:400 9px Arial,sans-serif;letter-spacing:.12em}
+.october-album-shell{position:absolute;z-index:9;top:4%;left:3%;display:flex;flex-direction:column;width:min(930px,92vw);height:91%;min-height:0;padding:24px 30px 29px;border:1px solid #fff5f0b8;background:#1d2b58f0;color:#fff7f5;box-shadow:0 20px 70px #17234d8a;backdrop-filter:blur(13px);clip-path:polygon(0 0,100% 0,100% 94%,94% 100%,0 100%);font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.october-album-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding-bottom:14px;border-bottom:1px solid #fff5f077}
+.october-album-head small,.october-album-copy>small{color:#e9ddea;font:400 11px/1.4 Arial,'Microsoft YaHei',sans-serif;letter-spacing:.12em}
+.october-album-head h3{margin:8px 0 0;color:#fff8f5;font:400 25px/1.3 Arial,'Microsoft YaHei',sans-serif}
+.october-album-close{min-height:44px;padding:7px 0;border:0;border-bottom:1px solid #fff6f0a8;background:none;color:#fff7f5;font:400 13px Arial,'Microsoft YaHei',sans-serif;white-space:nowrap;cursor:pointer}
+.october-album-main{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:26px;flex:1;min-height:0;overflow-y:auto;padding:19px 0}
+.october-album-photo{min-width:0;margin:0}
+.october-album-photo img{display:block;width:100%;height:min(48svh,420px);object-fit:contain;border:1px solid #f6eaf08c;background:#a5aec22c}
+.october-album-photo figcaption{margin-top:8px;color:#f5ecf2;font:400 12px/1.5 Arial,'Microsoft YaHei',sans-serif}
+.october-album-copy{min-width:0}
+.october-album-copy h4{margin:15px 0 24px;color:#fff8f5;font:400 24px/1.4 Arial,'Microsoft YaHei',sans-serif}
+.october-album-side{display:block;padding-top:15px;border-top:1px solid #fff5f088;color:#e9dcea;font:400 11px Arial,'Microsoft YaHei',sans-serif;letter-spacing:.1em}
+.october-album-copy p{margin:10px 0 22px;color:#fff7f4;font:400 15px/1.85 Arial,'Microsoft YaHei',sans-serif}
+.october-album-turn,.october-album-collect{min-height:44px;border:1px solid #f7edf0aa;border-radius:999px;background:#fff6f01c;color:#fff7f4;font:400 13px Arial,'Microsoft YaHei',sans-serif;cursor:pointer}
+.october-album-turn{padding:8px 18px}
+.october-album-collect{display:flex;align-items:center;gap:9px;margin-top:12px;padding:8px 17px}
+.october-album-collect svg{width:19px;height:19px}
+.october-album-strip{display:flex;gap:8px;flex:0 0 auto;overflow-x:auto;min-height:100px;padding:12px 0 2px;border-top:1px solid #fff5f07d;scrollbar-color:#d5c3dc7d transparent}
+.october-album-strip button{position:relative;flex:0 0 74px;height:74px;padding:2px;border:1px solid #fff5f071;background:#fff6f01b;color:#fff8f6;cursor:pointer}
+.october-album-strip button[aria-pressed=true]{border:2px solid #fff9f4;padding:1px}
+.october-album-strip img{display:block;width:100%;height:100%;object-fit:cover}
+.october-album-strip small{position:absolute;right:2px;bottom:1px;padding:1px 3px;background:#314660cc;font:500 10px Arial,sans-serif}
+.october-experience-active.in-game .october-chapter .quest-panel{display:none}
+.october-experience-active.in-game .october-month-drawer{position:absolute;z-index:8;left:3%;bottom:5%;width:max-content;max-width:94vw;color:#fff8f6}
+.october-month-drawer summary{min-height:44px;padding:10px 4px;list-style:none;font:600 10px/24px Arial,sans-serif;letter-spacing:.2em;cursor:pointer;text-shadow:0 1px 7px #455e7d}
+.october-month-drawer summary::-webkit-details-marker{display:none}
+.october-month-drawer[open]{padding:5px 12px;background:#354865ed;backdrop-filter:blur(9px)}
+.october-month-drawer .portal-months{margin:0;padding:5px 0 10px;background:none;box-shadow:none}
+.october-month-drawer .portal-months button{font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.october-chapter:has(.is-album-open) .october-month-drawer{display:none}
+.october-experience-active.in-game .october-chapter .reflection-section{position:fixed;z-index:15;inset:64px 0 0 auto;width:min(760px,100vw);height:calc(100svh - 64px);max-width:none;overflow-y:auto;margin:0;padding:30px clamp(24px,5vw,70px) 60px;border:1px solid #fff2efac;background:#1d2b58f0;color:#fff7f5;box-shadow:-18px 0 70px #17234d78;backdrop-filter:blur(13px);font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.october-experience-active.in-game .october-chapter .reflection-section[hidden]{display:none}
+.october-journal-close{display:block;min-height:44px;margin:0 0 26px auto;padding:5px 0;border:0;border-bottom:1px solid #fff5f0ab;background:none;color:#fff8f6;font:400 13px Arial,'Microsoft YaHei',sans-serif;cursor:pointer}
+.october-experience-active .october-ledger,.october-experience-active .october-ledger div+div{border-color:#fff5f087}
+.october-experience-active .october-ledger strong,.october-experience-active .october-ledger small,.october-experience-active .october-reading h4,.october-experience-active .october-reading .diary-prose,.october-experience-active .october-reading .diary-prose p,.october-experience-active .october-byline,.october-experience-active .reflection-section .locked-diary,.october-experience-active .reflection-section .choice-response,.october-experience-active .reflection-section .next-row small{color:#fff7f5;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif;font-style:normal}
+.october-experience-active .october-ledger strong{font-size:29px}
+.october-experience-active .october-journal>p,.october-experience-active .october-journal h4,.october-experience-active .october-journal-grid small,.october-experience-active .october-journal-grid h5,.october-experience-active .october-journal-grid p{color:#fff7f5;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif;font-style:normal}
+.october-experience-active .october-journal-grid article{border-color:#fff4f090;background:#fff6fa16;box-shadow:none}
+.october-experience-active .october-journal-grid h5{font-size:18px}
+.october-experience-active .october-journal-grid p{line-height:1.8}
+.october-experience-active .october-reading .diary-prose{font-size:15px;line-height:2}
+.october-experience-active .october-voice-switch button{border-radius:999px;border-color:#fff3efaf;color:#fff7f5}
+.october-experience-active .october-voice-switch button[aria-pressed=true]{background:#e8d7e6;color:#354565}
+.october-experience-active .reflection-section .choices button{border-color:#fff3efb2;background:#fff7f01b;color:#fff7f5}
+.october-experience-active .reflection-section .choices button.is-chosen{background:#e8d7e6;color:#354565}
+.october-experience-active .reflection-section .next-button{background:#d7c0d6;color:#354565}
+body.october-experience-active #life-modal{border:1px solid #fff3efb5;border-radius:18px;background:#1d2b58f0;color:#fff7f5;backdrop-filter:blur(13px);font-family:Arial,'Microsoft YaHei',sans-serif}
+body.october-experience-active #life-modal::backdrop{background:#2b3b5988;backdrop-filter:blur(2px)}
+body.october-experience-active #life-modal h2,body.october-experience-active #life-modal .event-story,body.october-experience-active #life-modal #event-feedback{color:#fff7f5;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.october-experience-active #life-modal .modal-close{width:44px;height:44px;border:1px solid #fff5f0a6;border-radius:50%;background:#405373;color:#fff7f5}
+.october-board button:focus-visible,.october-month-drawer summary:focus-visible,.october-journal-close:focus-visible{outline:2px solid #fff8f5;outline-offset:3px}
+@media(max-width:1120px){
+  .october-panel-shell{width:min(630px,49vw);left:3%}
+  .october-panel-inner h3{font-size:clamp(29px,3.5vw,42px)}
+  .october-panel-title{font-size:clamp(17px,2vw,22px)}
+}
+@media(max-width:800px){
+  .october-experience-active.in-game .topbar{height:62px;padding:0 12px}
+  .october-experience-active.in-game .atlas{padding-top:62px}
+  .october-experience-active.in-game .chapter-stage{height:calc(100svh - 62px);min-height:0}
+  .october-experience-active.in-game .october-chapter .scene-canvas.october-board{background:#17234f url('./assets/october-lake-scene.png') 50% bottom/auto 112% no-repeat}
+  .october-art-plane{display:none}
+  .october-scene-tools{top:2%;right:3%;gap:6px}
+  .october-scene-tools button{min-width:44px;min-height:44px;padding:8px}
+  .october-scene-tools button span{display:none}
+  .october-panel-shell{top:11%;left:4%;right:auto;width:92%;max-width:none;height:36%;min-height:0;overflow-y:auto;clip-path:polygon(0 0,100% 6%,100% 95%,62% 100%,0 95%)}
+  .october-panel-shell:before{clip-path:polygon(0 0,100% 6%,100% 95%,62% 100%,0 95%)}
+  .october-panel-inner{height:auto;min-height:100%;padding:22px 22px 30px}
+  .october-panel-kicker{font-size:10px}
+  .october-panel-kicker:after{width:54px;margin-top:11px}
+  .october-panel-inner h3{margin-top:12px;font-size:clamp(27px,7.4vw,36px);letter-spacing:.11em;white-space:normal}
+  .october-panel-title{margin-top:13px;font-size:17px;white-space:normal}
+  .october-panel-title:after{margin-top:13px}
+  .october-panel-detail{margin-top:15px}
+  .october-panel-detail>small{font-size:10px}
+  .october-panel-detail h4{margin:8px 0 0;font-size:17px}
+  .october-panel-detail [data-october-album]{position:static;min-height:44px;margin-top:6px;padding:8px 0;font-size:14px}
+  .october-panel-range{margin-top:6px;font-size:9px}
+  .october-route{left:2%;right:2%;top:auto;bottom:3%;display:flex;justify-content:space-between;gap:2px;height:92px}
+  .october-route-line{display:none}
+  .october-route-node,.october-node-0,.october-node-1,.october-node-2,.october-node-3,.october-node-4,.october-node-5{position:relative;left:auto;top:auto;transform:none;min-width:0;width:16.5%;min-height:84px;gap:4px;padding:4px 1px;border:1px solid #2836669c;border-radius:10px;background:#e6e5f0d9;color:#24345f;text-shadow:none;backdrop-filter:blur(5px)}
+  .october-route-name,.october-route-node.is-active .october-route-name{visibility:visible;min-height:33px;font-size:9px;line-height:1.2;white-space:normal;text-align:center}
+  .october-route-dot{width:8px;height:8px}
+  .october-route-node small{font-size:8px}
+  .october-experience-active.in-game .october-month-drawer{left:3%;bottom:16%}
+  .october-album-shell{inset:0;width:100%;height:100%;padding:16px 17px 22px;clip-path:none}
+  .october-album-head h3{font-size:21px}
+  .october-album-main{display:block;padding:13px 0}
+  .october-album-photo img{height:28svh}
+  .october-album-copy{margin-top:15px}
+  .october-album-copy h4{margin:10px 0 14px;font-size:20px}
+  .october-album-copy p{font-size:14px;line-height:1.75}
+  .october-album-strip{min-height:88px;padding-top:9px}
+  .october-album-strip button{flex-basis:62px;height:62px}
+  .october-experience-active.in-game .october-chapter .reflection-section{inset:62px 0 0;width:100vw;height:calc(100svh - 62px);padding:25px 22px 55px}
+}
+@media(max-width:400px){.october-panel-inner{padding:20px 18px 30px}.october-panel-inner h3{font-size:27px}.october-panel-title{font-size:16px}.october-route-name{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.october-experience-active *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

@@ -1,0 +1,116 @@
+/* May's approved type sits on the supplied painting; the panel follows its diagonal slope. */
+html:has(body.may-experience-active.in-game){height:100%;overflow:hidden}
+.may-experience-active.in-game{height:100%;overflow:hidden;background:#7184a3}
+.may-experience-active.in-game>footer{display:none}
+.may-experience-active.in-game .topbar{height:64px;background:#3d4d67e8;border-bottom:1px solid #f7e5eb66;backdrop-filter:blur(9px)}
+.may-experience-active.in-game .topbar .wordmark,.may-experience-active.in-game .topnav button,.may-experience-active.in-game .portal-top-progress{color:#fff0ef}
+.may-experience-active.in-game .topbar .wordmark{font:600 12px Arial,Helvetica,sans-serif;letter-spacing:.15em}
+.may-experience-active.in-game .topbar .wordmark>span:last-child{font-size:0}
+.may-experience-active.in-game .topbar .wordmark>span:last-child:after{content:'THE ARCHIVE';font-size:12px}
+.may-experience-active.in-game .atlas{padding:64px 0 0;background:#7184a3}
+.may-experience-active.in-game .atlas:before,.may-experience-active.in-game .atlas:after{display:none}
+.may-experience-active.in-game .chapter-stage{width:100%;max-width:none;height:calc(100svh - 64px);min-height:530px;margin:0;border:0;border-radius:0;box-shadow:none;background:#7184a3}
+.may-experience-active.in-game .may-chapter,.may-experience-active.in-game .may-chapter .play-layout{height:100%}
+.may-experience-active.in-game .may-chapter .play-layout{position:relative;display:block;max-width:none;margin:0;box-shadow:none}
+.may-experience-active.in-game .may-board{position:relative;width:100%;height:100%;min-height:0;padding:0;overflow:hidden;background:#8f94ad;color:#fff3ef;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.may-experience-active.in-game .may-board:after{display:none}
+.may-sunset-frame{position:absolute;inset:0;background:url('./assets/may-sunset-scene.png') center/cover no-repeat}
+.may-board-top{position:absolute;z-index:7;top:3.5%;left:2.6%;right:2.6%;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.may-logo{color:#fff3e8;text-shadow:0 1px 12px #53647b77;font:600 clamp(16px,1.55vw,28px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:.2em;white-space:nowrap}
+.may-tools{display:flex;gap:12px}
+.may-tools .november-top-action{display:flex;align-items:center;gap:9px;min-height:48px;padding:6px 15px;border:1px solid #fff0edbf;border-radius:999px;background:#52617d9e;color:#fff4ef;backdrop-filter:blur(8px);text-align:left;cursor:pointer}
+.may-tools .november-top-action:hover{background:#4b5e7bdc}
+.may-tools .november-action-icon{display:grid;place-items:center;width:31px;height:31px;flex:0 0 31px;padding-right:6px;border-right:1px solid #fff1ec99}
+.may-tools .november-action-icon svg{width:28px;height:28px}
+.may-tools .november-action-icon img{width:30px;height:30px;object-fit:contain}
+.may-tools .november-action-copy{display:grid;gap:2px;white-space:nowrap}
+.may-tools .november-action-copy small{font:600 8px/1.2 Arial,sans-serif;letter-spacing:.17em}
+.may-tools .november-action-copy strong{font:500 13px/1.2 Arial,'Microsoft YaHei',sans-serif;letter-spacing:.02em}
+.may-scene-nav{position:absolute;z-index:6;inset:0;pointer-events:none}
+.may-scene-node{position:absolute;display:flex;flex-direction:column-reverse;align-items:center;gap:11px;min-width:90px;min-height:68px;padding:7px;border:0;background:none;color:#f9f2eb;text-shadow:0 1px 8px #426176aa;font:500 clamp(12px,1.07vw,17px)/1.2 Arial,'Microsoft YaHei',sans-serif;white-space:nowrap;cursor:pointer;pointer-events:auto;transform:translate(-50%,-50%)}
+.may-node-0{left:34%;top:77%}.may-node-1{left:52%;top:66%}.may-node-2{left:83%;top:65%}
+.may-node-dot{width:14px;height:14px;border:1.5px solid #fff5ed;border-radius:50%;background:#b58db5;box-shadow:0 0 0 5px #f7e6eb4c}
+.may-scene-node.is-active .may-node-dot,.may-scene-node:hover .may-node-dot{background:#fff8eb;box-shadow:0 0 0 5px #d6a5ea9c,0 0 15px #fff4e9}
+.may-scene-node>span:last-child{padding:2px 7px;border-bottom:1px solid #fff4e4b0}
+.may-scene-hint{position:absolute;z-index:3;right:5%;bottom:4%;margin:0;color:#fff3e8;font:600 10px Arial,sans-serif;letter-spacing:.2em;text-shadow:0 1px 6px #4e5f70}
+.may-scene-hint span{font-size:17px}
+.may-scene-panel{position:absolute;z-index:5;top:14%;right:2.5%;width:min(48%,850px);max-height:60%;overflow-y:auto;padding:24px clamp(35px,3vw,60px) 23px clamp(80px,5.5vw,110px);background:#fff1e9a6;color:#fff5ee;clip-path:polygon(11% 0,100% 0,93% 100%,0 100%);backdrop-filter:blur(8px);box-shadow:0 20px 45px #344a6560}
+.may-scene-panel:before{content:'';position:absolute;inset:1px;clip-path:polygon(11% 0,100% 0,93% 100%,0 100%);background:#53627de8;pointer-events:none}
+.may-scene-panel>*{position:relative;z-index:1}
+.may-panel-top{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.may-panel-top small{font:600 10px Arial,sans-serif;letter-spacing:.2em;white-space:nowrap}
+.may-panel-top button,.may-journal-close{min-height:44px;padding:6px 0;border:0;border-bottom:1px solid #f9e8e4a8;background:none;color:#fff4ed;font:500 11px Arial,'Microsoft YaHei',sans-serif;cursor:pointer;white-space:nowrap}
+.may-scene-panel h3{position:relative;margin:7px 0 3px;color:#fff6ee;font:400 clamp(25px,2.7vw,44px)/1.14 Arial,Helvetica,sans-serif;letter-spacing:.16em}
+.may-panel-phase{margin:4px 0 8px;color:#fff4ef;font:500 clamp(16px,1.45vw,22px)/1.35 Arial,'Microsoft YaHei',sans-serif;letter-spacing:.025em}
+.may-panel-date{margin:0 0 11px;color:#f9e7e5;font:400 12px/1.4 Arial,'Microsoft YaHei',sans-serif}
+.may-memory-object{display:flex;align-items:center;gap:14px;width:100%;min-height:57px;padding:8px 0;border:0;border-top:1px solid #f9e6e69e;background:none;color:#fff5ee;text-align:left;font:500 14px/1.35 Arial,'Microsoft YaHei',sans-serif;cursor:pointer}
+.may-memory-object:hover{color:#fff}
+.may-memory-object>span:last-child{margin-left:auto;font-size:18px}
+.may-memory-icon{display:grid;place-items:center;width:29px;height:29px;flex:0 0 29px}
+.may-memory-icon svg{width:26px;height:26px}
+.may-panel-progress{margin:3px 0 0;color:#f6e3e6b8;font:600 9px Arial,sans-serif;letter-spacing:.14em}
+.may-experience-active.in-game .may-chapter .quest-panel{display:none}
+.may-experience-active.in-game .may-month-drawer{position:absolute;z-index:8;left:3%;bottom:1%;width:max-content;max-width:94vw;color:#fff3ed}
+.may-month-drawer summary{min-height:44px;padding:10px 4px;list-style:none;font:600 10px/24px Arial,sans-serif;letter-spacing:.2em;cursor:pointer;text-shadow:0 1px 6px #3c5372}
+.may-month-drawer summary::-webkit-details-marker{display:none}
+.may-month-drawer[open]{padding:5px 12px;background:#465977ed;backdrop-filter:blur(9px)}
+.may-month-drawer .portal-months{margin:0;padding:5px 0 10px;background:none;box-shadow:none}
+.may-month-drawer .portal-months button{font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.may-experience-active.in-game .may-chapter .reflection-section{position:fixed;z-index:15;inset:64px 0 0 auto;width:min(760px,100vw);height:calc(100svh - 64px);max-width:none;overflow-y:auto;margin:0;padding:30px clamp(24px,5vw,70px) 60px;border:1px solid #f6e9eea6;background:#4a5874ed;color:#fff5ee;box-shadow:-18px 0 75px #31415f6e;backdrop-filter:blur(14px);font-family:Arial,'Microsoft YaHei',sans-serif}
+.may-experience-active.in-game .may-chapter .reflection-section[hidden]{display:none}
+.may-journal-close{display:block;margin:0 0 25px auto}
+.may-experience-active .may-reading h4{color:#fff5ee;font:500 clamp(24px,2.4vw,34px)/1.4 Arial,'Microsoft YaHei',sans-serif}
+.may-experience-active .may-reading .diary-prose,.may-experience-active .may-reading .diary-prose p{color:#fff3ed;font:400 15px/2 Arial,'Microsoft YaHei',sans-serif}
+.may-experience-active .may-reading .may-byline,.may-experience-active .reflection-section .locked-diary,.may-experience-active .reflection-section .choice-response,.may-experience-active .reflection-section .next-row small{color:#f4e6e9}
+.may-experience-active .may-voice-switch button{border-radius:999px;border-color:#f5e7eaae;color:#fff4ed}
+.may-experience-active .may-voice-switch button[aria-pressed=true]{background:#f4e2e7;color:#40536f}
+.may-experience-active .reflection-section .choices button{border-color:#f4e6e8ae;background:#fff7f018;color:#fff4ed}
+.may-experience-active .reflection-section .choices button.is-chosen{background:#efdce5;color:#40536f}
+.may-experience-active .reflection-section .next-button{background:#d6b8d1;color:#40536f}
+body.may-experience-active #life-modal[data-kind="may"]{width:min(940px,calc(100% - 32px));max-height:87svh;padding:40px clamp(22px,4vw,55px);border:1px solid #f6e7ebaf;border-radius:18px;background:#4b5b77ed;color:#fff5ed;box-shadow:0 20px 75px #31415f72;backdrop-filter:blur(13px);font-family:Arial,'Microsoft YaHei',sans-serif}
+body.may-experience-active #life-modal[data-kind="may"]::backdrop{background:#2c3c5b80;backdrop-filter:blur(2px)}
+body.may-experience-active #life-modal[data-kind="may"] .modal-close{width:44px;height:44px;border:1px solid #f5e7e9bb;border-radius:50%;background:#4c5d7ca8;color:#fff5ee;box-shadow:none}
+body.may-experience-active #life-modal[data-kind="may"] .eyebrow{color:#f3dce9;font:600 10px Arial,sans-serif;letter-spacing:.2em}
+body.may-experience-active #life-modal[data-kind="may"] h2{color:#fff4ee;font:500 clamp(25px,3vw,38px)/1.3 Arial,'Microsoft YaHei',sans-serif}
+body.may-experience-active #life-modal[data-kind="may"] .event-story,body.may-experience-active #life-modal[data-kind="may"] #may-event{color:#fff2ec;font:400 15px/1.9 Arial,'Microsoft YaHei',sans-serif}
+body.may-experience-active #life-modal[data-kind="may"] #may-event h3,body.may-experience-active #life-modal[data-kind="may"] #may-event p,body.may-experience-active #life-modal[data-kind="may"] #event-feedback{color:#fff3ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.may-experience-active #life-modal[data-kind="may"] .may-gallery-photo{border-color:#f1e5eb8e;background:#b8b4ce31}
+body.may-experience-active #life-modal[data-kind="may"] .may-gallery-photo figcaption{color:#fff3ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.may-experience-active #life-modal[data-kind="may"] .may-bus{border-color:#f2e4e7a1;background:#a0abc34d}
+body.may-experience-active #life-modal[data-kind="may"] .may-bus-stops{color:#f6e7ed;border-color:#f1e3e7a1}
+body.may-experience-active #life-modal[data-kind="may"] .may-bus>strong{color:#fff4ed}
+body.may-experience-active #life-modal[data-kind="may"] #may-event button,body.may-experience-active #life-modal[data-kind="may"] #collect-object{min-height:44px;border:1px solid #f1e4e8b8;border-radius:999px;background:#a391b36b;color:#fff4ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.may-experience-active #life-modal[data-kind="may"] #collect-object:not(:disabled){background:#d4b5cf;color:#40536f}
+.may-board button:focus-visible,.may-month-drawer summary:focus-visible,.may-journal-close:focus-visible{outline:2px solid #fff7ed;outline-offset:3px}
+html:has(body.may-preview-active.in-game){overflow:auto}
+.may-preview-active.in-game{height:auto;overflow:auto}
+.may-preview-active.in-game .chapter-stage{height:auto;min-height:calc(100svh - 64px)}
+.may-experience-active.may-preview-active.in-game .may-chapter .play-layout{height:calc(100svh - 64px);min-height:530px}
+@media(max-width:800px){
+  .may-experience-active.in-game .topbar{height:62px;padding:0 12px}
+  .may-experience-active.in-game .atlas{padding-top:62px}
+  .may-experience-active.in-game .chapter-stage{height:calc(100svh - 62px);min-height:0}
+  .may-sunset-frame{background-position:31% center}
+  .may-board-top{top:3%;left:4%;right:4%;flex-wrap:wrap;gap:12px}
+  .may-logo{font-size:16px;letter-spacing:.16em}
+  .may-tools{width:100%;justify-content:flex-end;gap:6px}
+  .may-tools .november-top-action{min-height:42px;padding:5px 8px;gap:5px}
+  .may-tools .november-action-icon{width:23px;height:23px;flex-basis:23px;padding-right:3px}
+  .may-tools .november-action-icon svg,.may-tools .november-action-icon img{width:21px;height:21px}
+  .may-tools .november-action-copy small{font-size:7px;letter-spacing:.08em}
+  .may-tools .november-action-copy strong{font-size:11px}
+  .may-scene-nav{inset:auto 3% 6%;display:flex;justify-content:space-between;gap:4px}
+  .may-scene-node,.may-node-0,.may-node-1,.may-node-2{position:relative;top:auto;left:auto;transform:none;min-width:0;min-height:55px;flex:1;gap:5px;padding:4px;background:#455b7e9c;border-radius:10px;backdrop-filter:blur(5px);font-size:12px}
+  .may-node-dot{width:11px;height:11px;box-shadow:0 0 0 3px #f7e6eb4c}
+  .may-scene-panel{top:21%;left:3%;right:3%;width:94%;max-height:49%;padding:21px 23px 19px;clip-path:polygon(6% 0,100% 0,96% 100%,0 100%)}
+  .may-scene-panel:before{clip-path:polygon(6% 0,100% 0,96% 100%,0 100%)}
+  .may-scene-panel h3{font-size:clamp(21px,5vw,30px);letter-spacing:.12em}
+  .may-panel-phase{font-size:16px}
+  .may-panel-date{font-size:11px}
+  .may-memory-object{font-size:12px;min-height:51px}
+  .may-experience-active.in-game .may-chapter .reflection-section{inset:62px 0 0;width:100vw;height:calc(100svh - 62px);padding:25px 22px 55px}
+  body.may-experience-active #life-modal[data-kind="may"]{padding:28px 20px}
+  .may-preview-active.in-game .chapter-stage{height:auto}
+  .may-experience-active.may-preview-active.in-game .may-chapter .play-layout{height:calc(100svh - 62px);min-height:0}
+}
+@media(prefers-reduced-motion:reduce){.may-experience-active *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

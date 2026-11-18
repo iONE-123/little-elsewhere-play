@@ -1,0 +1,157 @@
+/* April: Chiang Mai's shade gives way to a pale map and the hour before meeting. */
+.april-chapter .play-layout{display:block}
+.april-chapter .scene-canvas.april-atlas{--april-ink:#425349;--april-line:#788b7659;position:relative;min-height:0;height:auto;padding:34px clamp(18px,4vw,46px) 29px;overflow:hidden;color:var(--april-ink);background:radial-gradient(circle at 94% 8%,#fff9ddc9,transparent 34%),linear-gradient(145deg,#e8e8d6,#d4dfce 58%,#e9e8d8);transition:background .4s ease}
+.april-chapter .scene-canvas.april-atlas[data-phase="1"]{background:radial-gradient(circle at 12% 6%,#fff9decf,transparent 35%),linear-gradient(145deg,#e8e4ca,#e4e8d8 58%,#d7dfcf)}
+.april-chapter .scene-canvas.april-atlas[data-phase="2"]{background:radial-gradient(circle at 86% 11%,#fff7ddbc,transparent 36%),linear-gradient(145deg,#e9e2d0,#e2dfc8 54%,#d7ded5)}
+.april-chapter .scene-canvas.april-atlas[data-phase="3"]{background:radial-gradient(circle at 86% 12%,#fff6db9c,transparent 37%),linear-gradient(155deg,#d9e7e9,#cbdce4 60%,#e4ddd5)}
+.april-atlas::after{inset:12px;border-color:#fffdf5a8;pointer-events:none}
+.april-atlas-heading{position:relative;z-index:1;max-width:880px;margin:0 auto 26px;padding:0 0 0 23px;border-left:2px solid #aeb88a}
+.april-atlas-heading .eyebrow{margin:0 0 8px;color:#627e66;font-size:9px;letter-spacing:.24em}
+.april-atlas-heading h4{max-width:760px;margin:0 0 8px;color:#3f544b;font-family:var(--serif);font-size:clamp(25px,3vw,36px);font-weight:400;line-height:1.55;letter-spacing:.025em}
+.april-atlas-heading p:not(.eyebrow){margin:0;color:#69796e;font-size:11px;letter-spacing:.07em}
+.april-phase-tabs{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:980px;margin:0 auto 24px;border-top:1px solid var(--april-line);border-bottom:1px solid var(--april-line)}
+.april-phase-tabs button{min-height:68px;padding:10px 8px;border:0;border-radius:0;background:transparent;color:#556a5b;font-family:var(--serif);font-size:13px;line-height:1.5;cursor:pointer}
+.april-phase-tabs button+button{border-left:1px solid #788b763d}
+.april-phase-tabs button:nth-child(4n+1){border-left:0}
+.april-phase-tabs button:nth-child(n+5){border-top:1px solid #788b763d}
+.april-phase-tabs button[aria-pressed="true"]{background:#fffcf2c7;box-shadow:inset 0 -3px #829a83;color:#354f41}
+.april-phase-tabs button:hover{background:#fffcf2a8}
+.april-phase-tabs small,.april-phase-tabs span{display:block;color:#7a8b7e;font-family:var(--sans);font-size:9px;line-height:1.7;letter-spacing:.07em}
+.april-phase-layout{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.22fr) minmax(245px,.78fr);gap:clamp(17px,3vw,32px);align-items:start;max-width:980px;margin:auto}
+.april-phase-media{display:grid;gap:11px;min-width:0}
+.april-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;align-items:start;min-width:0}
+.april-gallery:has(>figure:only-child){grid-template-columns:1fr}
+.april-gallery figure{min-width:0;margin:0;padding:7px 7px 5px;background:#fffdf6df;border:1px solid #fffef8;box-shadow:0 3px 0 #5d795315,0 12px 24px #3d5b4714}
+.april-gallery figcaption{min-height:2.9em;margin:0;padding:8px 4px 2px;color:#607467;font-size:10px;line-height:1.6;text-align:center}
+.april-photo,.april-photo button{position:relative;display:block;width:100%;min-width:0;padding:0;border:0;border-radius:0;background:#d9dfd0;overflow:hidden;color:#fff;cursor:zoom-in;text-align:center}
+.april-photo img,.april-photo button img{display:block;width:100%;height:206px;object-fit:cover;object-position:center;transition:transform .25s ease,filter .25s ease}
+.april-photo.is-screenshot img,.april-photo.is-screenshot button img{object-fit:contain;background:#e7dfc8}
+.april-gallery:has(>figure:only-child) .april-photo img{height:300px}
+.april-photo:hover img,.april-photo button:hover img{transform:scale(1.025);filter:saturate(.94)}
+.april-photo>span,.april-photo button>span{position:absolute;right:6px;bottom:6px;padding:4px 7px;background:#29382bbd;color:#fff;font-size:10px;line-height:1.3}
+.april-object-list{display:grid;gap:10px;min-width:0;padding:1px}
+.april-object-card{display:flex;align-items:center;gap:13px;width:100%;min-height:70px;padding:11px 14px;border:1px solid #879c835e;background:#fffdf2b9;color:#45594c;text-align:left;cursor:pointer;transition:background .2s ease,transform .2s ease}
+.april-object-card:hover{background:#fffef8;transform:translateY(-1px)}
+.april-object-card svg{width:38px;height:38px;flex:0 0 38px;color:#789273}
+.april-object-card>span{display:grid;gap:3px}
+.april-object-card strong{font-family:var(--serif);font-size:16px;font-weight:400;line-height:1.4}
+.april-object-card small{color:#748577;font-size:10px;line-height:1.5}
+.april-object-card.found{background:#e7eee3dc;border-color:#78917c82}
+.april-phase-note{position:relative;z-index:1;max-width:980px;margin:25px auto 0;padding:16px 0 0;border-top:1px solid var(--april-line);color:#65776b;font-family:var(--serif);font-size:12px;line-height:1.9;text-align:center}
+.april-ride-card{min-height:240px;padding:27px 26px;border:1px solid #a9ad8e91;background:linear-gradient(138deg,#fff9eae8,#f0e9cecd);box-shadow:0 13px 28px #65735420;color:#526052}
+.april-ride-top,.april-ride-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.april-ride-top{color:#788676;font-size:10px;letter-spacing:.12em}
+.april-ride-road{position:relative;height:105px;margin:18px 0 11px;border:1px solid #b9c7a45c;background:repeating-linear-gradient(0deg,transparent 0 25px,#7a997a1b 26px 27px),linear-gradient(115deg,#e7ebd3,#f5efdb);overflow:hidden}
+.april-ride-road i{position:absolute;left:13%;right:13%;top:53%;height:0;border-top:3px dashed #829b82;transform:rotate(-8deg)}
+.april-ride-road b,.april-ride-road strong{position:absolute;z-index:1;top:44%;display:grid;place-items:center;width:33px;height:33px;border:2px solid #6f9175;border-radius:50%;background:#fffdf2;color:#60856a;font-family:var(--sans);font-size:18px;line-height:1}
+.april-ride-road b{left:10%}
+.april-ride-road strong{right:10%;background:#6c9372;color:#fff;font-size:13px}
+.april-ride-road em{position:absolute;left:47%;top:30%;color:#607e68;font-family:var(--serif);font-size:30px;font-style:normal;transform:rotate(-8deg)}
+.april-ride-bottom{padding-top:10px;border-top:1px solid #b8c09c83}
+.april-ride-bottom small{color:#73836f;font-size:11px}
+.april-ride-bottom strong{margin:0;color:#4d6d53;font-family:var(--serif);font-size:24px}
+.april-ride-card .eyebrow{margin:0 0 17px;color:#78826c;font-size:9px}
+.april-ride-card h5,.april-ride-card strong{display:block;margin:0 0 14px;color:#435747;font-family:var(--serif);font-size:clamp(20px,2.3vw,28px);font-weight:400;line-height:1.5}
+.april-ride-card p{margin:0 0 12px;color:#687565;font-size:12px;line-height:1.9}
+.april-ride-card small{color:#7e8d7b;font-size:10px;letter-spacing:.08em}
+.april-clock-map{position:relative;display:grid;align-content:center;gap:20px;min-height:300px;padding:28px;overflow:hidden;border:1px solid #9eb2b696;background:radial-gradient(circle at 50% 54%,#f8faf5c0,transparent 31%),linear-gradient(155deg,#e8eff0,#d1e2e5);box-shadow:0 13px 28px #5d7b8a20;color:#45616c}
+.april-clock-map::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 40px,#ffffff30 41px 42px),repeating-linear-gradient(90deg,transparent 0 40px,#ffffff30 41px 42px);pointer-events:none}
+.april-clock-pair{position:relative;z-index:1;display:flex;justify-content:space-between;gap:16px}
+.april-clock{display:grid;gap:4px;min-width:0;padding:11px 14px;border:1px solid #ffffffb8;background:#fffcf2d6;box-shadow:0 4px 14px #607d8019;text-align:center}
+.april-clock-divider{align-self:center;color:#648491;font-family:var(--serif);font-size:12px;white-space:nowrap}
+.april-clock strong{color:#385764;font-family:var(--serif);font-size:clamp(19px,2vw,25px);font-weight:400;line-height:1.3}
+.april-clock small,.april-clock span{color:#6c858b;font-size:10px;line-height:1.5}
+.april-map-line{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:7px;min-height:73px}
+.april-map-line::before{content:"";position:absolute;left:11%;right:11%;top:50%;border-top:1px dashed #6b91a1;transform:translateY(-50%)}
+.april-map-point{position:relative;z-index:1;display:grid;place-items:center;min-width:70px;min-height:44px;padding:6px 10px;border:1px solid #8daab1;background:#fffcf3;color:#456a75;font-family:var(--serif);font-size:12px;text-align:center;box-shadow:0 3px 10px #5679871a}
+.april-map-point i{display:block;width:7px;height:7px;margin-bottom:3px;border-radius:50%;background:#668f9c;box-shadow:0 0 0 3px #668f9c24}
+.april-map-sea{position:relative;z-index:1;display:grid;place-items:center;width:65px;height:65px;border:1px solid #9ebfcb8a;border-radius:50%;background:#d9eaf0;color:#6f94a1;font-family:var(--serif);font-size:14px}
+.april-clock-map.is-aligned{background:radial-gradient(circle at 50% 54%,#fffef2de,transparent 32%),linear-gradient(155deg,#e6f0ec,#d7e8e4)}
+.april-clock-map.is-aligned .april-map-line::before{border-top-style:solid;border-color:#648e83}
+.april-clock-map.is-aligned .april-clock{border-color:#a7c7b6;background:#fffef7}
+.april-clock-map>button{position:relative;z-index:1;justify-self:center;min-height:44px;padding:8px 17px;border:1px solid #72979b;background:#f8fdf9;color:#476a6c;font-size:11px;cursor:pointer}
+.april-clock-map>button[aria-pressed="true"]{border-color:#6b9884;background:#6b9884;color:#fff}
+.april-clock-map>p,.april-clock-map>small{position:relative;z-index:1;margin:0;color:#5a7882;font-family:var(--serif);font-size:12px;line-height:1.9;text-align:center}
+.april-meeting-map{padding:20px;border:1px solid #9eb2b696;background:linear-gradient(145deg,#eaf0ee,#d5e5e6);color:#45616c;box-shadow:0 9px 24px #5d7b8a16}
+.april-meeting-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.april-meeting-top span{font-size:10px;letter-spacing:.14em;color:#688894}
+.april-meeting-top strong{font-family:var(--serif);font-size:16px;font-weight:400}
+.april-meeting-route{display:flex;align-items:center;gap:8px;margin:18px 0;color:#527887}
+.april-meeting-route span{padding:8px 12px;border:1px solid #9ab6b9;background:#fffdf4;font-family:var(--serif);font-size:12px;white-space:nowrap}
+.april-meeting-route i{height:0;flex:1;border-top:1px dashed #84a0a4}
+.april-meeting-route b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#7b9e9d;color:#fff;font-size:17px}
+.april-meeting-map p{margin:0;color:#68828a;font-size:11px;line-height:1.7}
+.april-chapter .quest-panel{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px 24px;padding:24px 36px;border-left:0;border-top:1px solid var(--line)}
+.april-chapter .quest-panel>.eyebrow,.april-chapter .quest-panel h4,.april-chapter .quest-meter,.april-chapter .quest-count,.april-chapter .quest-panel ul{grid-column:1}
+.april-chapter .quest-panel h4{font-size:17px}
+.april-chapter .quest-meter{margin-top:5px}
+.april-chapter .quest-count{margin:0}
+.april-chapter .quest-panel ul{display:flex;flex-wrap:wrap;gap:0 14px;margin:0}
+.april-chapter .quest-panel li button{min-height:44px;font-size:11px}
+.april-chapter .mood-label{display:none}
+.april-chapter .mood-chips{grid-column:2;grid-row:2;margin:0}
+.april-chapter .chapter-badge{grid-column:2;grid-row:3 / 6;align-self:center;margin:0}
+.april-reading{margin-top:18px;padding-top:34px;border-top:1px solid var(--line)}
+.april-reading>.eyebrow{margin-bottom:10px;color:#668171;font-size:9px;text-align:center}
+.april-reading h4{margin:0 0 21px;color:#42564b;font-family:var(--serif);font-size:clamp(25px,3vw,31px);font-weight:400;line-height:1.6;text-align:center}
+.april-voice-switch{display:flex;justify-content:center;gap:7px;margin:0 auto 22px}
+.april-voice-switch button{min-height:44px;padding:9px 18px;border:1px solid #9bb09d;background:#fffcf3;color:#526c5b;font-size:12px;cursor:pointer}
+.april-voice-switch button[aria-pressed="true"]{border-color:#5e7867;background:#5e7867;color:#fff}
+.april-byline{margin:0 0 22px;color:#738777;font-size:11px;letter-spacing:.08em;text-align:center}
+.april-reading .diary-prose{max-width:710px;margin:auto;color:#4b5850;font-family:var(--serif);font-size:16px;line-height:2.2}
+.april-reading .diary-prose p{margin:0 0 23px}
+#april-event{margin:22px 0 26px;padding:21px;border:1px solid #b9c8b4;background:#f8faf1;color:#46594b;scroll-margin-top:16px}
+.april-event-count{margin:0 0 10px;color:#78917b;font-size:10px;letter-spacing:.13em}
+#april-event h3{margin:0 0 13px;color:#415748;font-family:var(--serif);font-size:23px;font-weight:400;line-height:1.5}
+.april-event-text{margin:0 0 18px;color:#506256;font-family:var(--serif);font-size:15px;line-height:2}
+.april-event-photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.april-event-photos .april-photo img{height:220px}
+.april-bag-photo{display:block;width:60px;height:60px;object-fit:cover}
+.april-page-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;padding-top:16px;border-top:1px solid #a8baa77a}
+.april-page-controls button{min-height:44px;padding:8px 14px;border:1px solid #7a9881;background:#fffcf5;color:#4c6b55;font-size:12px;cursor:pointer}
+.april-page-controls button:disabled{opacity:.43;cursor:default}
+.april-page-controls span{color:#6b8170;font-size:11px}
+#april-photo-viewer{width:min(96vw,1000px);max-height:94vh;padding:0;border:0;background:#172121;color:#f7f2e9;box-shadow:0 20px 90px #0008}
+#april-photo-viewer::backdrop{background:#0a1517c9}
+#april-photo-viewer header,#april-photo-viewer nav{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:11px 18px;font-size:11px;letter-spacing:.09em}
+#april-photo-viewer header button,#april-photo-viewer nav button{min-height:44px;padding:5px 10px;border:1px solid #eee6dc70;background:transparent;color:inherit;cursor:pointer}
+#april-photo-viewer header button{font-size:24px;line-height:1}
+#april-photo-viewer nav button:disabled{opacity:.4;cursor:default}
+#april-photo-viewer figure{margin:0;text-align:center}
+#april-photo-viewer img{display:block;max-width:100%;max-height:calc(94vh - 140px);object-fit:contain;margin:auto}
+#april-photo-viewer figcaption{padding:8px 15px;color:#e8ebe1;font-family:var(--serif);font-size:13px;line-height:1.7}
+.april-chapter button:focus-visible,#april-event button:focus-visible,#april-photo-viewer button:focus-visible{outline:2px solid #49747d;outline-offset:3px}
+@media(max-width:700px){
+  .april-chapter .scene-canvas.april-atlas{padding:23px 16px}
+  .april-atlas-heading{padding-left:14px;margin-bottom:21px}
+  .april-phase-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .april-phase-tabs button:nth-child(odd){border-left:0}
+  .april-phase-tabs button:nth-child(n+3){border-top:1px solid #788b763d}
+  .april-phase-layout{grid-template-columns:1fr;gap:19px}
+  .april-object-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .april-object-card{min-height:68px;padding:10px}
+  .april-ride-card,.april-clock-map{min-height:240px}
+  .april-chapter .quest-panel{display:block;padding:22px 17px}
+  .april-chapter .quest-panel ul{display:block}
+  .april-chapter .mood-chips{margin:14px 0}
+  .april-chapter .chapter-badge{margin-top:15px}
+  .april-reading .diary-prose{font-size:15px}
+  .april-event-photos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .april-event-photos .april-photo img{height:165px}
+  #april-event{padding:16px}
+}
+@media(max-width:440px){
+  .april-atlas-heading h4{font-size:23px}
+  .april-gallery{gap:7px}
+  .april-gallery figure{padding:5px}
+  .april-gallery figcaption{font-size:9px}
+  .april-photo img,.april-photo button img{height:150px}
+  .april-object-list{grid-template-columns:1fr}
+  .april-clock-map{padding:17px;gap:13px}
+  .april-clock{padding:9px}
+  .april-map-point{min-width:60px;padding:5px 6px}
+  .april-event-photos{grid-template-columns:1fr}
+  .april-event-photos .april-photo img{height:230px}
+  .april-voice-switch button{padding:8px 12px;font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){.april-chapter .scene-canvas.april-atlas,.april-photo img,.april-object-card{transition:none}}

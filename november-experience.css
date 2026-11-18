@@ -1,0 +1,219 @@
+/* The approved November landscape is the room, not a cover above the content. */
+.november-experience-active.in-game{overflow:hidden;background:#303d51}
+.november-experience-active.in-game .topbar{height:64px;background:linear-gradient(#303b4ee8,#303b4ebc);border-bottom:1px solid #fff3df32;backdrop-filter:blur(9px)}
+.november-experience-active.in-game .topbar .wordmark,.november-experience-active.in-game .topnav button,.november-experience-active.in-game .portal-top-progress{color:#fff4e7}
+.november-experience-active.in-game .topbar .wordmark{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.15em}
+.november-experience-active.in-game .topbar .wordmark>span:last-child{font-size:0}
+.november-experience-active.in-game .topbar .wordmark>span:last-child:after{content:'THE ARCHIVE';font-size:12px}
+.november-experience-active.in-game .atlas{padding:64px 0 0;background:#303d51}
+.november-experience-active.in-game .atlas:before,.november-experience-active.in-game .atlas:after{display:none}
+.november-experience-active.in-game .chapter-stage{width:100%;max-width:none;height:calc(100svh - 64px);min-height:520px;margin:0;border:0;border-radius:0;box-shadow:none;background:#303d51}
+.november-experience-active.in-game .november-chapter,.november-experience-active.in-game .november-chapter .play-layout{height:100%}
+.november-experience-active.in-game .november-chapter .play-layout{position:relative;display:block;max-width:none;margin:0;box-shadow:none}
+.november-experience-active.in-game .november-board{position:relative;width:100%;height:100%;min-height:0;padding:0;overflow:hidden;background:#ae8799;color:#fff5e6;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.november-board:before{content:'';position:absolute;inset:-20px;background:url('./assets/autumn-portal-a.png') center/cover no-repeat;filter:blur(22px) brightness(.72);pointer-events:none}
+.november-landscape-frame{position:absolute;inset:0;width:100%;height:100%;background:url('./assets/autumn-portal-a.png') center/cover no-repeat}
+.november-experience-active.in-game .november-board:after{display:none}
+.november-board-shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,#303d5140 0%,transparent 20%,transparent 67%,#303d5145 100%)}
+.november-board-top{position:absolute;z-index:2;top:3%;left:3.5%;right:3.5%;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:11px;letter-spacing:.2em;text-shadow:0 1px 5px #303d5180}
+.november-board-tools{display:flex;gap:18px;align-items:center}
+.november-board-tools button{min-height:44px;padding:6px 2px;border:0;border-bottom:1px solid #fff5e67d;background:none;color:inherit;font:600 10px/1.4 Arial,'Microsoft YaHei',sans-serif;letter-spacing:.14em;cursor:pointer;text-shadow:inherit}
+.november-moon-node{position:absolute;z-index:5;display:flex;align-items:center;gap:9px;min-height:52px;padding:4px 6px;border:0;background:transparent;color:#fff4e7;font:600 clamp(12px,1vw,15px)/1.25 Arial,'Microsoft YaHei','PingFang SC',sans-serif;letter-spacing:.04em;text-shadow:0 1px 5px #344558;cursor:pointer;white-space:nowrap}
+.november-node-orbit{display:grid;place-items:center;width:32px;height:32px;flex:0 0 32px;border:1px solid #fff3e2c9;border-radius:50%;box-shadow:0 0 0 5px #fff4e51a,0 0 16px #fff5df80;background:#fff4e631}
+.november-node-orbit svg{width:18px;height:18px}
+.november-node-label{padding-bottom:3px;border-bottom:1px solid #fff5e6b3}
+.november-node-0{left:8%;top:46%}
+.november-node-1{left:41%;top:56%}
+.november-node-2{right:10%;top:32%}
+.november-moon-node:hover .november-node-orbit,.november-moon-node.is-active .november-node-orbit{background:#fff4e6;color:#c38b8d;box-shadow:0 0 0 7px #fff4e52a,0 0 22px #fff5dfa1}
+.november-moon-node:focus-visible,.november-board-tools button:focus-visible,.november-plane-inner button:focus-visible,.november-journal-close:focus-visible{outline:2px solid #fff4e6;outline-offset:4px}
+.november-follow-hint{position:absolute;z-index:2;right:5%;bottom:4%;margin:0;font:600 11px/1.4 Arial,sans-serif;letter-spacing:.26em;text-shadow:0 1px 5px #344558}
+.november-follow-hint span{font-size:17px;letter-spacing:0}
+.november-scene-plane{position:absolute;z-index:4;right:0;bottom:0;width:59%;min-height:70%;display:flex;align-items:center;background:#303d51f2;clip-path:polygon(16% 15%,100% 0,100% 100%,0 100%,0 36%);box-shadow:-20px -20px 60px #25324755}
+.november-plane-inner{width:100%;max-width:760px;margin:auto;padding:clamp(95px,12vh,150px) clamp(30px,5vw,90px) 35px clamp(80px,8vw,150px)}
+.november-plane-top{display:flex;justify-content:space-between;align-items:center;gap:15px;color:#f0ded2;font:600 10px/1.5 Arial,sans-serif;letter-spacing:.25em;white-space:nowrap}
+.november-plane-top>span{display:flex;align-items:center;gap:12px}
+.november-plane-moon{display:inline-flex;width:20px;height:20px}
+.november-plane-moon svg{width:20px;height:20px}
+.november-plane-top button{min-height:44px;padding:5px 0;border:0;border-bottom:1px solid #f0ded290;background:none;color:inherit;font:inherit;letter-spacing:.13em;cursor:pointer}
+.november-plane-inner h3{margin:26px 0 6px;color:#fff1dc;font:500 clamp(28px,3vw,45px)/1.15 Arial,Helvetica,sans-serif;letter-spacing:.08em}
+.november-plane-line{margin:0 0 22px;color:#f1ddd0;font:500 clamp(14px,1.2vw,18px)/1.7 Arial,'Microsoft YaHei','PingFang SC',sans-serif;letter-spacing:.05em}
+.november-plane-objects{border-top:1px solid #eadad082}
+.november-plane-objects button{display:flex;align-items:center;width:100%;min-height:68px;padding:8px 0;border:0;border-bottom:1px solid #eadad05d;background:transparent;color:#f5e8da;text-align:left;cursor:pointer}
+.november-plane-objects button:hover{background:#fff6e70d}
+.november-plane-icon{display:grid;place-items:center;width:44px;flex:0 0 44px;margin-right:15px;color:#f4d9c3}
+.november-plane-icon svg{width:26px;height:26px}
+.november-object-copy{display:grid;gap:3px}
+.november-object-copy small{font:600 9px/1.2 Arial,sans-serif;letter-spacing:.17em;opacity:.7}
+.november-object-copy strong{font:500 15px/1.3 Arial,sans-serif;letter-spacing:.16em}
+.november-object-arrow{margin-left:auto;font-size:19px}
+.november-plane-count{margin:18px 0 0;font:600 10px Arial,sans-serif;letter-spacing:.18em;opacity:.76}
+.november-experience-active.in-game .november-chapter .quest-panel{display:none}
+.november-experience-active.in-game .november-chapter .portal-month-drawer{position:absolute;z-index:6;left:3%;bottom:2%;width:max-content;border:0;background:none;color:#fff4e6}
+.november-experience-active.in-game .portal-month-drawer summary{margin:0;padding:7px 2px;min-height:44px;color:#fff4e6;font:600 10px/30px Arial,sans-serif;letter-spacing:.18em;text-shadow:0 1px 5px #303d51}
+.november-experience-active.in-game .portal-month-drawer[open]{width:min(440px,94vw);padding:5px 14px;background:#303d51ed;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.november-experience-active.in-game .portal-month-drawer .portal-months{padding:4px 0 12px}
+.november-experience-active.in-game .november-chapter .reflection-section{position:fixed;z-index:15;inset:64px 0 0 auto;width:min(760px,100vw);height:calc(100svh - 64px);overflow-y:auto;padding:28px clamp(24px,5vw,72px) 60px;border:0;background:#303d51f5;color:#f3e8da;box-shadow:-20px 0 90px #1b263b9c;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.november-experience-active.in-game .november-chapter .reflection-section[hidden]{display:none}
+.november-journal-close{display:block;margin:0 0 30px auto;min-height:44px;padding:6px 0;border:0;border-bottom:1px solid #f0ded290;background:none;color:#f0ded2;font:600 10px Arial,sans-serif;letter-spacing:.18em;cursor:pointer}
+.november-experience-active.in-game .november-chapter .reflection-heading{color:#ebd6c9}
+.november-experience-active.in-game .november-chapter .reflection-heading>span:last-child{color:#d3b6b4}
+.november-experience-active.in-game .november-chapter .nov-reading{border-color:#e9d6c356}
+.november-experience-active.in-game .november-chapter .nov-reading h4,.november-experience-active.in-game .november-chapter .memory-diary summary{color:#fff1dc;font-family:Arial,'Microsoft YaHei',sans-serif;font-weight:500}
+.november-experience-active.in-game .november-chapter .nov-reading .diary-prose,.november-experience-active.in-game .november-chapter .memory-diary .diary-prose{color:#f1e6d9;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif;font-size:15px;line-height:2}
+.november-experience-active.in-game .november-chapter .role-reading-label,.november-experience-active.in-game .november-chapter .nov-byline{color:#e1bbb8}
+.november-experience-active.in-game .november-chapter .locked-diary,.november-experience-active.in-game .november-chapter .next-row small{color:#dcc6bd;font-family:Arial,'Microsoft YaHei',sans-serif}
+.november-experience-active.in-game .november-chapter .next-button{background:#c9919b;color:#303d51}
+.november-experience-active.in-game .november-chapter .next-button:disabled{opacity:.5}
+.november-experience-active.in-game .november-chapter .choices button{color:#f3e8da;border-color:#e9d6c377;background:#ffffff0b}
+.november-experience-active.in-game .november-chapter .choices button.is-chosen{background:#c9919b;color:#303d51}
+.november-experience-active.in-game .november-chapter .choice-response{color:#e7d2c9}
+@media(max-width:800px){
+  .november-experience-active.in-game .topbar{padding:0 12px}
+  .november-experience-active.in-game .topnav{gap:4px}
+  .november-experience-active.in-game .topnav .text-button{font-size:10px;padding:3px}
+  .november-experience-active.in-game .portal-top-progress{display:none}
+  .november-landscape-frame{background-position:48% center}
+  .november-board-edition{display:none}
+  .november-board-top{top:2%;justify-content:flex-end}
+  .november-node-0{left:2%;top:48%}
+  .november-node-1{left:38%;top:57%}
+  .november-node-2{right:2%;top:33%}
+  .november-moon-node{font-size:11px;gap:4px}
+  .november-node-orbit{width:27px;height:27px;flex-basis:27px}
+  .november-scene-plane{width:100%;min-height:58%;clip-path:polygon(0 13%,100% 0,100% 100%,0 100%)}
+  .november-plane-inner{padding:70px 28px 25px}
+  .november-plane-inner h3{font-size:29px}
+  .november-follow-hint{right:4%;bottom:4%;font-size:10px}
+  .november-experience-active.in-game .november-chapter .portal-month-drawer{bottom:1%;left:3%}
+}
+@media(max-width:520px){
+  .november-experience-active.in-game .topbar .wordmark>span:last-child:after{font-size:9px;letter-spacing:.08em}
+  .november-experience-active.in-game .topnav .text-button:nth-child(2),.november-experience-active.in-game .topnav .text-button:nth-child(4){display:none}
+  .november-experience-active.in-game .chapter-stage{height:calc(100svh - 62px);min-height:0}
+  .november-board-tools{gap:12px}
+  .november-board-tools button{font-size:9px}
+  .november-moon-node{font-size:10px;flex-direction:column;gap:3px;text-align:center}
+  .november-node-0{left:4%;top:46%}
+  .november-node-1{left:38%;top:55%}
+  .november-node-2{right:3%;top:40%}
+  .november-board.has-scene .november-node-0,.november-board.has-scene .november-node-1,.november-board.has-scene .november-node-2{top:12%}
+  .november-board.has-scene .november-node-0{left:2%}
+  .november-board.has-scene .november-node-1{left:36%}
+  .november-board.has-scene .november-node-2{right:2%}
+  .november-scene-plane{min-height:62%}
+  .november-plane-inner{padding:55px 22px 16px}
+  .november-plane-top{font-size:8px;letter-spacing:.1em}
+  .november-plane-top>span{gap:5px}
+  .november-plane-top button{font-size:8px}
+  .november-plane-inner h3{margin:14px 0 5px;font-size:25px}
+  .november-plane-line{margin-bottom:12px;font-size:13px}
+  .november-plane-objects button{min-height:52px}
+  .november-plane-icon{width:34px;flex-basis:34px;margin-right:8px}
+  .november-plane-icon svg{width:22px;height:22px}
+  .november-object-copy strong{font-size:12px}
+  .november-plane-count{margin-top:9px;font-size:8px}
+}
+@media(prefers-reduced-motion:reduce){.november-experience-active.in-game *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* Approved floating actions: readable labels and distinct character/journal symbols. */
+.november-board-top{z-index:8}
+.november-board-tools{gap:12px}
+.november-board-tools .november-top-action{display:flex;align-items:center;justify-content:center;gap:12px;min-width:168px;min-height:62px;padding:7px 18px;border:1.5px solid #fff0e4d9;border-radius:999px;background:#4c485ebd;box-shadow:0 6px 20px #2d33463d,inset 0 1px #fff6e359;color:#fff0e2;backdrop-filter:blur(9px);text-align:left;text-shadow:none;cursor:pointer;transition:background .2s,transform .2s}
+.november-board-tools .november-top-action:hover{background:#4d4864e8;transform:translateY(-2px)}
+.november-action-icon{display:grid;place-items:center;flex:0 0 39px;width:39px;height:39px;border-right:1px solid #f9e4d382;padding-right:8px}
+.november-action-icon svg{width:34px;height:34px}
+.november-action-icon img{display:block;width:39px;height:39px;max-width:none;object-fit:contain;object-position:center;transform:scale(1.18)}
+.november-action-copy{display:grid;gap:2px;white-space:nowrap}
+.november-action-copy small{font:600 8px/1.2 Arial,sans-serif;letter-spacing:.24em;color:#f2d6d7}
+.november-action-copy strong{font:500 16px/1.25 Arial,'Microsoft YaHei','PingFang SC',sans-serif;letter-spacing:.05em;color:#fff0e2}
+
+/* November memory objects stay in the scene instead of opening a cream paper page. */
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"]{width:min(1000px,calc(100% - 36px));max-height:min(86svh,760px);padding:42px clamp(24px,4vw,56px);border:1px solid #f7e4d9c9;border-radius:22px 22px 24px 24px;background:#45465ddc;color:#fff0e4;box-shadow:0 20px 65px #26314773;backdrop-filter:blur(12px);font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"]::backdrop{background:#2630475c;backdrop-filter:blur(2px)}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .modal-close{float:right;position:sticky;top:0;width:44px;height:44px;margin:-18px -28px 0 0;border:1px solid #f8e5d4d1;border-radius:50%;background:#55516aa8;color:#fff2df;box-shadow:none;font:26px/1 Arial,sans-serif}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(190px,32%);gap:0 34px;align-items:start}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content>.eyebrow{grid-column:1;grid-row:1;margin:2px 0 26px;color:#f1d4d1;font:600 10px/1.4 Arial,sans-serif;letter-spacing:.24em}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content>h2{grid-column:1;grid-row:2;margin:0 0 20px;color:#fff0e1;font:500 clamp(27px,3vw,41px)/1.25 Arial,'Microsoft YaHei','PingFang SC',sans-serif;letter-spacing:.03em}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content>.event-story{grid-column:1;grid-row:3;margin:0;padding-bottom:22px;border-bottom:1px solid #f5e2d77d;color:#f8e8de;font:400 16px/1.9 Arial,'Microsoft YaHei','PingFang SC',sans-serif;letter-spacing:.015em}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content>.event-illustration{grid-column:2;grid-row:1/5;display:grid;place-items:center;float:none;width:100%;height:270px;margin:24px 0 0;border:1px solid #f5e2d778;border-radius:12px;background:#d5b4bb2d;color:#f2d4cf}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content:has(.nov-event-photos)>.event-illustration{display:none}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .nov-event-photos{grid-column:2;grid-row:1/7;display:grid;grid-template-columns:1fr;gap:10px;align-content:start;margin:18px 0 0;max-height:53svh;overflow:auto}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .nov-photo{padding:6px;border:1px solid #ffe7d59c;border-radius:9px;background:#f8eee5ed;box-shadow:none;color:#53495e}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .nov-photo img,body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .tall-photo img{width:100%;height:min(43svh,360px);object-fit:contain;background:#e7ded9}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .nov-photo>span{color:#665b6b;font-family:Arial,'Microsoft YaHei',sans-serif;font-size:10px}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #event-feedback{grid-column:1;grid-row:auto;margin-top:18px;color:#e8cad0;font:13px/1.6 Arial,'Microsoft YaHei',sans-serif}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #collect-object{grid-column:1;grid-row:auto;width:max-content;min-width:0;min-height:48px;margin-top:12px;padding:12px 26px;border:1px solid #f7d6d9d1;border-radius:999px;background:#b37c8f;color:#fff4e9;box-shadow:none;font:500 14px Arial,'Microsoft YaHei',sans-serif;letter-spacing:.02em}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #collect-object:hover{background:#c18b9d}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .nov-awards-stage{grid-column:2;grid-row:1/7;margin-top:18px;border:1px solid #f6ddd09e;border-radius:12px}
+body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content:has(.nov-awards-stage)>.event-illustration{display:none}
+body.november-experience-active #nov-photo-viewer{border-color:#f5e2d7ac;background:#45465df0;color:#fff0e4;backdrop-filter:blur(10px)}
+body.november-experience-active #nov-photo-viewer::backdrop{background:#263047a8;backdrop-filter:blur(3px)}
+body.november-experience-active #nov-photo-viewer header{background:#45465d;color:#fff0e4}
+body.november-experience-active #nov-photo-viewer nav button{border-color:#f5e2d7a0;border-radius:999px;background:#ffffff14;color:#fff0e4}
+
+/* The name switch changes visible player labels, never the underlying role key. */
+#life-modal[data-kind="characters"].november-role-choice{position:fixed;top:50%;left:auto;right:4vw;transform:translateY(-50%);width:min(810px,calc(100vw - 58px));max-height:min(82svh,720px);margin:0;padding:38px 48px 36px 126px;border:1px solid #f5e0d4b8;border-radius:0;background:linear-gradient(115deg,#636077bf,#3e415cca);color:#fff0e4;box-shadow:0 20px 80px #2f344357;clip-path:polygon(16% 0,100% 0,100% 100%,0 100%,8% 61%);backdrop-filter:blur(8px);font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+#life-modal[data-kind="characters"].november-role-choice::backdrop{background:linear-gradient(90deg,#3f374627,#30384a38),url('./assets/autumn-portal-a.png') center/cover no-repeat;backdrop-filter:none}
+#life-modal[data-kind="characters"].november-role-choice .modal-close{position:absolute;float:none;top:18px;right:20px;width:44px;height:44px;margin:0;border:1px solid #f7e3d3bd;border-radius:50%;background:#5b566e75;color:#fff0e4;box-shadow:none;font:26px/1 Arial,sans-serif}
+#life-modal[data-kind="characters"].november-role-choice #life-modal-content{position:relative}
+#life-modal[data-kind="characters"].november-role-choice .november-role-title{margin:2px 0 22px;color:#fff1e5;font:600 12px/1.3 Arial,sans-serif;letter-spacing:.36em}
+#life-modal[data-kind="characters"].november-role-choice .november-name-switch{display:flex;width:max-content;max-width:100%;margin:0 0 31px;padding:3px;border:1px solid #f5dfd3a8;border-radius:999px;background:#514c627a}
+#life-modal[data-kind="characters"].november-role-choice .november-name-switch button{min-width:104px;min-height:44px;padding:8px 17px;border:0;border-radius:999px;background:transparent;color:#f6e6de;font:500 13px Arial,'Microsoft YaHei',sans-serif;cursor:pointer}
+#life-modal[data-kind="characters"].november-role-choice .november-name-switch button[aria-pressed="true"]{background:#f5e4dd;color:#42475d;box-shadow:0 2px 12px #2c2e4033}
+#life-modal[data-kind="characters"].november-role-choice .character-files{position:relative;display:grid;grid-template-columns:1fr;gap:16px;margin:0}
+#life-modal[data-kind="characters"].november-role-choice .character-files::before{content:'';position:absolute;z-index:1;right:12%;top:calc(50% - 16px);width:34px;height:32px;border-right:1px solid #f6dfd2a8;transform:skewX(-32deg);pointer-events:none}
+#life-modal[data-kind="characters"].november-role-choice .november-route-card{position:relative;display:grid;grid-template-columns:37% minmax(0,1fr) 30px;gap:14px;align-items:center;min-height:132px;padding:0 55px 0 0;overflow:hidden;border:1px solid #f8e8d7a8;border-radius:8px;background:#56536b78;color:#fff0e4;text-align:left;box-shadow:none;clip-path:polygon(10% 0,100% 0,93% 100%,0 100%);opacity:.88;transition:opacity .2s,background .2s,filter .2s}
+#life-modal[data-kind="characters"].november-role-choice .november-route-card:hover{opacity:1;background:#6c627aab}
+#life-modal[data-kind="characters"].november-role-choice .november-route-card.selected{opacity:1;border-color:#ffe5d0;background:#7e6d85a3;filter:drop-shadow(0 0 11px #f8d4c377)}
+#life-modal[data-kind="characters"].november-role-choice .november-route-scene{position:relative;display:block;align-self:stretch;overflow:hidden;background:linear-gradient(145deg,#e1b4c285,#7b77997a 67%,#3c4b6a8f);clip-path:polygon(25% 0,100% 0,100% 100%,0 100%)}
+#life-modal[data-kind="characters"].november-role-choice .november-route-wangzi .november-route-scene{background:linear-gradient(135deg,#a7a0b97a,#8886a48a 45%,#394963b8)}
+#life-modal[data-kind="characters"].november-role-choice .november-route-scene svg{position:absolute;right:7%;bottom:0;width:min(75%,160px);height:88%;overflow:visible}
+#life-modal[data-kind="characters"].november-role-choice .november-route-ground{fill:#4b536dc2}
+#life-modal[data-kind="characters"].november-role-choice .november-route-deer{fill:#fff4e3;opacity:.86}
+#life-modal[data-kind="characters"].november-role-choice .november-violet-stem{fill:none;stroke:#e4d2db;stroke-width:1.4;stroke-linecap:round}
+#life-modal[data-kind="characters"].november-role-choice .november-violet-bloom{fill:#aa9aca;opacity:.9}
+#life-modal[data-kind="characters"].november-role-choice .november-violet-heart{fill:#eed7b6}
+#life-modal[data-kind="characters"].november-role-choice .november-route-copy{display:grid;gap:3px;min-width:0}
+#life-modal[data-kind="characters"].november-role-choice .november-route-copy .character-label{color:#ffe7df;font:500 11px/1.4 Arial,'Microsoft YaHei',sans-serif;letter-spacing:.14em}
+#life-modal[data-kind="characters"].november-role-choice .november-route-copy strong{margin:0;color:#fff3e7;font:500 clamp(27px,3vw,35px)/1.15 Arial,'Microsoft YaHei',sans-serif}
+#life-modal[data-kind="characters"].november-role-choice[data-name-mode="nicknames"] .november-route-copy strong{font:italic 42px/1.1 Georgia,serif}
+#life-modal[data-kind="characters"].november-role-choice .november-route-mood{color:#f3ddd5;font:400 11px/1.5 Arial,'Microsoft YaHei',sans-serif;letter-spacing:.08em}
+#life-modal[data-kind="characters"].november-role-choice .november-route-check{display:grid;place-items:center;width:28px;height:28px;border:1px solid #ffe7d4;border-radius:50%}
+#life-modal[data-kind="characters"].november-role-choice .november-route-card.selected .november-route-check{background:#f7e8dc;color:#515367}
+#life-modal[data-kind="characters"].november-role-choice .november-route-card.selected .november-route-check::after{content:'✓';font:600 18px/1 Arial,sans-serif}
+#life-modal[data-kind="characters"].november-role-choice .november-role-note{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#life-modal[data-kind="characters"].november-role-choice .november-role-enter{display:block;width:max-content;max-width:100%;min-width:0;min-height:52px;margin:28px 0 0 auto;padding:12px 26px;border:1px solid #ffe6d9;border-radius:999px;background:#f4e3d9;color:#42475d;box-shadow:none;font:500 15px Arial,'Microsoft YaHei',sans-serif}
+#life-modal[data-kind="characters"].november-role-choice .november-role-enter:hover{background:#fff2e5}
+#life-modal[data-kind="characters"].november-role-choice button:focus-visible{outline:2px solid #fff8e9;outline-offset:3px}
+#life-modal[data-kind="characters"].november-role-choice .november-route-card:focus-visible{outline:0;box-shadow:inset 0 0 0 3px #fff8e9}
+@media(prefers-reduced-motion:reduce){#life-modal[data-kind="characters"].november-role-choice *{transition:none!important;animation:none!important}}
+@media(max-width:900px){#life-modal[data-kind="characters"].november-role-choice{right:2vw;width:min(720px,calc(100vw - 24px));padding-left:100px}}
+@media(max-width:700px){
+  #life-modal[data-kind="characters"].november-role-choice{left:50%;right:auto;transform:translate(-50%,-50%);width:calc(100vw - 24px);max-height:88svh;padding:58px 20px 24px;border-radius:18px;clip-path:none;background:#4a4c65e8}
+  #life-modal[data-kind="characters"].november-role-choice .modal-close{top:12px;right:12px}
+  #life-modal[data-kind="characters"].november-role-choice .november-role-title{font-size:10px;letter-spacing:.25em}
+  #life-modal[data-kind="characters"].november-role-choice .november-name-switch{margin-bottom:18px}
+  #life-modal[data-kind="characters"].november-role-choice .november-name-switch button{min-width:90px;min-height:44px;font-size:12px}
+  #life-modal[data-kind="characters"].november-role-choice .november-route-card{grid-template-columns:32% minmax(0,1fr) 25px;gap:8px;min-height:112px;padding-right:22px;clip-path:none;border-radius:13px}
+  #life-modal[data-kind="characters"].november-role-choice .november-route-scene{clip-path:none}
+  #life-modal[data-kind="characters"].november-role-choice[data-name-mode="nicknames"] .november-route-copy strong{font-size:32px}
+  #life-modal[data-kind="characters"].november-role-choice .november-route-copy strong{font-size:26px}
+  #life-modal[data-kind="characters"].november-role-choice .november-route-mood{font-size:9px;letter-spacing:0}
+  #life-modal[data-kind="characters"].november-role-choice .november-role-enter{margin-top:20px;font-size:13px}
+}
+
+@media(max-width:720px){
+  .november-board-tools .november-top-action{min-width:0;min-height:52px;padding:6px 10px;gap:7px}
+  .november-action-icon{width:27px;flex-basis:27px;height:30px;padding-right:3px}
+  .november-action-icon svg{width:25px;height:25px}
+  .november-action-icon img{width:30px;height:30px}
+  .november-action-copy small{font-size:7px;letter-spacing:.12em}
+  .november-action-copy strong{font-size:12px}
+  body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content{grid-template-columns:1fr}
+  body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content>.eyebrow,body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content>h2,body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content>.event-story,body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .nov-event-photos,body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #life-modal-content>.event-illustration,body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #event-feedback,body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] #collect-object,body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .nov-awards-stage{grid-column:1;grid-row:auto}
+  body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .nov-event-photos{max-height:none;overflow:visible}
+  body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .nov-photo img,body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .tall-photo img{height:min(42svh,330px)}
+  body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"]{padding:28px 22px;border-radius:17px}
+  body.november-experience-active #life-modal[data-kind="event"][data-november-object="true"] .modal-close{margin:-12px -12px 0 0}
+}

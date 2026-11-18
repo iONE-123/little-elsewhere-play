@@ -1,0 +1,138 @@
+/* The original oval-path painting stays still while February's memories open over it. */
+.february-experience-active.in-game{overflow:hidden;background:#8584a8}
+.february-experience-active.in-game .topbar{height:64px;background:#424864ec;border-bottom:1px solid #f0eaf257;backdrop-filter:blur(9px)}
+.february-experience-active.in-game .topbar .wordmark,.february-experience-active.in-game .topnav button,.february-experience-active.in-game .portal-top-progress{color:#f5f1f4}
+.february-experience-active.in-game .topbar .wordmark{font:600 12px Arial,Helvetica,sans-serif;letter-spacing:.15em}
+.february-experience-active.in-game .topbar .wordmark>span:last-child{font-size:0}
+.february-experience-active.in-game .topbar .wordmark>span:last-child:after{content:'THE ARCHIVE';font-size:12px}
+.february-experience-active.in-game .atlas{padding:64px 0 0;background:#8584a8}
+.february-experience-active.in-game .atlas:before,.february-experience-active.in-game .atlas:after{display:none}
+.february-experience-active.in-game .chapter-stage{width:100%;max-width:none;height:calc(100svh - 64px);min-height:530px;margin:0;border:0;border-radius:0;box-shadow:none;background:#8584a8}
+.february-experience-active.in-game .february-chapter,.february-experience-active.in-game .february-chapter .play-layout{height:100%}
+.february-experience-active.in-game .february-chapter .play-layout{position:relative;display:block;max-width:none;margin:0;box-shadow:none}
+.february-experience-active.in-game .february-board{position:relative;width:100%;height:100%;min-height:0;padding:0;overflow:hidden;background:#8584a8;color:#fff5ed;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.february-board:before{content:'';position:absolute;inset:-20px;background:url('./assets/february-oval-path.png') center/cover no-repeat;filter:blur(18px) brightness(.84);pointer-events:none}
+.february-experience-active.in-game .february-board:after{display:none}
+.february-art-frame{position:absolute;inset:50% auto auto 50%;width:min(100%,calc(280.1svh - 179px));aspect-ratio:2098/749;transform:translate(-50%,-50%);background:url('./assets/february-oval-path.png') center/100% 100% no-repeat;box-shadow:0 0 75px #4545672b}
+.february-board-top{position:absolute;z-index:6;top:3%;left:3%;right:3%;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.february-logo{display:grid;gap:2px;color:#4b5978;text-shadow:0 1px 12px #e3e3f3a1;white-space:nowrap}
+.february-logo small{font:600 clamp(11px,1.1vw,18px)/1.2 Arial,sans-serif;letter-spacing:.32em}
+.february-logo strong{font:500 clamp(35px,4.8vw,78px)/.95 Arial,Helvetica,sans-serif;letter-spacing:.12em}
+.february-tools{display:flex;gap:12px}
+.february-tools .november-top-action{display:flex;align-items:center;gap:9px;min-height:54px;padding:7px 16px;border:1px solid #f9edf2d9;border-radius:999px;background:#56516fbf;color:#fff1ed;box-shadow:0 8px 24px #514b7138;backdrop-filter:blur(9px);text-align:left;cursor:pointer}
+.february-tools .november-top-action:hover{background:#4a4b6fe8}
+.february-tools .november-action-icon{display:grid;place-items:center;width:34px;height:34px;flex:0 0 34px;padding-right:6px;border-right:1px solid #f9e7e8a3}
+.february-tools .november-action-icon svg{width:30px;height:30px}
+.february-tools .november-action-icon img{width:33px;height:33px;object-fit:contain;transform:scale(1.12)}
+.february-tools .november-action-copy{display:grid;gap:2px;white-space:nowrap}
+.february-tools .november-action-copy small{font:600 8px/1.2 Arial,sans-serif;letter-spacing:.19em}
+.february-tools .november-action-copy strong{font:500 14px/1.2 Arial,'Microsoft YaHei',sans-serif}
+.february-gates{position:absolute;z-index:5;inset:50% auto auto 50%;width:min(100%,calc(280.1svh - 179px));aspect-ratio:2098/749;transform:translate(-50%,-50%);pointer-events:none}
+.february-gate{position:absolute;display:flex;align-items:center;gap:9px;min-height:48px;padding:3px 9px;border:0;border-radius:999px;background:#514e7459;color:#fff7ef;text-shadow:0 1px 6px #3b3f65a8;backdrop-filter:blur(3px);font:500 clamp(11px,1.05vw,16px)/1.25 Arial,'Microsoft YaHei',sans-serif;white-space:nowrap;cursor:pointer;pointer-events:auto}
+.february-gate-0{left:5%;top:59%}.february-gate-1{left:31%;top:64%}.february-gate-2{left:59%;top:84%}.february-gate-3{right:5%;top:71%}
+.february-gate-dot{display:block;width:13px;height:13px;flex:0 0 13px;border:2px solid #fff0df;border-radius:50%;background:#76749e;box-shadow:0 0 0 4px #f9d8e638,0 0 13px #fff3e6a1}
+.february-gate-label{display:flex;align-items:baseline;gap:7px}
+.february-gate-label small{font:500 clamp(10px,1.2vw,18px)/1 Arial,sans-serif;letter-spacing:.06em}
+.february-gate.is-active,.february-gate:hover{background:#f1e6ed66}
+.february-gate.is-active .february-gate-dot,.february-gate:hover .february-gate-dot{background:#fff3e5;box-shadow:0 0 0 5px #ffe6e86e,0 0 15px #fff5e7}
+.february-scene-hint{position:absolute;z-index:3;right:6%;bottom:5%;margin:0;color:#f8edf1;font:600 10px Arial,sans-serif;letter-spacing:.2em;text-shadow:0 1px 6px #4d4b75}
+.february-scene-hint span{font-size:17px}
+.february-scene-panel{position:absolute;z-index:4;top:27%;right:12%;width:min(42%,580px);min-height:275px;max-height:60%;overflow-y:auto;padding:27px 32px 23px;border:1px solid #f6e7edb0;border-radius:50% / 12%;background:#565272c9;color:#fff6ed;box-shadow:0 16px 40px #3b3b6260;backdrop-filter:blur(11px);text-align:center}
+.february-panel-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.february-panel-top small{font:600 10px Arial,sans-serif;letter-spacing:.22em}
+.february-panel-top button,.february-journal-close{min-height:44px;padding:7px 0;border:0;border-bottom:1px solid #f3e9ebaa;background:none;color:#fff3ea;font:500 12px Arial,'Microsoft YaHei',sans-serif;cursor:pointer;white-space:nowrap}
+.february-scene-panel h3{margin:15px 0 6px;color:#fff4eb;font:500 clamp(25px,2.5vw,40px)/1.2 Arial,sans-serif;letter-spacing:.19em}
+.february-panel-phase{margin:0;color:#f9e9ef;font:500 13px/1.5 Arial,'Microsoft YaHei',sans-serif}
+.february-memory-stage{display:grid;justify-items:center;margin:20px auto 4px;gap:8px}
+.february-memory-index{color:#f6eaf0;font:600 10px Arial,sans-serif;letter-spacing:.18em}
+.february-memory-object{display:flex;align-items:center;gap:13px;min-height:68px;padding:5px 13px;border:0;border-radius:999px;background:#eee7f01e;color:#fff4eb;cursor:pointer}
+.february-memory-object:hover{background:#fff7f039}
+.february-memory-glyph{display:grid;place-items:center;width:35px;height:35px}
+.february-memory-glyph svg{width:30px;height:30px}
+.february-memory-name{font:500 clamp(18px,1.6vw,25px)/1.3 Arial,'Microsoft YaHei',sans-serif;letter-spacing:.03em}
+.february-memory-arrow{font-size:19px}
+.february-memory-state{font:600 9px Arial,sans-serif;letter-spacing:.17em;color:#f6eaf0}
+.february-panel-foot{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:10px}
+.february-panel-foot>button{width:44px;height:44px;border:1px solid #f1e7eaba;border-radius:50%;background:#fff7f017;color:#fff3eb;font-size:21px;cursor:pointer}
+.february-panel-foot>button:disabled{opacity:.35;cursor:default}
+.february-page-dots{display:flex;align-items:center;gap:4px}
+.february-page-dots button{width:28px;height:40px;padding:0;border:0;background:none;cursor:pointer}
+.february-page-dots button:before{content:'';display:block;width:6px;height:6px;margin:auto;border:1px solid #f6e8e9;border-radius:50%}
+.february-page-dots button[aria-current=true]:before{background:#fff2e8;box-shadow:0 0 0 3px #fff3ea4d}
+.february-experience-active.in-game .february-chapter .quest-panel{display:none}
+.february-experience-active.in-game .february-month-drawer{position:absolute;z-index:8;left:3%;bottom:1%;width:max-content;max-width:94vw;color:#f4edf0}
+.february-month-drawer summary{min-height:44px;padding:10px 4px;list-style:none;font:600 10px/24px Arial,sans-serif;letter-spacing:.2em;cursor:pointer;text-shadow:0 1px 5px #454466}
+.february-month-drawer summary::-webkit-details-marker{display:none}
+.february-month-drawer[open]{padding:5px 12px;background:#494c6eea;backdrop-filter:blur(9px)}
+.february-month-drawer .portal-months{margin:0;padding:5px 0 10px;background:none;box-shadow:none}
+.february-experience-active.in-game .february-chapter .reflection-section{position:fixed;z-index:15;inset:64px 0 0 auto;width:min(760px,100vw);height:calc(100svh - 64px);max-width:none;overflow-y:auto;margin:0;padding:30px clamp(24px,5vw,70px) 60px;border:1px solid #f4e9efac;background:#555674e3;color:#faf3ee;box-shadow:-18px 0 75px #373b5c70;backdrop-filter:blur(14px);font-family:Arial,'Microsoft YaHei',sans-serif}
+.february-experience-active.in-game .february-chapter .reflection-section[hidden]{display:none}
+.february-journal-close{display:block;margin:0 0 25px auto}
+.february-experience-active .reflection-heading,.february-experience-active .reflection-heading>span:last-child,.february-experience-active .feb-reading .eyebrow,.february-experience-active .feb-byline{color:#f7edf2}
+.february-experience-active .feb-reading{border-color:#f1e8ee80}
+.february-experience-active .feb-reading h4{color:#fff5ec;font:500 clamp(24px,2.4vw,34px)/1.4 Arial,'Microsoft YaHei',sans-serif}
+.february-experience-active .feb-voice-switch button{border-color:#f1e8ee9c;border-radius:999px;background:#ffffff1a;color:#fff4ed}
+.february-experience-active .feb-voice-switch button[aria-pressed=true]{background:#f2e7f0;color:#484865}
+.february-experience-active .feb-reading .diary-prose,.february-experience-active .feb-reading .diary-prose p{color:#fff4ed;font:400 15px/2 Arial,'Microsoft YaHei',sans-serif}
+.february-experience-active .reflection-section .choices button{border-color:#f1e6ee9c;background:#fff6ef17;color:#fff4ed}
+.february-experience-active .reflection-section .choices button.is-chosen{background:#efe8f0;color:#494966}
+.february-experience-active .reflection-section .choice-response,.february-experience-active .reflection-section .locked-diary,.february-experience-active .reflection-section .next-row small,.february-experience-active .reflection-section .choice-label{color:#fff3ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+.february-experience-active .reflection-section .next-button{background:#d5c5db;color:#454666}
+.february-board button:focus-visible,.february-month-drawer summary:focus-visible,.february-journal-close:focus-visible{outline:2px solid #fff5e7;outline-offset:3px}
+body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"]{width:min(940px,calc(100% - 32px));max-height:87svh;padding:40px clamp(22px,4vw,55px);border:1px solid #f4e9edb8;border-radius:18px;background:#54546fdf;color:#fff4ed;box-shadow:0 20px 75px #33375372;backdrop-filter:blur(13px);font-family:Arial,'Microsoft YaHei',sans-serif}
+body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"]::backdrop{background:#30324f78;backdrop-filter:blur(2px)}
+body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] .modal-close{width:44px;height:44px;border:1px solid #f1e9edbd;border-radius:50%;background:#464766aa;color:#fff5ed;box-shadow:none}
+body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] .eyebrow{color:#f1e7ec;font:600 10px Arial,sans-serif;letter-spacing:.21em}
+body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] h2{color:#fff6f0;font:500 clamp(26px,3vw,40px)/1.3 Arial,'Microsoft YaHei',sans-serif}
+body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] .event-story,body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] #feb-event{color:#fff3ed;font:400 15px/1.9 Arial,'Microsoft YaHei',sans-serif}
+body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] .event-illustration,body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] #feb-event{border-color:#f1e5ed82;background:#b9a6ca30;color:#fff4ed}
+body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] #feb-event h3,body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] #feb-event p,body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] #event-feedback{color:#fff4ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] #feb-event button:not(.feb-photo),body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] #collect-object{min-height:44px;border:1px solid #f1e7edbc;border-radius:999px;background:#b4a3c26b;color:#fff5ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] #collect-object:not(:disabled){background:#d7bfd4;color:#41445f}
+body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"] .feb-photo{border:1px solid #f1e7ed8a;border-radius:10px;background:#d1bed936;box-shadow:none}
+body.february-experience-active #feb-photo-viewer{border:1px solid #f1e8edab;border-radius:16px;background:#4a4b69ed;color:#fff5ed;backdrop-filter:blur(10px)}
+body.february-experience-active #feb-photo-viewer::backdrop{background:#333451b1}
+body.february-experience-active #feb-photo-viewer header{background:#494a68;color:#fff5ed}
+body.february-experience-active #feb-photo-viewer nav button{border-radius:999px;border-color:#f4e6e9a9;background:#ffffff19;color:#fff5ed}
+body.february-experience-active #life-modal[data-kind="characters"].november-role-choice{background:linear-gradient(115deg,#777294d9,#484b70e6)}
+body.february-experience-active #life-modal[data-kind="characters"].november-role-choice::backdrop{background:linear-gradient(#55537644,#47456877),url('./assets/february-oval-path.png') center/cover no-repeat}
+
+@media(max-width:900px){.february-scene-panel{right:3%;width:48%;padding:25px 25px 20px}.february-gate-3{right:2%}}
+@media(max-width:650px){
+  .february-experience-active.in-game .topbar{height:62px;padding:0 12px}
+  .february-experience-active.in-game .atlas{padding-top:62px}
+  .february-experience-active.in-game .chapter-stage{height:calc(100svh - 62px);min-height:0}
+  .february-experience-active.in-game .topnav{gap:5px}
+  .february-experience-active.in-game .topnav .text-button{font-size:10px;padding:4px}
+  .february-experience-active.in-game .topnav .text-button:nth-child(2),.february-experience-active.in-game .topnav .text-button:nth-child(4){display:none}
+  .february-experience-active.in-game .portal-top-progress{display:none}
+  .february-board:before{background-position:15% center}
+  .february-art-frame{inset:0;width:100%;height:100%;aspect-ratio:auto;transform:none;background-size:auto 100%;background-position:15% center}
+  .february-board-top{top:2%;left:4%;right:4%;display:grid;gap:12px}
+  .february-logo small{font-size:10px}
+  .february-logo strong{font-size:31px}
+  .february-tools{gap:6px;justify-content:flex-end;justify-self:end}
+  .february-tools .november-top-action{min-width:0;min-height:48px;padding:5px 9px;gap:5px}
+  .february-tools .november-action-icon{width:24px;height:28px;flex-basis:24px;padding-right:3px}
+  .february-tools .november-action-icon svg,.february-tools .november-action-icon img{width:24px;height:24px}
+  .february-tools .november-action-copy small{font-size:7px;letter-spacing:.08em}
+  .february-tools .november-action-copy strong{font-size:11px}
+  .february-gates{inset:auto 3% 4%;width:94%;height:auto;aspect-ratio:auto;transform:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+  .february-gate,.february-gate-0,.february-gate-1,.february-gate-2,.february-gate-3{position:static;min-height:48px;padding:4px 7px;gap:5px;background:#4c4a71b8;font-size:11px}
+  .february-gate-dot{width:10px;height:10px;flex-basis:10px}
+  .february-gate-label{gap:4px}
+  .february-gate-label small{font-size:10px}
+  .february-scene-panel{top:48%;left:4%;right:auto;width:92%;min-height:0;max-height:31%;padding:16px 20px;border-radius:23px}
+  .february-scene-panel h3{font-size:24px;letter-spacing:.1em;margin-top:8px}
+  .february-panel-top small{font-size:9px;letter-spacing:.1em}
+  .february-panel-top button{font-size:11px}
+  .february-memory-stage{margin-top:10px;gap:3px}
+  .february-memory-object{min-height:52px}
+  .february-memory-name{font-size:18px}
+  .february-panel-foot{margin-top:2px}
+  .february-scene-hint{right:5%;bottom:19%;font-size:9px}
+  .february-experience-active.in-game .february-chapter .reflection-section{inset:62px 0 0;width:100vw;height:calc(100svh - 62px);padding:25px 22px 55px}
+  body.february-experience-active #life-modal[data-kind="event"][data-february-object="true"]{padding:28px 20px}
+}
+@media(max-height:650px) and (min-width:651px){.february-scene-panel{top:22%;max-height:70%;padding-top:18px;padding-bottom:15px}.february-scene-panel h3{margin-top:6px}.february-memory-stage{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){.february-experience-active *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

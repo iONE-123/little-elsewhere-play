@@ -1,0 +1,93 @@
+.july-chapter .play-layout { display: block; }
+.july-chapter .scene-canvas.july-board {
+  height: auto;
+  min-height: 0;
+  padding: 26px 34px 38px;
+  color: #514d48;
+  background: linear-gradient(135deg, #e6e1d3 0%, #e6ded4 46%, #d8e0db 100%);
+}
+.july-board::after { inset: 11px; }
+.july-tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; margin-bottom: 28px; }
+.july-tabs button { min-height: 68px; padding: 10px 7px; border: 0; border-bottom: 1px solid #b3a799; background: #fffaf3a6; color: #615c55; cursor: pointer; font: 15px/1.5 var(--serif); }
+.july-tabs button[aria-pressed="true"] { background: #fffdf7; border-bottom: 3px solid #af7c76; }
+.july-tabs small { display: block; margin-bottom: 5px; color: #a3726e; font: 10px var(--sans); letter-spacing: .16em; }
+.july-board-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); align-items: center; gap: clamp(25px, 4vw, 54px); max-width: 950px; margin: 0 auto; }
+.july-cover { margin: 0; padding: 11px 11px 16px; background: #fffdf7; box-shadow: 0 11px 28px #534e4224; transform: rotate(-1deg); }
+.july-cover img { display: block; width: 100%; height: 385px; object-fit: contain; background: #ece6db; }
+.july-cover figcaption { padding: 11px 5px 0; color: #6e625d; font: 13px/1.75 var(--serif); }
+.july-board-copy { max-width: 420px; }
+.july-date { color: #aa756d; font: 11px var(--sans); letter-spacing: .1em; }
+.july-board-copy h4 { margin: 15px 0 17px; font: 400 clamp(25px, 3vw, 35px)/1.5 var(--serif); }
+.july-board-copy p { margin: 0 0 28px; font: 15px/1.95 var(--serif); }
+.july-object-card { display: flex; align-items: center; gap: 14px; width: 100%; min-height: 78px; padding: 14px; border: 1px solid #ac9384; background: #fffdf7c9; color: #6d6257; text-align: left; cursor: pointer; }
+.july-object-card:hover { background: #fffdf7; }
+.july-object-card.found { border-color: #859d8c; }
+.july-object-card svg { width: 42px; height: 42px; flex: 0 0 42px; }
+.july-object-card strong { display: block; font: 17px/1.4 var(--serif); }
+.july-object-card small { display: block; margin-top: 4px; font: 11px var(--sans); }
+.july-chapter .quest-panel { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 7px 24px; border-left: 0; padding: 24px 35px; }
+.july-chapter .quest-panel > .eyebrow,
+.july-chapter .quest-panel h4,
+.july-chapter .quest-meter,
+.july-chapter .quest-count,
+.july-chapter .quest-panel ul { grid-column: 1; }
+.july-chapter .quest-panel h4 { font-size: 17px; }
+.july-chapter .quest-panel ul { display: flex; flex-wrap: wrap; gap: 0 14px; margin: 0; }
+.july-chapter .quest-panel li button { min-height: 44px; font-size: 12px; }
+.july-chapter .mood-label { display: none; }
+.july-chapter .mood-chips { grid-column: 2; grid-row: 2; margin: 0; }
+.july-chapter .chapter-badge { grid-column: 2; grid-row: 3 / 6; align-self: center; margin: 0; }
+.july-ledger { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 790px; margin: 12px auto 48px; border-top: 1px solid #cfc5b9; border-bottom: 1px solid #cfc5b9; }
+.july-ledger div { display: grid; align-content: center; min-height: 100px; padding: 15px 9px; text-align: center; }
+.july-ledger div + div { border-left: 1px solid #d6cbbf; }
+.july-ledger strong { color: #a16f68; font: 400 31px/1.2 var(--serif); }
+.july-ledger small { margin-top: 7px; color: #756c61; font-size: 11px; }
+.july-reading { max-width: 735px; margin: 0 auto 42px; }
+.july-reading h4 { margin: 0 0 23px; text-align: center; font: 400 30px/1.6 var(--serif); }
+.july-voice-switch { display: flex; justify-content: center; gap: 8px; margin-bottom: 29px; }
+.july-voice-switch button { min-height: 44px; padding: 9px 21px; border: 1px solid #a4a292; background: transparent; color: #665f53; cursor: pointer; }
+.july-voice-switch button[aria-pressed="true"] { background: #a5766e; border-color: #a5766e; color: #fffdf7; }
+.july-byline { margin: -12px 0 25px; text-align: center; color: #81766b; font-size: 12px; letter-spacing: .04em; }
+.july-reading .diary-prose { color: #514d48; font-size: 17px; line-height: 2.2; }
+.july-reading .diary-prose p { margin: 0 0 26px; }
+.life-modal[data-kind="july"] { width: min(900px, calc(100% - 24px)); }
+.life-modal[data-kind="july"] .event-illustration,
+.life-modal[data-kind="july"] .event-story { display: none; }
+.life-modal[data-kind="july"] h2 { color: #8e766f; font-size: 24px; }
+#july-memory { margin-top: 20px; }
+.july-memory-date { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 11px; border-bottom: 1px solid #cdc4b8; color: #85796d; font-size: 11px; }
+.july-memory-photo { margin: 20px 0 0; padding: 10px; background: #fffdf7; border: 1px solid #ddd4c7; }
+.july-memory-photo img { display: block; width: 100%; height: min(53svh, 540px); object-fit: contain; background: #ece6db; }
+.july-memory-photo figcaption { padding: 11px 4px 3px; font: 13px/1.8 var(--serif); }
+.july-note { min-height: 125px; margin: 20px 0 0; padding: 18px 20px; border: 1px solid #d7c5b5; background: #f8f0e5; }
+.july-note[data-side="back"] { background: #e9eee9; border-color: #b5c7bd; }
+.july-note small { color: #9b726e; font-size: 11px; letter-spacing: .1em; }
+.july-note p { margin: 9px 0 0; font: 16px/1.9 var(--serif); }
+.july-turn { display: block; min-height: 44px; margin: 13px 0 12px auto; padding: 8px 16px; border: 1px solid #b7a395; background: #fffdf7; color: #7a615c; cursor: pointer; }
+.july-chapter button:focus-visible,
+#july-memory button:focus-visible { outline: 2px solid #875e58; outline-offset: 3px; }
+.july-preview-gallery { margin: 18px 0 26px; padding: 20px; border: 1px solid #c7a89a; background: #fffaf3; }
+.july-preview-gallery h4 { margin: 0 0 16px; font: 400 23px var(--serif); }
+.july-preview-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; }
+.july-preview-grid figure { margin: 0; }
+.july-preview-grid img { display: block; width: 100%; height: 170px; object-fit: cover; background: #eee5db; }
+.july-preview-grid figcaption { padding: 8px 0; font: 12px/1.6 var(--serif); }
+.july-preview-grid figcaption strong { color: #a5766e; }
+@media (max-width: 700px) {
+  .july-chapter .scene-canvas.july-board { padding: 18px 16px 27px; }
+  .july-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; margin-bottom: 20px; }
+  .july-tabs button { min-height: 55px; font-size: 13px; }
+  .july-board-layout { grid-template-columns: 1fr; gap: 22px; }
+  .july-cover img { height: 290px; }
+  .july-board-copy h4 { font-size: 25px; }
+  .july-chapter .quest-panel { display: block; padding: 22px 20px; }
+  .july-chapter .quest-panel ul { display: block; }
+  .july-chapter .mood-chips { margin: 12px 0; }
+  .july-chapter .chapter-badge { margin-top: 14px; }
+  .july-ledger { margin-bottom: 32px; }
+  .july-ledger strong { font-size: 25px; }
+  .july-ledger small { font-size: 10px; }
+  .july-reading .diary-prose { font-size: 16px; }
+  .life-modal[data-kind="july"] { padding: 30px 20px; }
+  .july-preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

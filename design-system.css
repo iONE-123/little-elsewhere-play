@@ -1,0 +1,69 @@
+/* Shared editorial UI. Monthly scene art and chapter interactions remain in their own files. */
+:root {
+  --morandi-rose:#c9919b;--morandi-lavender:#b7adc9;--morandi-blue:#b3c9da;
+  --morandi-sage:#a9b8a0;--morandi-ivory:#f3ede5;--morandi-periwinkle:#c4c6df;
+  --morandi-slate:#657489;--morandi-terracotta:#b77f79;
+  --color-page:var(--morandi-ivory);--color-surface:#faf7f1;
+  --color-text:#414a55;--color-muted:#657489;--color-heading:#344558;
+  --color-accent:#81586b;--color-line:rgba(65,74,85,.19);
+  --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;
+  --space-6:24px;--space-8:32px;--space-12:48px;--space-16:64px;
+  --content-width:1180px;--reading-width:720px;--radius-card:8px;--radius-button:6px;
+  --shadow-paper:0 6px 24px rgba(52,69,88,.08);
+  --motion-fast:180ms;--motion-slow:400ms;
+  --paper:var(--color-page);--bright:var(--color-surface);--ink:var(--color-text);
+  --deep:var(--color-heading);--rose:var(--morandi-rose);--blue:var(--morandi-blue);
+  --sage:var(--morandi-sage);--line:var(--color-line);--shadow:rgba(52,69,88,.12);
+  --serif:"Noto Serif SC","Songti SC","STSong",serif;
+  --sans:"Noto Sans SC","PingFang SC","Microsoft YaHei UI","Microsoft YaHei",sans-serif;
+}
+html{background:var(--color-page)}
+body{color:var(--color-text);background:var(--color-page);font-family:var(--sans)}
+:where(p,li,blockquote){overflow-wrap:anywhere}
+:where(.chapter-prose,.diary-prose,.reflection-section p){max-width:var(--reading-width);line-height:1.9}
+:where(.section-heading,.chapter-stage,.play-layout,.reflection-section){max-width:var(--content-width)}
+:where(h1,h2,h3,.chapter-title){color:var(--color-heading)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--color-accent);outline-offset:3px}
+.weather,.hero-orbit,.atlas:before,.atlas:after{display:none}
+.grain{opacity:.045}
+.topbar{background:rgba(250,247,241,.94);border-bottom:1px solid var(--color-line);backdrop-filter:none}
+.primary-button,.secondary-button,.game-primary{border-radius:var(--radius-button);box-shadow:none;transform:none}
+.primary-button:after{display:none}
+.primary-button:hover:not(:disabled),.secondary-button:hover,.game-primary:hover{transform:translateY(-1px)}
+.hero-card,.chapter-stage{clip-path:none;transform:none;border-radius:var(--radius-card);box-shadow:var(--shadow-paper)}
+.hero-card:before,.hero-card:after,.chapter-stage:before{display:none}
+.choice:first-child,.choice:nth-child(2){transform:none}
+.in-game .topbar{background:rgba(250,247,241,.96);box-shadow:none;backdrop-filter:none}
+.in-game .atlas,.in-game .chapter-stage{background:var(--color-page)}
+.chapter-portal{background-color:var(--morandi-ivory);color:var(--color-heading);background-position:var(--art-position,center center)}
+.life-chapter[data-season="spring"]{--art-position:53% center;--season-ui:var(--morandi-lavender)}
+.life-chapter[data-season="summer"]{--art-position:47% center;--season-ui:var(--morandi-blue)}
+.life-chapter[data-season="autumn"]{--art-position:center center;--season-ui:var(--morandi-terracotta)}
+.life-chapter[data-season="winter"]{--art-position:56% center;--season-ui:var(--morandi-periwinkle)}
+.chapter-portal:before{background:linear-gradient(90deg,rgba(243,237,229,.43),transparent 45%),linear-gradient(0deg,rgba(52,69,88,.18),transparent 24%)}
+.portal-wash{display:none}
+.portal-cards{width:min(300px,28vw);gap:var(--space-3)}
+.portal-card{padding:var(--space-6);color:var(--color-text);border:1px solid var(--color-line);border-radius:var(--radius-card);background:rgba(250,247,241,.93);box-shadow:var(--shadow-paper);backdrop-filter:none}
+.portal-card p,.portal-card-small small{color:var(--color-muted)}
+.portal-card-small{padding:var(--space-2) var(--space-4)}
+.portal-title{text-shadow:0 1px 7px rgba(250,247,241,.8)}
+.portal-title h2{color:#493e51;font-family:var(--serif);font-style:normal;letter-spacing:.02em}
+.portal-enter{border-radius:var(--radius-button);border:1px solid var(--color-accent);background:var(--color-accent);box-shadow:none;font-family:var(--serif)}
+.portal-enter:hover{background:#6f495c}
+.portal-role{border-radius:var(--radius-button);background:rgba(250,247,241,.94);backdrop-filter:none}
+.portal-months{background:var(--color-surface);box-shadow:none}
+.portal-months button[aria-current="page"]{border-radius:var(--radius-button);background:var(--color-accent);box-shadow:none}
+.portal-months button:not(:disabled):not([aria-current="page"]):hover{background:#e9e4e1}
+.portal-meter i{background:var(--season-ui,var(--color-accent))}
+.in-game .play-layout{box-shadow:none}
+@media(max-width:900px){.portal-cards{width:min(300px,40vw)}}
+@media(max-width:640px){
+  .chapter-portal{background-position:var(--art-position,center center)}
+  .chapter-portal:before{background:linear-gradient(180deg,rgba(243,237,229,.75),rgba(243,237,229,.38) 45%,rgba(52,69,88,.18))}
+  .portal-cards{width:100%}.portal-card{padding:var(--space-4)}
+  .portal-title{margin-bottom:var(--space-8)}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" role="img" aria-label="站在草地上的小鹿">
+  <defs>
+    <linearGradient id="coat" x1=".1" y1=".1" x2=".9" y2="1"><stop stop-color="#e9bc91"/><stop offset="1" stop-color="#b98268"/></linearGradient>
+    <linearGradient id="ear" x1="0" x2="1" y2="1"><stop stop-color="#c89478"/><stop offset="1" stop-color="#a97560"/></linearGradient>
+    <filter id="paper"><feTurbulence type="fractalNoise" baseFrequency=".025" numOctaves="2" seed="8" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5"/></filter>
+  </defs>
+  <g filter="url(#paper)" stroke="#805d53" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M68 186c-5 15-5 37-1 53m20-54c-1 17-1 35 3 53m56-58c0 20 2 39 5 58m19-58c3 17 6 36 5 57" fill="none" stroke-width="12"/>
+    <path d="M55 236h17m12 0h16m44 0h17m11 0h17" stroke="#634f4a" stroke-width="5"/>
+    <path d="M63 145c-10-17-7-39 14-51 22-14 72-9 95 7 15 11 17 30 12 52-6 27-27 48-58 49-35 1-56-14-63-57Z" fill="url(#coat)"/>
+    <path d="M177 106c13 4 23 1 28-8-1 16-10 24-22 21" fill="#e6c29c"/>
+    <path d="M83 102c-15-11-20-22-18-37 9-4 21 6 29 20m50 0c6-19 17-28 27-25 5 15 1 28-16 39" fill="url(#ear)"/>
+    <path d="M75 69c10 1 16 7 20 16m69-19c-8 4-13 11-15 20" fill="none" stroke="#eac2a5" stroke-width="6"/>
+    <path d="M85 68c-2-24 9-39 33-40 26-1 43 15 42 40l-8 39c-5 19-19 28-36 27-19-1-35-11-39-29Z" fill="url(#coat)"/>
+    <path d="M94 101c8-12 34-15 46-4 5 4 5 17-1 24-9 13-36 15-47 1-6-8-5-16 2-21Z" fill="#f7e6cd"/>
+    <path d="M100 89q8-5 15 1m22-2q-8-4-14 2" fill="none" stroke="#5b4845" stroke-width="3"/>
+    <path d="M113 108q6-5 12 0-5 6-12 0Z" fill="#73534d"/>
+    <path d="M119 112v5m-8 2q8 7 16 0" fill="none" stroke="#73534d"/>
+    <path d="M87 99q-7 1-10 8m69-9q7 1 10 8" fill="none" stroke="#d98f83" opacity=".5"/>
+    <g fill="#f7e8d2" stroke="none" opacity=".9"><ellipse cx="90" cy="151" rx="4" ry="6"/><ellipse cx="105" cy="142" rx="3" ry="5"/><ellipse cx="120" cy="153" rx="4" ry="6"/><ellipse cx="136" cy="144" rx="3" ry="5"/><ellipse cx="154" cy="154" rx="4" ry="6"/><ellipse cx="112" cy="169" rx="3" ry="5"/><ellipse cx="143" cy="170" rx="3" ry="5"/></g>
+  </g>
+</svg>

@@ -1,0 +1,149 @@
+/* The approved blue painting is the January room; all controls remain real HTML. */
+.january-experience-active.in-game{overflow:hidden;background:#8299b7}
+.january-experience-active.in-game .topbar{height:64px;background:#3e5675ec;border-bottom:1px solid #edf4ff58;backdrop-filter:blur(9px)}
+.january-experience-active.in-game .topbar .wordmark,.january-experience-active.in-game .topnav button,.january-experience-active.in-game .portal-top-progress{color:#f2f5fa}
+.january-experience-active.in-game .topbar .wordmark{font:600 12px Arial,Helvetica,sans-serif;letter-spacing:.15em}
+.january-experience-active.in-game .topbar .wordmark>span:last-child{font-size:0}
+.january-experience-active.in-game .topbar .wordmark>span:last-child:after{content:'THE ARCHIVE';font-size:12px}
+.january-experience-active.in-game .atlas{padding:64px 0 0;background:#8299b7}
+.january-experience-active.in-game .atlas:before,.january-experience-active.in-game .atlas:after{display:none}
+.january-experience-active.in-game .chapter-stage{width:100%;max-width:none;height:calc(100svh - 64px);min-height:530px;margin:0;border:0;border-radius:0;box-shadow:none;background:#8299b7}
+.january-experience-active.in-game .january-chapter,.january-experience-active.in-game .january-chapter .play-layout{height:100%}
+.january-experience-active.in-game .january-chapter .play-layout{position:relative;display:block;max-width:none;margin:0;box-shadow:none}
+.january-experience-active.in-game .january-board{position:relative;width:100%;height:100%;min-height:0;padding:0;overflow:hidden;background:#7f98b8;color:#eef5fa;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.january-board:before{content:'';position:absolute;inset:-20px;background:url('./assets/january-blue-pillars.png') center/cover no-repeat;filter:blur(18px) brightness(.86);pointer-events:none}
+.january-experience-active.in-game .january-board:after{display:none}
+.january-art-frame{position:absolute;inset:50% auto auto 50%;width:min(100%,calc(278.83svh - 178.45px));aspect-ratio:2094/751;transform:translate(-50%,-50%);background:url('./assets/january-blue-pillars.png') center/100% 100% no-repeat;box-shadow:0 0 75px #3b53732e}
+.january-board-top{position:absolute;z-index:6;top:3%;left:3%;right:3%;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.january-logo{display:grid;gap:2px;color:#385579;text-shadow:0 1px 12px #dce8f8ad;white-space:nowrap}
+.january-logo small{font:600 clamp(11px,1.1vw,18px)/1.2 Arial,sans-serif;letter-spacing:.32em}
+.january-logo strong{font:500 clamp(35px,4.8vw,78px)/.95 Arial,Helvetica,sans-serif;letter-spacing:.12em}
+.january-tools{display:flex;gap:12px}
+.january-tools .november-top-action{display:flex;align-items:center;gap:9px;min-height:54px;padding:7px 16px;border:1px solid #f5f2f0d9;border-radius:999px;background:#506985bd;color:#f5f3ef;box-shadow:0 8px 24px #40597438;backdrop-filter:blur(9px);text-align:left;cursor:pointer}
+.january-tools .november-top-action:hover{background:#425d7de5}
+.january-tools .november-action-icon{display:grid;place-items:center;width:34px;height:34px;flex:0 0 34px;padding-right:6px;border-right:1px solid #f5f0e6a3}
+.january-tools .november-action-icon svg{width:30px;height:30px}
+.january-tools .november-action-icon img{width:33px;height:33px;object-fit:contain;transform:scale(1.12)}
+.january-tools .november-action-copy{display:grid;gap:2px;white-space:nowrap}
+.january-tools .november-action-copy small{font:600 8px/1.2 Arial,sans-serif;letter-spacing:.19em}
+.january-tools .november-action-copy strong{font:500 14px/1.2 Arial,'Microsoft YaHei',sans-serif}
+.january-gate-nav{position:absolute;z-index:5;inset:50% auto auto 50%;width:min(100%,calc(278.83svh - 178.45px));aspect-ratio:2094/751;transform:translate(-50%,-50%);pointer-events:none}
+.january-gate-nav:before{content:'';position:absolute;left:11%;right:16%;top:81.5%;border-top:1px solid #fff5e8b2;box-shadow:0 0 9px #fbf1e275;pointer-events:none}
+.january-gate{position:absolute;top:78.5%;display:flex;align-items:center;gap:9px;min-height:53px;padding:3px 8px;border:0;border-radius:999px;background:#435a7747;color:#f9f4ed;text-shadow:0 1px 5px #3a5272a3;backdrop-filter:blur(2px);font:500 clamp(11px,1.15vw,17px)/1.25 Arial,'Microsoft YaHei',sans-serif;white-space:nowrap;cursor:pointer;pointer-events:auto;transform:translateX(-9px)}
+.january-gate-0{left:11%}.january-gate-1{left:45%}.january-gate-2{left:67%}.january-gate-3{left:82%}
+.january-gate-dot{display:block;width:13px;height:13px;flex:0 0 13px;border:2px solid #fff2db;border-radius:50%;background:#6f91b4;box-shadow:0 0 0 4px #ebeff03d,0 0 14px #fff3df8c}
+.january-gate-label{display:flex;align-items:baseline;gap:8px}
+.january-gate-label small{font:500 clamp(11px,1.4vw,22px)/1 Arial,sans-serif;letter-spacing:.06em}
+.january-gate.is-active,.january-gate:hover{background:#f2eadd50}
+.january-gate.is-active .january-gate-dot,.january-gate:hover .january-gate-dot{background:#fff4dc;box-shadow:0 0 0 5px #f9eddb55,0 0 16px #fff5d7}
+.january-scene-hint{position:absolute;z-index:3;right:4%;bottom:5%;margin:0;color:#edf3fa;font:600 10px Arial,sans-serif;letter-spacing:.2em;text-shadow:0 1px 5px #334d6d}
+.january-scene-hint span{font-size:17px}
+.january-scene-panel{position:absolute;z-index:4;top:17%;left:3%;width:min(30%,540px);max-height:59%;overflow-y:auto;padding:30px 38px 23px;border:1px solid #ecf2f5a8;border-radius:3px;background:#385878ce;color:#f5f4f0;box-shadow:14px 17px 38px #28476842;backdrop-filter:blur(10px);clip-path:polygon(7% 0,100% 0,88% 100%,0 100%)}
+.january-panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.january-panel-head small{font:600 10px Arial,sans-serif;letter-spacing:.22em}
+.january-panel-head button,.january-journal-close{min-height:44px;padding:7px 0;border:0;border-bottom:1px solid #f3f1e9a1;background:none;color:#f5f2e8;font:500 12px Arial,'Microsoft YaHei',sans-serif;cursor:pointer;white-space:nowrap}
+.january-scene-panel h3{margin:8px 0 0;color:#fff5ed;font:500 clamp(28px,3vw,42px)/1.2 Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.january-panel-date{margin:5px 0 14px;color:#e8f0f5;font:600 10px Arial,sans-serif;letter-spacing:.13em}
+.january-panel-heading{margin:0 0 18px;font:400 14px/1.5 Arial,'Microsoft YaHei',sans-serif}
+.january-panel-objects{border-top:1px solid #f6f2e891}
+.january-memory-link{display:flex;align-items:center;gap:10px;width:100%;min-height:55px;padding:5px 12px 5px 2px;border:0;border-bottom:1px solid #f6f2e85e;background:none;color:#fff5ed;text-align:left;cursor:pointer}
+.january-memory-link:hover{background:#e8f1f01b}
+.january-memory-icon{display:grid;place-items:center;width:30px;flex:0 0 30px;color:#f6e7dc}
+.january-memory-icon svg{width:23px;height:23px}
+.january-memory-copy{display:grid;gap:3px;flex:1;min-width:0}
+.january-memory-copy strong{font:500 13px/1.35 Arial,'Microsoft YaHei',sans-serif}
+.january-memory-copy small{font:400 10px Arial,'Microsoft YaHei',sans-serif;opacity:.8}
+.january-panel-progress{margin:12px 0 0;font:600 9px Arial,sans-serif;letter-spacing:.18em;opacity:.8}
+.january-experience-active.in-game .january-chapter .quest-panel{display:none}
+.january-experience-active.in-game .january-month-drawer{position:absolute;z-index:8;left:3%;bottom:1%;width:max-content;max-width:94vw;color:#f4f3ee}
+.january-month-drawer summary{min-height:44px;padding:10px 4px;list-style:none;font:600 10px/24px Arial,sans-serif;letter-spacing:.2em;cursor:pointer;text-shadow:0 1px 5px #344c6b}
+.january-month-drawer summary::-webkit-details-marker{display:none}
+.january-month-drawer[open]{padding:5px 12px;background:#3c5878ed;backdrop-filter:blur(9px)}
+.january-month-drawer .portal-months{margin:0;padding:5px 0 10px;background:none;box-shadow:none}
+.january-experience-active.in-game .january-chapter .reflection-section{position:fixed;z-index:15;inset:64px 0 0 auto;width:min(760px,100vw);height:calc(100svh - 64px);max-width:none;overflow-y:auto;margin:0;padding:30px clamp(24px,5vw,70px) 60px;border:1px solid #f2f2eba3;background:#3c5b7cdd;color:#f7f6f0;box-shadow:-18px 0 75px #29476770;backdrop-filter:blur(14px);font-family:Arial,'Microsoft YaHei',sans-serif}
+.january-experience-active.in-game .january-chapter .reflection-section[hidden]{display:none}
+.january-journal-close{display:block;margin:0 0 25px auto}
+.january-experience-active .reflection-heading,.january-experience-active .reflection-heading>span:last-child,.january-experience-active .jan-reading .eyebrow,.january-experience-active .jan-byline{color:#e9edf5}
+.january-experience-active .jan-reading h4{color:#fff7f1;font:500 clamp(24px,2.4vw,34px)/1.4 Arial,'Microsoft YaHei',sans-serif}
+.january-experience-active .jan-reading,.january-experience-active .jan-voice-switch{border-color:#eef0e78c}
+.january-experience-active .jan-voice-switch{background:#2e4e6e8a;border-radius:999px}
+.january-experience-active .jan-voice-switch button{color:#f5f2ec;border-radius:999px;font-family:Arial,'Microsoft YaHei',sans-serif}
+.january-experience-active .jan-voice-switch button[aria-pressed=true]{background:#ebeff0;color:#39577a}
+.january-experience-active .jan-reading .diary-prose,.january-experience-active .jan-reading .diary-prose p{color:#f6f5ef;font:400 15px/2 Arial,'Microsoft YaHei',sans-serif}
+.january-experience-active .reflection-section .choices button{border-color:#eef0e69c;background:#f8f6ed14;color:#f8f5ed}
+.january-experience-active .reflection-section .choices button.is-chosen{background:#e9e9e9;color:#395779}
+.january-experience-active .reflection-section .choice-response,.january-experience-active .reflection-section .locked-diary,.january-experience-active .reflection-section .next-row small{color:#f0f2f1;font-family:Arial,'Microsoft YaHei',sans-serif}
+.january-experience-active .reflection-section .choice-label{color:#f0f2f1;font-family:Arial,'Microsoft YaHei',sans-serif}
+.january-experience-active .reflection-section .next-button{background:#c4d8e7;color:#344e6d}
+.january-board button:focus-visible,.january-month-drawer summary:focus-visible,.january-journal-close:focus-visible{outline:2px solid #fff7e6;outline-offset:3px}
+
+/* Original photographs and event mechanics stay inside a blue floating reading layer. */
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"]{width:min(940px,calc(100% - 32px));max-height:87svh;padding:40px clamp(22px,4vw,55px);border:1px solid #f2f1e8b8;border-radius:18px;background:#3e5b7cde;color:#f7f4ec;box-shadow:0 20px 75px #293d5e70;backdrop-filter:blur(13px);font-family:Arial,'Microsoft YaHei',sans-serif}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"]::backdrop{background:#2e436275;backdrop-filter:blur(2px)}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .modal-close{width:44px;height:44px;border:1px solid #f1f0e5bd;border-radius:50%;background:#385373a0;color:#fff5e9;box-shadow:none}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .eyebrow{color:#e1eaf4;font:600 10px Arial,sans-serif;letter-spacing:.21em}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] h2{color:#fff7f0;font:500 clamp(26px,3vw,40px)/1.3 Arial,'Microsoft YaHei',sans-serif}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .event-story,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] #jan-event{color:#f6f4ee;font:400 15px/1.9 Arial,'Microsoft YaHei',sans-serif}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .event-illustration{border-color:#edf1f078;background:#a4bed63d;color:#fff3e9}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-reveal,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-ticket,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-night-card,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-stage-note,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-stage-finale,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-album-hero,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-continuation{border:1px solid #eef1e58d;border-radius:12px;background:#a9bed136;color:#f7f4ed;box-shadow:none}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] #jan-event p,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] #jan-event h4,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] #jan-event strong,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] #jan-event small,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] #event-feedback{color:#f7f4ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-photo{border:1px solid #edf0e28a;border-radius:10px;background:#c1d0da38;color:#f7f4ed;box-shadow:none;transform:none}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-photo img{height:auto;max-height:none;object-fit:contain}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-caption,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-quote p,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-quote small{color:#f7f4ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-quote{border-color:#bad3e7}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-stage-perspectives{border-color:#edf1e58a;background:#29496c87;border-radius:999px}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-stage-perspectives button{color:#f6f4ed;border-radius:999px}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] .jan-stage-perspectives button[aria-pressed="true"]{background:#e8f0f3;color:#345272}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] #collect-object,body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] #jan-event button:not(.jan-photo){min-height:44px;border:1px solid #f1efe4bc;border-radius:999px;background:#6685a5a8;color:#fff7ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"] #collect-object:not(:disabled){background:#9cb9d1;color:#243d5e}
+body.january-experience-active #jan-photo-viewer{border:1px solid #eef0e2ab;border-radius:16px;background:#3d5a7bea;color:#f8f5ec;backdrop-filter:blur(10px)}
+body.january-experience-active #jan-photo-viewer::backdrop{background:#293d5db1}
+body.january-experience-active #jan-photo-viewer header{background:#3d5a7b;color:#f8f5ec}
+body.january-experience-active #jan-photo-viewer nav button{border-radius:999px;border-color:#f3f0e2a9;background:#ffffff19;color:#fff7ed}
+body.january-experience-active #life-modal[data-kind="characters"].november-role-choice{background:linear-gradient(115deg,#557493d9,#344e70e6)}
+body.january-experience-active #life-modal[data-kind="characters"].november-role-choice::backdrop{background:linear-gradient(#4c668044,#364f6a77),url('./assets/january-blue-pillars.png') center/cover no-repeat}
+body.january-experience-active #life-modal[data-kind="characters"].november-role-choice .november-route-card{background:#617f9a78}
+body.january-experience-active #life-modal[data-kind="characters"].november-role-choice .november-route-scene{background:linear-gradient(145deg,#b9d1e285,#708ba877 67%,#3c5d7a8f)}
+
+@media(max-width:900px){
+  .january-scene-panel{width:39%;padding:25px 28px 18px}
+  .january-gate-label{gap:5px}
+  .january-gate-3{left:auto;right:2%}
+}
+@media(max-width:650px){
+  .january-experience-active.in-game .topbar{height:62px;padding:0 12px}
+  .january-experience-active.in-game .atlas{padding-top:62px}
+  .january-experience-active.in-game .chapter-stage{height:calc(100svh - 62px);min-height:0}
+  .january-experience-active.in-game .topnav{gap:5px}
+  .january-experience-active.in-game .topnav .text-button{font-size:10px;padding:4px}
+  .january-experience-active.in-game .topnav .text-button:nth-child(2),.january-experience-active.in-game .topnav .text-button:nth-child(4){display:none}
+  .january-experience-active.in-game .portal-top-progress{display:none}
+  .january-board:before{background-position:34% center}
+  .january-art-frame{inset:0;width:100%;height:100%;aspect-ratio:auto;transform:none;background-size:auto 100%;background-position:34% center}
+  .january-board-top{top:2%;left:4%;right:4%;display:grid;gap:12px}
+  .january-logo small{font-size:10px}
+  .january-logo strong{font-size:31px}
+  .january-tools{gap:6px;justify-content:flex-end}
+  .january-tools .november-top-action{min-width:0;min-height:48px;padding:5px 9px;gap:5px}
+  .january-tools .november-action-icon{width:24px;height:28px;flex-basis:24px;padding-right:3px}
+  .january-tools .november-action-icon svg,.january-tools .november-action-icon img{width:24px;height:24px}
+  .january-tools .november-action-copy small{font-size:7px;letter-spacing:.08em}
+  .january-tools .november-action-copy strong{font-size:11px}
+  .january-gate-nav{inset:0;width:100%;height:100%;aspect-ratio:auto;transform:none}
+  .january-gate-nav:before{left:5%;right:5%;top:82%}
+  .january-gate{top:79%;min-height:49px;padding:3px 4px;gap:4px;transform:none;font-size:10px;background:#3f5b7d8c}
+  .january-gate-0{left:3%}.january-gate-1{left:27%}.january-gate-2{left:53%}.january-gate-3{left:auto;right:2%}
+  .january-gate-dot{width:9px;height:9px;flex-basis:9px}
+  .january-gate-label{display:grid;gap:2px;white-space:normal;max-width:62px;text-align:left}
+  .january-gate-label small{font-size:11px}
+  .january-scene-panel{top:26%;left:4%;width:92%;max-height:43%;padding:21px 22px 17px;clip-path:none;border-radius:16px}
+  .january-scene-panel h3{font-size:27px}
+  .january-panel-head small{font-size:9px;letter-spacing:.1em}
+  .january-panel-head button{font-size:11px}
+  .january-panel-heading{font-size:12px;margin-bottom:10px}
+  .january-memory-link{min-height:50px}
+  .january-scene-hint{right:4%;bottom:6%;font-size:9px}
+  .january-experience-active.in-game .january-chapter .reflection-section{inset:62px 0 0;width:100vw;height:calc(100svh - 62px);padding:25px 22px 55px}
+  body.january-experience-active #life-modal[data-kind="event"][data-january-object="true"]{padding:28px 20px}
+}
+@media(prefers-reduced-motion:reduce){.january-experience-active *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

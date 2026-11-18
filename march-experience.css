@@ -1,0 +1,128 @@
+/* The supplied March slope is the stage; its existing stories remain behind live controls. */
+html:has(body.march-experience-active.in-game){height:100%;overflow:hidden}
+.march-experience-active.in-game{height:100%;overflow:hidden;background:#6d6986}
+.march-experience-active.in-game>footer{display:none}
+.march-experience-active.in-game .topbar{height:64px;background:#3d4863e8;border-bottom:1px solid #f6e9ea50;backdrop-filter:blur(9px)}
+.march-experience-active.in-game .topbar .wordmark,.march-experience-active.in-game .topnav button,.march-experience-active.in-game .portal-top-progress{color:#fff0ec}
+.march-experience-active.in-game .topbar .wordmark{font:600 12px Arial,Helvetica,sans-serif;letter-spacing:.15em}
+.march-experience-active.in-game .topbar .wordmark>span:last-child{font-size:0}
+.march-experience-active.in-game .topbar .wordmark>span:last-child:after{content:'THE ARCHIVE';font-size:12px}
+.march-experience-active.in-game .atlas{padding:64px 0 0;background:#6d6986}
+.march-experience-active.in-game .atlas:before,.march-experience-active.in-game .atlas:after{display:none}
+.march-experience-active.in-game .chapter-stage{width:100%;max-width:none;height:calc(100svh - 64px);min-height:530px;margin:0;border:0;border-radius:0;box-shadow:none;background:#6d6986}
+.march-experience-active.in-game .march-chapter,.march-experience-active.in-game .march-chapter .play-layout{height:100%}
+.march-experience-active.in-game .march-chapter .play-layout{position:relative;display:block;max-width:none;margin:0;box-shadow:none}
+.march-experience-active.in-game .march-board{position:relative;width:100%;height:100%;min-height:0;padding:0;overflow:clip;background:#706987;color:#fff0e7;font-family:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.march-board:before{content:'';position:absolute;inset:-20px;background:url('./assets/march-slope.png') center/cover no-repeat;filter:blur(19px) brightness(.8);pointer-events:none}
+.march-experience-active.in-game .march-board:after{display:none}
+.march-landscape-frame{position:absolute;inset:50% auto auto 50%;width:min(100%,calc(280.4svh - 179.5px));aspect-ratio:2100/749;transform:translate(-50%,-50%);background:url('./assets/march-slope.png') center/100% 100% no-repeat;box-shadow:0 0 75px #38456338}
+.march-board-top{position:absolute;z-index:7;top:3%;left:3%;right:3%;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.march-logo{color:#fff2ea;text-shadow:0 1px 12px #4c496265;font:500 clamp(15px,1.8vw,27px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:.25em;white-space:nowrap}
+.march-tools{display:flex;gap:12px}
+.march-tools .november-top-action{display:flex;align-items:center;gap:9px;min-height:54px;padding:7px 16px;border:1px solid #f9e7e4ce;border-radius:999px;background:#57526dbd;color:#fff2e9;box-shadow:0 8px 24px #463e5a3a;backdrop-filter:blur(9px);text-align:left;cursor:pointer}
+.march-tools .november-top-action:hover{background:#494a68e9}
+.march-tools .november-action-icon{display:grid;place-items:center;width:34px;height:34px;flex:0 0 34px;padding-right:6px;border-right:1px solid #f8e8e4a3}
+.march-tools .november-action-icon svg{width:30px;height:30px}
+.march-tools .november-action-icon img{width:33px;height:33px;object-fit:contain;transform:scale(1.12)}
+.march-tools .november-action-copy{display:grid;gap:2px;white-space:nowrap}
+.march-tools .november-action-copy small{font:600 8px/1.2 Arial,sans-serif;letter-spacing:.19em}
+.march-tools .november-action-copy strong{font:500 14px/1.2 Arial,'Microsoft YaHei',sans-serif}
+.march-gates{position:absolute;z-index:6;inset:50% auto auto 50%;width:min(100%,calc(280.4svh - 179.5px));aspect-ratio:2100/749;transform:translate(-50%,-50%);pointer-events:none}
+.march-gate{position:absolute;display:flex;flex-direction:column-reverse;align-items:center;justify-content:center;gap:10px;min-width:112px;min-height:64px;padding:4px;border:0;background:none;color:#fff1e9;text-shadow:0 1px 6px #4c4663b2;font:500 clamp(11px,1.05vw,15px)/1.25 Arial,'Microsoft YaHei',sans-serif;white-space:nowrap;cursor:pointer;pointer-events:auto;transform:translate(-50%,-50%)}
+.march-gate-0{left:14%;top:78%}.march-gate-1{left:34%;top:69%}.march-gate-2{left:71%;top:53%}.march-gate-3{left:88%;top:44%}
+.march-gate-dot{display:block;width:16px;height:16px;border:2px solid #fff0e3;border-radius:50%;background:#b690a9;box-shadow:0 0 0 5px #ffe4df42,0 0 10px #fff0e1a6}
+.march-gate-label{display:flex;align-items:baseline;gap:7px;padding:4px 7px;border-bottom:1px solid #fff2e5a4}
+.march-gate-label small{font:600 11px Arial,sans-serif;letter-spacing:.05em}
+.march-gate.is-active .march-gate-dot,.march-gate:hover .march-gate-dot{background:#fff4e4;box-shadow:0 0 0 6px #fff0e465,0 0 15px #fff1e6c9}
+.march-scene-hint{position:absolute;z-index:3;right:5%;bottom:4%;margin:0;color:#fff0eb;font:600 10px Arial,sans-serif;letter-spacing:.2em;text-shadow:0 1px 7px #41445f}
+.march-scene-hint span{font-size:17px}
+.march-scene-panel{position:absolute;z-index:5;right:0;bottom:0;width:43%;min-height:53%;max-height:76%;overflow-y:auto;padding:clamp(76px,12vh,125px) clamp(28px,4vw,75px) 34px 50px;background:#3e4869dc;color:#fff3e9;clip-path:polygon(0 27%,100% 0,100% 100%,0 100%);backdrop-filter:blur(7px)}
+.march-panel-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.march-panel-top small{font:600 10px Arial,sans-serif;letter-spacing:.23em;white-space:nowrap}
+.march-panel-top button,.march-journal-close{min-height:44px;padding:6px 0;border:0;border-bottom:1px solid #f5e9e9a3;background:none;color:#fff3e9;font:500 11px Arial,'Microsoft YaHei',sans-serif;cursor:pointer;white-space:nowrap}
+.march-scene-panel h3{margin:17px 0 3px;color:#fff0e9;font:400 clamp(27px,2.8vw,44px)/1.15 Arial,Helvetica,sans-serif;letter-spacing:.1em}
+.march-panel-phase{margin:5px 0 19px;color:#ffede5;font:500 16px/1.5 Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+.march-memory-stage{display:flex;align-items:center;gap:12px;padding-top:16px;border-top:1px solid #fff0e977}
+.march-memory-index{font:600 10px Arial,sans-serif;letter-spacing:.12em;white-space:nowrap}
+.march-memory-object{display:flex;align-items:center;gap:12px;width:100%;min-height:60px;padding:5px 0;border:0;background:none;color:#fff3e9;text-align:left;cursor:pointer}
+.march-memory-object:hover{color:#fff}
+.march-memory-object strong{font:500 clamp(15px,1.2vw,19px)/1.4 Arial,'Microsoft YaHei',sans-serif}
+.march-memory-object>span:last-child{margin-left:auto;font-size:19px}
+.march-memory-icon{display:grid;place-items:center;width:28px;height:28px;flex:0 0 28px}
+.march-memory-icon svg{width:24px;height:24px}
+.march-panel-foot{display:flex;align-items:center;justify-content:center;gap:20px;margin-top:10px;font:600 10px Arial,sans-serif;letter-spacing:.14em}
+.march-panel-foot button{width:44px;height:44px;border:1px solid #f4e5e7b8;border-radius:50%;background:#fff8f018;color:#fff2e8;font-size:18px;cursor:pointer}
+.march-panel-foot button:disabled{opacity:.35;cursor:default}
+.march-experience-active.in-game .march-chapter .quest-panel{display:none}
+.march-experience-active.in-game .march-month-drawer{position:absolute;z-index:8;left:3%;bottom:1%;width:max-content;max-width:94vw;color:#fff0e9}
+.march-month-drawer summary{min-height:44px;padding:10px 4px;list-style:none;font:600 10px/24px Arial,sans-serif;letter-spacing:.2em;cursor:pointer;text-shadow:0 1px 6px #43465e}
+.march-month-drawer summary::-webkit-details-marker{display:none}
+.march-month-drawer[open]{padding:5px 12px;background:#434966e8;backdrop-filter:blur(9px)}
+.march-month-drawer .portal-months{margin:0;padding:5px 0 10px;background:none;box-shadow:none}
+.march-experience-active.in-game .march-chapter .reflection-section{position:fixed;z-index:15;inset:64px 0 0 auto;width:min(760px,100vw);height:calc(100svh - 64px);max-width:none;overflow-y:auto;margin:0;padding:30px clamp(24px,5vw,70px) 60px;border:1px solid #f5e9ed9c;background:#474c6cdc;color:#fff3ed;box-shadow:-18px 0 75px #33364d6e;backdrop-filter:blur(14px);font-family:Arial,'Microsoft YaHei',sans-serif}
+.march-experience-active.in-game .march-chapter .reflection-section[hidden]{display:none}
+.march-journal-close{display:block;margin:0 0 25px auto}
+.march-experience-active .reflection-heading,.march-experience-active .reflection-heading>span:last-child,.march-experience-active .march-reading .eyebrow,.march-experience-active .march-byline{color:#f7e8ed}
+.march-experience-active .march-reading{border-color:#f0e4ed80}
+.march-experience-active .march-reading h4{color:#fff3e9;font:500 clamp(24px,2.4vw,34px)/1.4 Arial,'Microsoft YaHei',sans-serif}
+.march-experience-active .march-voice-switch button{border-color:#f1e5eaa8;border-radius:999px;background:#ffffff19;color:#fff2ed}
+.march-experience-active .march-voice-switch button[aria-pressed=true]{background:#e5d6e4;color:#424862}
+.march-experience-active .march-reading .diary-prose,.march-experience-active .march-reading .diary-prose p{color:#fff2e9;font:400 15px/2 Arial,'Microsoft YaHei',sans-serif}
+.march-experience-active .reflection-section .choices button{border-color:#f1e4eab0;background:#fff8f017;color:#fff4e9}
+.march-experience-active .reflection-section .choices button.is-chosen{background:#eadbe8;color:#414761}
+.march-experience-active .reflection-section .choice-response,.march-experience-active .reflection-section .locked-diary,.march-experience-active .reflection-section .next-row small,.march-experience-active .reflection-section .choice-label{color:#fff2ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+.march-experience-active .reflection-section .next-button{background:#cdaec9;color:#3b4461}
+.march-board button:focus-visible,.march-month-drawer summary:focus-visible,.march-journal-close:focus-visible{outline:2px solid #fff4e7;outline-offset:3px}
+body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"]{width:min(940px,calc(100% - 32px));max-height:87svh;padding:40px clamp(22px,4vw,55px);border:1px solid #f5e5eab8;border-radius:18px;background:#474c68e5;color:#fff3eb;box-shadow:0 20px 75px #30354f72;backdrop-filter:blur(13px);font-family:Arial,'Microsoft YaHei',sans-serif}
+body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"]::backdrop{background:#30334f7d;backdrop-filter:blur(2px)}
+body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] .modal-close{width:44px;height:44px;border:1px solid #f1e5e9bd;border-radius:50%;background:#464a63a8;color:#fff5ed;box-shadow:none}
+body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] .eyebrow{color:#f1e5eb;font:600 10px Arial,sans-serif;letter-spacing:.21em}
+body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] h2{color:#fff3ee;font:500 clamp(26px,3vw,40px)/1.3 Arial,'Microsoft YaHei',sans-serif}
+body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] .event-story,body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] #march-event{color:#fff1eb;font:400 15px/1.9 Arial,'Microsoft YaHei',sans-serif}
+body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] .event-illustration,body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] #march-event{border-color:#f3e5ed80;background:#b7a1c330;color:#fff2ec}
+body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] #march-event h3,body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] #march-event p,body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] #event-feedback{color:#fff3ec;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] #march-event button:not(.march-photo),body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] #collect-object{min-height:44px;border:1px solid #f1e5eab8;border-radius:999px;background:#b6a5c06b;color:#fff3ed;font-family:Arial,'Microsoft YaHei',sans-serif}
+body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] #collect-object:not(:disabled){background:#dbc5d4;color:#414761}
+body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"] .march-photo{border:1px solid #f0e5e989;border-radius:10px;background:#cbb6d538;box-shadow:none}
+body.march-experience-active #march-photo-viewer{border:1px solid #f1e6eaa8;border-radius:16px;background:#414760ed;color:#fff4ed;backdrop-filter:blur(10px)}
+body.march-experience-active #march-photo-viewer::backdrop{background:#30334db5}
+body.march-experience-active #march-photo-viewer nav button{border-radius:999px;border-color:#f1e5e8ac;background:#ffffff19;color:#fff3eb}
+body.march-experience-active #life-modal[data-kind="characters"].november-role-choice{background:linear-gradient(115deg,#746e8ed9,#424965e6)}
+body.march-experience-active #life-modal[data-kind="characters"].november-role-choice::backdrop{background:linear-gradient(#4c496a44,#42486277),url('./assets/march-slope.png') center/cover no-repeat}
+@media(max-width:900px){.march-scene-panel{width:50%;padding-right:30px}}
+@media(max-width:650px){
+  .march-experience-active.in-game .topbar{height:62px;padding:0 12px}
+  .march-experience-active.in-game .atlas{padding-top:62px}
+  .march-experience-active.in-game .chapter-stage{height:calc(100svh - 62px);min-height:0}
+  .march-experience-active.in-game .topnav{gap:5px}
+  .march-experience-active.in-game .topnav .text-button{font-size:10px;padding:4px}
+  .march-experience-active.in-game .topnav .text-button:nth-child(2),.march-experience-active.in-game .topnav .text-button:nth-child(4){display:none}
+  .march-experience-active.in-game .portal-top-progress{display:none}
+  .march-board:before{background-position:55% center}
+  .march-landscape-frame{inset:0;width:100%;height:100%;aspect-ratio:auto;transform:none;background-size:auto 100%;background-position:55% center}
+  .march-board-top{top:2%;left:4%;right:4%;display:grid;gap:10px}
+  .march-logo{font-size:13px;letter-spacing:.17em}
+  .march-tools{gap:6px;justify-content:flex-end;justify-self:end}
+  .march-tools .november-top-action{min-width:0;min-height:48px;padding:5px 9px;gap:5px}
+  .march-tools .november-action-icon{width:24px;height:28px;flex-basis:24px;padding-right:3px}
+  .march-tools .november-action-icon svg,.march-tools .november-action-icon img{width:24px;height:24px}
+  .march-tools .november-action-copy small{font-size:7px;letter-spacing:.08em}
+  .march-tools .november-action-copy strong{font-size:11px}
+  .march-gates{inset:auto 3% 9%;width:94%;height:auto;aspect-ratio:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;transform:none}
+  .march-gate,.march-gate-0,.march-gate-1,.march-gate-2,.march-gate-3{position:relative;top:auto;left:auto;right:auto;min-width:0;min-height:70px;gap:4px;padding:4px 1px;transform:none;border-radius:12px;background:#4c496c9c;backdrop-filter:blur(5px)}
+  .march-gate-label{display:grid;gap:2px;justify-items:center;padding:0;border:0;font-size:9px;white-space:normal;text-align:center}
+  .march-gate-label small{font-size:9px}
+  .march-gate-dot{width:12px;height:12px;box-shadow:0 0 0 3px #ffe4df42}
+  .march-board.has-scene .march-gates{inset:16% 3% auto}
+  .march-board.has-scene .march-gate{min-height:61px}
+  .march-scene-hint{right:4%;bottom:3%;font-size:9px}
+  .march-scene-panel{right:0;bottom:0;width:100%;min-height:0;max-height:57%;padding:22px 22px 32px;border-top:1px solid #f2e6edab;border-radius:24px 24px 0 0;background:#414862eb;clip-path:none;overflow-y:auto}
+  .march-scene-panel h3{font-size:27px;margin:10px 0 3px}
+  .march-panel-phase{font-size:14px;margin:3px 0 9px}
+  .march-memory-stage{padding-top:8px}
+  .march-memory-object strong{font-size:14px}
+  .march-panel-foot{margin-top:3px}
+  .march-experience-active.in-game .march-chapter .reflection-section{inset:62px 0 0;width:100vw;height:calc(100svh - 62px);padding:25px 22px 55px}
+  body.march-experience-active #life-modal[data-kind="event"][data-march-object="true"]{padding:28px 20px}
+}
+@media(prefers-reduced-motion:reduce){.march-experience-active *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

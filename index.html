@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3ede5">
+  <meta name="description" content="《开心的结果》——一份尚未写完的友情人生存档。">
+  <title>Little Elsewhere · 一份友情人生存档</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./game.css">
+  <link rel="stylesheet" href="./november.css">
+  <link rel="stylesheet" href="./december.css">
+  <link rel="stylesheet" href="./january.css">
+  <link rel="stylesheet" href="./february.css">
+  <link rel="stylesheet" href="./march.css">
+  <link rel="stylesheet" href="./april.css">
+  <link rel="stylesheet" href="./may.css">
+  <link rel="stylesheet" href="./june.css">
+  <link rel="stylesheet" href="./july.css">
+  <link rel="stylesheet" href="./august.css">
+  <link rel="stylesheet" href="./september.css">
+  <link rel="stylesheet" href="./october.css">
+  <link rel="stylesheet" href="./role.css">
+  <link rel="stylesheet" href="./aesthetic.css">
+  <link rel="stylesheet" href="./design-system.css">
+  <link rel="stylesheet" href="./autumn-portal.css">
+  <link rel="stylesheet" href="./november-experience.css">
+  <link rel="stylesheet" href="./december-experience.css">
+  <link rel="stylesheet" href="./january-experience.css">
+  <link rel="stylesheet" href="./february-experience.css">
+  <link rel="stylesheet" href="./march-experience.css">
+  <link rel="stylesheet" href="./april-experience.css">
+  <link rel="stylesheet" href="./may-experience.css">
+  <link rel="stylesheet" href="./june-experience.css">
+  <link rel="stylesheet" href="./july-experience.css">
+  <link rel="stylesheet" href="./august-experience.css">
+  <link rel="stylesheet" href="./september-experience.css">
+  <link rel="stylesheet" href="./october-experience.css">
+  <link rel="stylesheet" href="./little-elsewhere.css">
+  <link rel="stylesheet" href="./birthday-ending.css">
+  <link rel="stylesheet" href="./chapter-exploration.css">
+</head>
+<body class="opening-active">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="weather" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="opening-sequence le-opening" id="opening-sequence" data-phase="cover" aria-label="Little Elsewhere">
+    <section class="le-screen" data-le-screen="cover" aria-labelledby="le-cover-title">
+      <h1 id="le-cover-title" class="le-sr" tabindex="-1">LITTLE ELSEWHERE</h1>
+      <div class="le-stage">
+        <div class="le-art" aria-hidden="true">
+          <img src="./assets/little-elsewhere-home.png" width="1672" height="941" alt="">
+          <div class="le-light"></div>
+          <div class="le-wind"><i></i><i></i><i></i></div>
+        </div>
+        <div class="le-controls">
+          <button type="button" class="le-target" data-action="play-opening" aria-label="NEW JOURNEY" style="--x:69%;--y:56.25%;--w:16%;--h:5.05%"><span>NEW JOURNEY</span></button>
+          <button type="button" class="le-target" data-game="continue" aria-label="CONTINUE" style="--x:69%;--y:61.3%;--w:16%;--h:5.05%"><span>CONTINUE</span></button>
+          <button type="button" class="le-target" data-game="memories" aria-label="GALLERY" style="--x:69%;--y:66.35%;--w:16%;--h:5.05%"><span>GALLERY</span></button>
+          <button type="button" class="le-target" data-game="settings" aria-label="SETTINGS" style="--x:69%;--y:71.4%;--w:16%;--h:5.05%"><span>SETTINGS</span></button>
+        </div>
+      </div>
+    </section>
+    <section class="le-screen" data-le-screen="intro" aria-labelledby="le-intro-title" inert aria-hidden="true">
+      <h2 id="le-intro-title" class="le-sr" tabindex="-1">LITTLE ELSEWHERE · 序章</h2>
+      <p class="le-intro-copy le-sr">在一处小小的别处，收集生活的碎片。 A year in a little elsewhere. Collect the quiet pieces of life. 生活 Live · 探索 Explore · 收藏 Collect · 回忆 Remember。穿过十二个月与四季的风景，一段关于日常、成长与陪伴的故事，将在此缓缓展开。</p>
+      <div class="le-stage">
+        <div class="le-art" aria-hidden="true">
+          <img data-src="./assets/little-elsewhere-intro.png" width="1672" height="941" alt="">
+          <div class="le-light"></div>
+          <div class="le-wind"><i></i><i></i><i></i></div>
+        </div>
+        <div class="le-controls">
+          <button type="button" class="le-target" data-le-intro="intro" aria-label="INTRO 序章" style="--x:2.7%;--y:28.1%;--w:7.9%;--h:8.2%"><span>INTRO 序章</span></button>
+          <button type="button" class="le-target" data-le-intro="world" aria-label="WORLD 世界" style="--x:2.7%;--y:39%;--w:7.9%;--h:8.2%"><span>WORLD 世界</span></button>
+          <button type="button" class="le-target" data-le-intro="play" aria-label="PLAY 玩法" style="--x:2.7%;--y:49.6%;--w:7.9%;--h:8.2%"><span>PLAY 玩法</span></button>
+          <button type="button" class="le-target" data-le-phase="perspective" aria-label="开始旅程 Begin" style="--x:66.6%;--y:72.9%;--w:22.2%;--h:6.4%"><span>开始旅程 Begin</span></button>
+          <button type="button" class="le-target" data-le-phase="cover" aria-label="返回 Back" style="--x:72.5%;--y:80.3%;--w:10.6%;--h:6%"><span>返回 Back</span></button>
+        </div>
+      </div>
+    </section>
+    <section class="le-screen" data-le-screen="perspective" aria-labelledby="le-perspective-title" inert aria-hidden="true">
+      <h2 id="le-perspective-title" class="le-sr" tabindex="-1">CHOOSE YOUR PERSPECTIVE</h2>
+      <div class="le-stage">
+        <div class="le-art" aria-hidden="true">
+          <img data-src="./assets/little-elsewhere-perspective.png" width="1672" height="941" alt="">
+          <div class="le-light"></div>
+          <div class="le-wind"><i></i><i></i><i></i></div>
+        </div>
+        <div class="le-controls">
+          <button type="button" class="le-target le-arch" data-le-role="qiulu" aria-label="THE FAWN" style="--x:28.55%;--y:26.7%;--w:18.55%;--h:55.5%;--gate-y:0%;--gate-h:85%"><span>THE FAWN</span></button>
+          <button type="button" class="le-target le-arch" data-le-role="wangzi" aria-label="THE VIOLET" style="--x:53.45%;--y:26.7%;--w:18.2%;--h:55.5%;--gate-y:0%;--gate-h:85%"><span>THE VIOLET</span></button>
+          <button type="button" class="le-target le-utility" data-le-phase="intro" aria-label="返回简介" style="--x:2.8%;--y:91%;--w:10%;--h:6%"><span>返回简介</span></button>
+        </div>
+      </div>
+    </section>
+    <section class="le-screen" data-le-screen="library" aria-labelledby="le-library-title" inert aria-hidden="true">
+      <h2 id="le-library-title" class="le-sr" tabindex="-1">CONNECTION</h2>
+      <div class="le-stage">
+        <div class="le-art" aria-hidden="true">
+          <img data-src="./assets/little-elsewhere-chapters.png" width="1671" height="941" alt="">
+          <img class="le-title-tile" data-src="./assets/little-elsewhere-volume-title.png" width="34" height="34" alt="">
+          <div class="le-light"></div>
+          <div class="le-wind"><i></i><i></i><i></i></div>
+        </div>
+        <div class="le-controls">
+          <button type="button" class="le-target le-arch" data-opening-chapter="0" aria-label="一冬小事 · 2025.11—2026.02" style="--x:19.6%;--y:42.5%;--w:13.1%;--h:40.6%;--gate-y:39%;--gate-h:61%"><span>一冬小事 · 2025.11—2026.02</span><small class="le-lock" aria-hidden="true">未解锁</small></button>
+          <button type="button" class="le-target le-arch" data-opening-chapter="4" aria-label="春天的行李 · 2026.03—2026.06" style="--x:55.65%;--y:32.6%;--w:10.6%;--h:39.7%;--gate-y:40%;--gate-h:60%"><span>春天的行李 · 2026.03—2026.06</span><small class="le-lock" aria-hidden="true">未解锁</small></button>
+          <button type="button" class="le-target le-arch" data-opening-chapter="8" aria-label="去往的地方 · 2026.07—2026.11" style="--x:81%;--y:23.2%;--w:10.2%;--h:33.7%;--gate-y:40%;--gate-h:60%"><span>去往的地方 · 2026.07—2026.11</span><small class="le-lock" aria-hidden="true">未解锁</small></button>
+          <button type="button" class="le-target" data-game="memories" aria-label="回忆背包" style="--x:84.7%;--y:1.6%;--w:3.4%;--h:5.1%"><span>回忆背包</span></button>
+          <button type="button" class="le-target" data-action="show-map" aria-label="时间地图" style="--x:89.8%;--y:1.6%;--w:3.4%;--h:5.1%"><span>时间地图</span></button>
+          <button type="button" class="le-target" data-game="progress" aria-label="游戏进度" style="--x:94.8%;--y:1.6%;--w:3.4%;--h:5.1%"><span>游戏进度</span></button>
+          <button type="button" class="le-target" data-le-phase="cover" aria-label="返回开始界面" style="--x:2%;--y:1.6%;--w:14.2%;--h:5.1%"><span>返回开始界面</span></button>
+          <button type="button" class="le-target le-utility" data-action="skip-opening" hidden aria-label="返回当前章节" style="--x:2.8%;--y:91%;--w:13%;--h:6%"><span>返回当前章节</span></button>
+          <button type="button" id="ending" class="le-target le-answer-entry" data-action="open-ending" hidden disabled><span>THE BOOK OF ANSWERS</span><strong>答案之书</strong></button>
+        </div>
+      </div>
+    </section>
+    <p id="library-progress" class="le-sr" aria-live="polite"></p>
+  </div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#home" data-game="shelf" aria-label="回到书架">
+      <span class="wordmark-mark">✦</span>
+      <span>开心的结果</span>
+    </a>
+    <nav class="topnav" aria-label="页面导航">
+      <button class="text-button" data-game="shelf">三卷书架</button>
+      <button class="text-button" data-action="show-map">时间地图</button>
+      <button class="text-button" data-game="memories">回忆背包</button>
+      <button class="text-button" data-game="settings">设置</button>
+      <button class="sound-toggle" data-action="toggle-sound" aria-pressed="false" title="开关游戏伴奏">
+        <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="sound-label">伴奏关闭</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="site-title">
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="coordinate-dot dot-one"></div>
+        <div class="coordinate-dot dot-two"></div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">给秋露 · A BIRTHDAY MEMORY GAME</p>
+        <h1 id="site-title">开心的<br><em>结果</em></h1>
+        <p class="hero-intro">十二个月，十二页生活。<br>有些路一起走，有些故事隔着屏幕听。<br>翻到哪一页，都可以慢慢看。</p>
+        <button class="primary-button" data-game="start">
+          <span>进入人生存档</span>
+          <span aria-hidden="true">→</span>
+        </button>
+        <p class="save-note">进度只保存在你的浏览器里</p>
+      </div>
+      <div class="hero-card" aria-label="故事档案">
+        <div class="hero-card-top">
+          <span>FRIENDSHIP LIFE / 01</span>
+          <span class="live-dot">仅为你打开</span>
+        </div>
+        <div class="map-mini" aria-hidden="true">
+          <svg viewBox="0 0 320 220" role="img" aria-label="两条相遇又分开的路线">
+            <path class="route route-a" d="M12,182 C58,134 64,54 126,70 C190,86 180,172 238,150 C278,135 278,78 310,36"/>
+            <path class="route route-b" d="M10,38 C76,52 70,144 132,132 C182,122 180,54 236,74 C282,90 276,164 310,184"/>
+            <circle cx="129" cy="128" r="5"/>
+            <circle cx="237" cy="76" r="5"/>
+            <circle cx="238" cy="149" r="5"/>
+          </svg>
+        </div>
+        <div class="hero-card-caption">
+          <strong>各有时区，共享坐标</strong>
+          <span>两条人生线 · 十二枚记忆坐标</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#atlas"><span>向下翻阅</span><i></i></a>
+    </section>
+
+    <section class="atlas" id="atlas" aria-labelledby="atlas-title">
+      <div class="section-heading">
+        <p class="eyebrow">THE SHARED ATLAS · 友谊模拟人生</p>
+        <h2 id="atlas-title">时间不是直线，<br>是被我们记住的天气。</h2>
+        <p>三卷故事，十二处可以重返的地方。探索场景里的物件，将散落的记忆收好，再翻开这一月的手记。</p>
+      </div>
+      <div id="game-hud" class="game-hud"></div>
+
+      <div class="chapter-rail-wrap">
+        <div class="chapter-rail" id="chapter-rail" role="list" aria-label="十二章时间线"></div>
+      </div>
+
+      <article class="chapter-stage" id="chapter-stage" aria-live="polite">
+        <div class="stage-empty">
+          <span class="stage-number">00</span>
+          <h3>故事尚未开始</h3>
+          <p>从十一月的两种天气出发。有期待，也有变数；有些计划改变了，有些路还是走到了。</p>
+          <button class="secondary-button" data-game="start">选择角色，开启存档</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="coordinates" aria-labelledby="coordinates-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">TWO LIVES / SHARED COORDINATES</p>
+        <h2 id="coordinates-title">不是彼此的轨道，<br>是各自明亮时，也认得对方的光。</h2>
+      </div>
+      <div class="principle-grid">
+        <article>
+          <span>01</span>
+          <h3>各自生长</h3>
+          <p>她去往她的远方，我也辨认我的方向。友情不是合并人生，而是在彼此转弯时，仍看得见那一点灯。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>保留留白</h3>
+          <p>不替对方决定，不把关心变成绳结。那些不必解释的沉默，也在共同语言之内。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>共享坐标</h3>
+          <p>首尔、釜山、一通越洋视频、一间KTV。相遇并不取消独立，只让世界多出可重返的地点。</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>《开心的结果》· 给秋露的一份尚未写完的生日存档</p>
+    <button class="text-button" data-action="show-about">关于这份礼物</button>
+  </footer>
+
+  <dialog class="modal" id="map-modal">
+    <button class="modal-close" data-action="close-modal" aria-label="关闭">×</button>
+    <p class="eyebrow">THE YEAR AT A GLANCE</p>
+    <h2>一年，被折成十二页。</h2>
+    <div class="year-map" id="year-map"></div>
+  </dialog>
+
+  <dialog class="modal prose-modal" id="about-modal">
+    <button class="modal-close" data-action="close-modal" aria-label="关闭">×</button>
+    <p class="eyebrow">ABOUT</p>
+    <h2>关于这本手账</h2>
+    <p>这里收着这一年的照片、聊天和一些舍不得忘的小事。两个人各有自己的日子，也会在一些地方碰面。</p>
+    <p>随时可以合上，过一阵再从喜欢的月份翻起。</p>
+  </dialog>
+
+  <dialog class="answer-modal birthday-ending" id="answer-modal" aria-label="答案之书">
+    <button type="button" class="ending-close" data-action="close-modal" aria-label="合上答案之书">×</button>
+    <div id="birthday-ending-scene"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <audio id="game-music" src="./assets/music/journey.mp3" preload="none" loop hidden></audio>
+  <script src="./app.js"></script>
+  <script src="./game-data.js"></script>
+  <script src="./november-data.js"></script>
+  <script src="./december-data.js"></script>
+  <script src="./january-data.js"></script>
+  <script src="./february-data.js"></script>
+  <script src="./march-data.js"></script>
+  <script src="./april-data.js"></script>
+  <script src="./may-data.js"></script>
+  <script src="./june-data.js"></script>
+  <script src="./july-data.js"></script>
+  <script src="./august-data.js"></script>
+  <script src="./september-data.js"></script>
+  <script src="./october-data.js"></script>
+  <script src="./game.js"></script>
+  <script src="./november.js"></script>
+  <script src="./december.js"></script>
+  <script src="./january.js"></script>
+  <script src="./february.js"></script>
+  <script src="./march.js"></script>
+  <script src="./april.js"></script>
+  <script src="./may.js"></script>
+  <script src="./june.js"></script>
+  <script src="./july.js"></script>
+  <script src="./august.js"></script>
+  <script src="./september.js"></script>
+  <script src="./october.js"></script>
+  <script src="./role.js"></script>
+  <script src="./aesthetic.js"></script>
+  <script src="./chapter-exploration.js"></script>
+  <script src="./november-experience.js"></script>
+  <script src="./december-experience.js"></script>
+  <script src="./january-experience.js"></script>
+  <script src="./february-experience.js"></script>
+  <script src="./march-experience.js"></script>
+  <script src="./april-experience.js"></script>
+  <script src="./may-experience.js"></script>
+  <script src="./june-experience.js"></script>
+  <script src="./july-experience.js"></script>
+  <script src="./august-experience.js"></script>
+  <script src="./september-experience.js"></script>
+  <script src="./october-experience.js"></script>
+  <script src="./little-elsewhere.js"></script>
+  <script src="./birthday-letter.js"></script>
+  <script src="./birthday-ending.js"></script>
+</body>
+</html>
